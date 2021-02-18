@@ -13,22 +13,13 @@ namespace DocViewer.Controls {
     public partial class DocumentTypePanelBar1 {
         
         /// <summary>
-        /// RadPersistenceManager1 control.
+        /// RadPersistenceManagerProxy1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPersistenceManager RadPersistenceManager1;
-        
-        /// <summary>
-        /// XmlDataSource1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource1;
+        protected global::Telerik.Web.UI.RadPersistenceManagerProxy RadPersistenceManagerProxy1;
         
         /// <summary>
         /// SaveButton control.
@@ -56,6 +47,15 @@ namespace DocViewer.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadButton LoadButton;
+        
+        /// <summary>
+        /// XmlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource1;
         
         /// <summary>
         /// RadPanelBar1 control.

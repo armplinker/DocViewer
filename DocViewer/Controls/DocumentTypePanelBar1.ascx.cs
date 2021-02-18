@@ -13,19 +13,22 @@ namespace DocViewer.Controls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack && Object.Equals(Session["PanelBarPersistenceKey"], null))
-            {
-                LoadButton.Enabled = false;
-            }
+             
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
         {
-            Session["PanelBarPersistenceKey"] = this.Session.SessionID;
-            string fileId = Session["PanelBarPersistenceKey"].ToString();
-            LoadButton.Enabled = true;
-            RadPersistenceManager1.StorageProviderKey = fileId;
-            RadPersistenceManager1.SaveState();
+           var persistenceManager1 = RadPersistenceManager.GetCurrent(Page);
+            persistenceManager1.StorageProviderKey = "DocumentPanelBarState";
+            persistenceManager1.SaveState();
+        }
+
+
+        protected void LoadButton_Click(object sender, EventArgs e)
+        {
+            var persistenceManager1 = RadPersistenceManager.GetCurrent(Page);
+            persistenceManager1.StorageProviderKey = "DocumentPanelBarState";
+            persistenceManager1.LoadState();
         }
 
         protected void ResetButton_Click(object sender, EventArgs e)
@@ -34,11 +37,33 @@ namespace DocViewer.Controls
             RadPanelBar1.CollapseAllItems();
         }
 
-        protected void LoadButton_Click(object sender, EventArgs e)
+        private void RadPanelBar1_ItemCreated(object sender, Telerik.Web.UI.RadPanelBarEventArgs e)
         {
-            string fileId = Session["PanelBarPersistenceKey"].ToString();
-            RadPersistenceManager1.StorageProviderKey = fileId;
-            RadPersistenceManager1.LoadState();
+           SetPanelBarItemVisibility(e);
+        }
+
+
+        private void SetPanelBarItemVisibility(Telerik.Web.UI.RadPanelBarEventArgs e)
+        {
+            var docTypeKey = (string)DataBinder.Eval(e.Item.DataItem, "DocTypeKey");
+            e.Item.Visible = ((MainPage)this.Page).CheckDocTypeVisibility(docTypeKey, "");
+        }
+
+        private void RadPanelBar1_ItemDataBound(object sender, Telerik.Web.UI.RadPanelBarEventArgs e)
+        {
+            InitializePanelBarItem(e);
+        }
+
+        private void InitializePanelBarItem(Telerik.Web.UI.RadPanelBarEventArgs e)
+        {
+            e.Item.ToolTip = (string)DataBinder.Eval(e.Item.DataItem, "ToolTip"); //"Read more about " + (string)DataBinder.Eval(e.Item.DataItem, "Text");
+
+        }
+
+
+        protected void RadPanelBar1_ItemClick(object sender, RadPanelBarEventArgs e)
+        {
+            var itemClicked = e.Item; Response.Write("Server event raised -- you clicked: " + itemClicked.Text);
         }
     }
 }

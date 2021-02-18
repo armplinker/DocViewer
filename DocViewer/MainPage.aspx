@@ -1,7 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MainPage.aspx.cs" Inherits="MainPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MainPage.aspx.cs" Inherits="DocViewer.MainPage" %>
 
 <%@ Register Src="~/Controls/UserControl1.ascx" TagPrefix="uc1" TagName="UserControl1" %>
-
+<%@ Register Src="~/Controls/DocumentTypePanelBar1.ascx" TagPrefix="ucDocsRPB" TagName="DocumentTypePanelBar1" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -20,7 +20,7 @@
             </Scripts>
         </telerik:RadScriptManager>
         <script type="text/javascript">
-        //Put your JavaScript code here.
+            //Put your JavaScript code here.
         </script>
         <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
             <AjaxSettings>
@@ -31,6 +31,7 @@
                 </telerik:AjaxSetting>
             </AjaxSettings>
         </telerik:RadAjaxManager>
+        <telerik:RadPersistenceManager ID="RadPersistenceManager1" runat="server"></telerik:RadPersistenceManager>
         
        
 
@@ -39,14 +40,15 @@
             <telerik:RadWindowManager ID="RadWindowManager1" runat="server" OnClientClose="OnClientClose">
             </telerik:RadWindowManager>
             <uc1:UserControl1 runat="server" ID="UserControl1" />
-
+         
             <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+               
 
                 <script type="text/javascript">
+                    window.$=$telerik.$;
                     function openWin() {
                         var oWnd = radopen("MainPage_Dialog.aspx", "RadWindow1");
                     }
-
                     function OnClientClose(sender, args) {
                         var txtField = $get("<%= UserControl1.TextBox1.ClientID %>");
                         txtField.value = args.get_argument();
@@ -56,10 +58,8 @@
                 </script>
 
             </telerik:RadCodeBlock>
+            <ucDocsRPB:DocumentTypePanelBar1  runat="server" ID="DocumentTypePanelBar1" />
         </div>
-        <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/App_Data/MenuItems.xml" XPath="/Items/Item"></asp:XmlDataSource>
-        <telerik:RadPanelBar ID="RadPanelBar1" runat="server" DataNavigateUrlField="Url" DataSourceID="XmlDataSource1" DataTextField="Text" DataValueField="Filter" Skin="WebBlue" ExpandMode="SingleExpandedItem">
-        </telerik:RadPanelBar>
     </form>
 </body>
 </html>

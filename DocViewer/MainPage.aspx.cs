@@ -1,17 +1,31 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using System;
+using Telerik.Web.UI;
 
-public partial class  MainPage : System.Web.UI.Page
+namespace DocViewer
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class  MainPage : System.Web.UI.Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //if (UserControl1 != null)
+            //{
+            //    ((RadPersistenceManagerProxy) UserControl1.FindControl("RadPersistenceManagerProxy1")).UniqueKey = "1";
+            //}
 
+            if (DocumentTypePanelBar1 != null)
+            {
+                ((RadPersistenceManagerProxy) DocumentTypePanelBar1.FindControl("RadPersistenceManagerProxy1")).UniqueKey = "1";
+            }
+        }
+
+        public bool CheckDocTypeVisibility(string docTypeKey, string userRole)
+        {
+            var visibleToUser = true;
+
+            return visibleToUser;
+        }
     }
+}
  
-        }    
+             
 
