@@ -1,4 +1,6 @@
 ﻿using System;
+using Telerik.Web.UI;
+using Telerik.Web.Design;
 
 namespace DocViewer
 {

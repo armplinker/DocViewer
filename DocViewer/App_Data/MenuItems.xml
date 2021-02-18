@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding= "utf-8" ?>
+  <Items Text="Documents and Forms">
+    <Item Text="NBI Inspection Docs (10)" MenuItemId = "UnqId10_0101000" ToolTip="Click to show only NBI Inspection  (10) documents" Filter="" Url=""  >
+         <Item Text="All NBI Inspection Docs" MenuItemId = "UnqId0000101001" ToolTip="Click to show all NBI Inspection  documents" DocTypeKey="10" Filter="doc_type_key='10'" Url=""   /> 
+         <Item Text="NBI Insp GEN" MenuItemId = "UnqId1000101010" ToolTip="Click to show only NBI Insp GEN documents" DocTypeKey="1000" Filter="doc_subtype_key='1000'" Url=""   /> 
+         <Item Text="NBI Insp RPT" MenuItemId = "UnqId1010101020" ToolTip="Click to show only NBI Insp RPT documents" DocTypeKey="1010" Filter="doc_subtype_key='1010'" Url=""   /> 
+         <Item Text="NBI Insp PIX" MenuItemId = "UnqId1088101088" ToolTip="Click to show only NBI Insp PIX documents" DocTypeKey="1088" Filter="doc_subtype_key='1088'" Url=""   /> 
+         <Item Text="NBI Insp FRM" MenuItemId = "UnqId1099101099" ToolTip="Click to show only NBI Insp FRM documents" DocTypeKey="1099" Filter="doc_subtype_key='1099'" Url=""   /> 
+     </Item>
+    <Item Text="FC Sp. Insp. Docs (20)" MenuItemId = "UnqId20_0202000" ToolTip="Click to show only FC Sp. Insp.  (20) documents" Filter="" Url=""  >
+         <Item Text="All FC Sp. Insp. Docs" MenuItemId = "UnqId0000202001" ToolTip="Click to show all FC Sp. Insp.  documents" DocTypeKey="20" Filter="doc_type_key='20'" Url=""   /> 
+         <Item Text="SPI - FC - GEN" MenuItemId = "UnqId2000202010" ToolTip="Click to show only SPI - FC - GEN documents" DocTypeKey="2000" Filter="doc_subtype_key='2000'" Url=""   /> 
+         <Item Text="SPI - FC - RPT" MenuItemId = "UnqId2010202020" ToolTip="Click to show only SPI - FC - RPT documents" DocTypeKey="2010" Filter="doc_subtype_key='2010'" Url=""   /> 
+         <Item Text="SPI - FC - PIX" MenuItemId = "UnqId2088202088" ToolTip="Click to show only SPI - FC - PIX documents" DocTypeKey="2088" Filter="doc_subtype_key='2088'" Url=""   /> 
+         <Item Text="SPI - FC - FRM" MenuItemId = "UnqId2099202099" ToolTip="Click to show only SPI - FC - FRM documents" DocTypeKey="2099" Filter="doc_subtype_key='2099'" Url=""   /> 
+     </Item>
+    <Item Text="UW Sp. Insp. Docs (25)" MenuItemId = "UnqId25_0202500" ToolTip="Click to show only UW Sp. Insp.  (25) documents" Filter="" Url=""  >
+         <Item Text="All UW Sp. Insp. Docs" MenuItemId = "UnqId0000202501" ToolTip="Click to show all UW Sp. Insp.  documents" DocTypeKey="25" Filter="doc_type_key='25'" Url=""   /> 
+         <Item Text="SPI - UW - GEN" MenuItemId = "UnqId2500202510" ToolTip="Click to show only SPI - UW - GEN documents" DocTypeKey="2500" Filter="doc_subtype_key='2500'" Url=""   /> 
+         <Item Text="SPI - UW - RPT" MenuItemId = "UnqId2510202520" ToolTip="Click to show only SPI - UW - RPT documents" DocTypeKey="2510" Filter="doc_subtype_key='2510'" Url=""   /> 
+         <Item Text="SPI - UW - PIX" MenuItemId = "UnqId2588202588" ToolTip="Click to show only SPI - UW - PIX documents" DocTypeKey="2588" Filter="doc_subtype_key='2588'" Url=""   /> 
+         <Item Text="SPI - UW - FRM" MenuItemId = "UnqId2599202599" ToolTip="Click to show only SPI - UW - FRM documents" DocTypeKey="2599" Filter="doc_subtype_key='2599'" Url=""   /> 
+     </Item>
+    <Item Text="OS Sp. Insp. Docs (30)" MenuItemId = "UnqId30_0203000" ToolTip="Click to show only OS Sp. Insp.  (30) documents" Filter="" Url=""  >
+         <Item Text="All OS Sp. Insp. Docs" MenuItemId = "UnqId0000203001" ToolTip="Click to show all OS Sp. Insp.  documents" DocTypeKey="30" Filter="doc_type_key='30'" Url=""   /> 
+         <Item Text="SPI - OS - GEN" MenuItemId = "UnqId3000203010" ToolTip="Click to show only SPI - OS - GEN documents" DocTypeKey="3000" Filter="doc_subtype_key='3000'" Url=""   /> 
+         <Item Text="SPI - OS - RPT" MenuItemId = "UnqId3010203020" ToolTip="Click to show only SPI - OS - RPT documents" DocTypeKey="3010" Filter="doc_subtype_key='3010'" Url=""   /> 
+         <Item Text="SPI - OS - PIX" MenuItemId = "UnqId3088203088" ToolTip="Click to show only SPI - OS - PIX documents" DocTypeKey="3088" Filter="doc_subtype_key='3088'" Url=""   /> 
+         <Item Text="SPI - OS - FRM" MenuItemId = "UnqId3099203099" ToolTip="Click to show only SPI - OS - FRM documents" DocTypeKey="3099" Filter="doc_subtype_key='3099'" Url=""   /> 
+     </Item>
+    <Item Text="PH Sp. Insp. Docs (40)" MenuItemId = "UnqId40_0204000" ToolTip="Click to show only PH Sp. Insp.  (40) documents" Filter="" Url=""  >
+         <Item Text="All PH Sp. Insp. Docs" MenuItemId = "UnqId0000204001" ToolTip="Click to show all PH Sp. Insp.  documents" DocTypeKey="40" Filter="doc_type_key='40'" Url=""   /> 
+         <Item Text="SPI - PH - GEN" MenuItemId = "UnqId4000204010" ToolTip="Click to show only SPI - PH - GEN documents" DocTypeKey="4000" Filter="doc_subtype_key='4000'" Url=""   /> 
+         <Item Text="SPI - PH - RPT" MenuItemId = "UnqId4010204020" ToolTip="Click to show only SPI - PH - RPT documents" DocTypeKey="4010" Filter="doc_subtype_key='4010'" Url=""   /> 
+         <Item Text="SPI - PH - PIX" MenuItemId = "UnqId4088204088" ToolTip="Click to show only SPI - PH - PIX documents" DocTypeKey="4088" Filter="doc_subtype_key='4088'" Url=""   /> 
+         <Item Text="SPI - PH - FRM" MenuItemId = "UnqId4099204099" ToolTip="Click to show only SPI - PH - FRM documents" DocTypeKey="4099" Filter="doc_subtype_key='4099'" Url=""   /> 
+     </Item>
+    <Item Text="DMG Sp. Insp. Docs (45)" MenuItemId = "UnqId45_0204500" ToolTip="Click to show only DMG Sp. Insp.  (45) documents" Filter="" Url=""  >
+         <Item Text="All  DMG Sp. Insp. Docs" MenuItemId = "UnqId0000204501" ToolTip="Click to show all  DMG Sp. Insp.  documents" DocTypeKey="45" Filter="doc_type_key='45'" Url=""   /> 
+         <Item Text="SPI - DMG - GEN" MenuItemId = "UnqId4500204510" ToolTip="Click to show only SPI - DMG - GEN documents" DocTypeKey="4500" Filter="doc_subtype_key='4500'" Url=""   /> 
+         <Item Text="SPI - DMG - RPT" MenuItemId = "UnqId4510204520" ToolTip="Click to show only SPI - DMG - RPT documents" DocTypeKey="4510" Filter="doc_subtype_key='4510'" Url=""   /> 
+         <Item Text="SPI - DMG - PIX" MenuItemId = "UnqId4588204588" ToolTip="Click to show only SPI - DMG - PIX documents" DocTypeKey="4588" Filter="doc_subtype_key='4588'" Url=""   /> 
+         <Item Text="SPI - DMG - FRM" MenuItemId = "UnqId4599204599" ToolTip="Click to show only SPI - DMG - FRM documents" DocTypeKey="4599" Filter="doc_subtype_key='4599'" Url=""   /> 
+     </Item>
+    <Item Text="CIF Docs (35)" MenuItemId = "UnqId35_0253500" ToolTip="Click to show only CIF  (35) documents" Filter="" Url=""  >
+         <Item Text="All CIF Docs" MenuItemId = "UnqId0000253501" ToolTip="Click to show all CIF  documents" DocTypeKey="35" Filter="doc_type_key='35'" Url=""   /> 
+         <Item Text="CIF - GEN" MenuItemId = "UnqId3500253520" ToolTip="Click to show only CIF - GEN documents" DocTypeKey="3500" Filter="doc_subtype_key='3500'" Url=""   /> 
+         <Item Text="CIF - RPT" MenuItemId = "UnqId3510253530" ToolTip="Click to show only CIF - RPT documents" DocTypeKey="3510" Filter="doc_subtype_key='3510'" Url=""   /> 
+         <Item Text="CIF - PIX" MenuItemId = "UnqId3588253588" ToolTip="Click to show only CIF - PIX documents" DocTypeKey="3588" Filter="doc_subtype_key='3588'" Url=""   /> 
+         <Item Text="CIF - FRM" MenuItemId = "UnqId3599253599" ToolTip="Click to show only CIF - FRM documents" DocTypeKey="3599" Filter="doc_subtype_key='3599'" Url=""   /> 
+     </Item>
+    <Item Text="Scour Program Docs (50)" MenuItemId = "UnqId50_0305000" ToolTip="Click to show only Scour Program  (50) documents" Filter="" Url=""  >
+         <Item Text="All Scour Program Docs" MenuItemId = "UnqId0000305001" ToolTip="Click to show all Scour Program  documents" DocTypeKey="50" Filter="doc_type_key='50'" Url=""   /> 
+         <Item Text="Scour - GEN" MenuItemId = "UnqId5000305010" ToolTip="Click to show only Scour - GEN documents" DocTypeKey="5000" Filter="doc_subtype_key='5000'" Url=""   /> 
+         <Item Text="Scour - Smry. RPT" MenuItemId = "UnqId5010305020" ToolTip="Click to show only Scour - Smry. RPT documents" DocTypeKey="5010" Filter="doc_subtype_key='5010'" Url=""   /> 
+         <Item Text="Scour - 113 RPT" MenuItemId = "UnqId5020305030" ToolTip="Click to show only Scour - 113 RPT documents" DocTypeKey="5020" Filter="doc_subtype_key='5020'" Url=""   /> 
+         <Item Text="Scour - Original POAs" MenuItemId = "UnqId5030305040" ToolTip="Click to show only Scour - Original POAs documents" DocTypeKey="5030" Filter="doc_subtype_key='5030'" Url=""   /> 
+         <Item Text="Scour - Amended POAs" MenuItemId = "UnqId5035305050" ToolTip="Click to show only Scour - Amended POAs documents" DocTypeKey="5035" Filter="doc_subtype_key='5035'" Url=""   /> 
+         <Item Text="Scour - Retired POAs" MenuItemId = "UnqId5040305060" ToolTip="Click to show only Scour - Retired POAs documents" DocTypeKey="5040" Filter="doc_subtype_key='5040'" Url=""   /> 
+         <Item Text="Scour - PIX" MenuItemId = "UnqId5088305088" ToolTip="Click to show only Scour - PIX documents" DocTypeKey="5088" Filter="doc_subtype_key='5088'" Url=""   /> 
+         <Item Text="Scour - POA Original FRM" MenuItemId = "UnqId5096305096" ToolTip="Click to show only Scour - POA Original FRM documents" DocTypeKey="5096" Filter="doc_subtype_key='5096'" Url=""   /> 
+         <Item Text="Scour - POA Amended FRM" MenuItemId = "UnqId5097305097" ToolTip="Click to show only Scour - POA Amended FRM documents" DocTypeKey="5097" Filter="doc_subtype_key='5097'" Url=""   /> 
+         <Item Text="Scour - POA Retired FRM" MenuItemId = "UnqId5098305098" ToolTip="Click to show only Scour - POA Retired FRM documents" DocTypeKey="5098" Filter="doc_subtype_key='5098'" Url=""   /> 
+         <Item Text="Scour - 113 Report FRM" MenuItemId = "UnqId5099305099" ToolTip="Click to show only Scour - 113 Report FRM documents" DocTypeKey="5099" Filter="doc_subtype_key='5099'" Url=""   /> 
+     </Item>
+    <Item Text="Load Rating Docs (60)" MenuItemId = "UnqId60_0406000" ToolTip="Click to show only Load Rating  (60) documents" Filter="" Url=""  >
+         <Item Text="All Load Rating Docs" MenuItemId = "UnqId0000406001" ToolTip="Click to show all Load Rating  documents" DocTypeKey="60" Filter="doc_type_key='60'" Url=""   /> 
+         <Item Text="LR - GEN" MenuItemId = "UnqId6000406010" ToolTip="Click to show only LR - GEN documents" DocTypeKey="6000" Filter="doc_subtype_key='6000'" Url=""   /> 
+         <Item Text="LR - Smry RPT" MenuItemId = "UnqId6010406020" ToolTip="Click to show only LR - Smry RPT documents" DocTypeKey="6010" Filter="doc_subtype_key='6010'" Url=""   /> 
+         <Item Text="LR Field Assessments" MenuItemId = "UnqId6020406030" ToolTip="Click to show only LR Field Assessments documents" DocTypeKey="6020" Filter="doc_subtype_key='6020'" Url=""   /> 
+         <Item Text="LR Plans and Other" MenuItemId = "UnqId6030406040" ToolTip="Click to show only LR Plans and Other documents" DocTypeKey="6030" Filter="doc_subtype_key='6030'" Url=""   /> 
+         <Item Text="LR Bridge Models" MenuItemId = "UnqId6040406050" ToolTip="Click to show only LR Bridge Models documents" DocTypeKey="6040" Filter="doc_subtype_key='6040'" Url=""   /> 
+         <Item Text="LR Bridge Data Files" MenuItemId = "UnqId6050406060" ToolTip="Click to show only LR Bridge Data Files documents" DocTypeKey="6050" Filter="doc_subtype_key='6050'" Url=""   /> 
+         <Item Text="LR - PIX" MenuItemId = "UnqId6088406088" ToolTip="Click to show only LR - PIX documents" DocTypeKey="6088" Filter="doc_subtype_key='6088'" Url=""   /> 
+         <Item Text="LR - FRM" MenuItemId = "UnqId6099406099" ToolTip="Click to show only LR - FRM documents" DocTypeKey="6099" Filter="doc_subtype_key='6099'" Url=""   /> 
+     </Item>
+    <Item Text="Existing Plans (70)" MenuItemId = "UnqId70_0507000" ToolTip="Click to show only Existing Plans (70) documents" Filter="" Url=""  >
+         <Item Text="All Existing Plans" MenuItemId = "UnqId0000507001" ToolTip="Click to show all Existing Plans documents" DocTypeKey="70" Filter="doc_type_key='70'" Url=""   /> 
+         <Item Text="Plans - GEN" MenuItemId = "UnqId7000507010" ToolTip="Click to show only Plans - GEN documents" DocTypeKey="7000" Filter="doc_subtype_key='7000'" Url=""   /> 
+         <Item Text="Plans - RPT" MenuItemId = "UnqId7010507020" ToolTip="Click to show only Plans - RPT documents" DocTypeKey="7010" Filter="doc_subtype_key='7010'" Url=""   /> 
+         <Item Text="Plans - CADD Files" MenuItemId = "UnqId7020507030" ToolTip="Click to show only Plans - CADD Files documents" DocTypeKey="7020" Filter="doc_subtype_key='7020'" Url=""   /> 
+         <Item Text="Plans - Scans/Other" MenuItemId = "UnqId7030507040" ToolTip="Click to show only Plans - Scans/Other documents" DocTypeKey="7030" Filter="doc_subtype_key='7030'" Url=""   /> 
+         <Item Text="Plans - FRM" MenuItemId = "UnqId7099507099" ToolTip="Click to show only Plans - FRM documents" DocTypeKey="7099" Filter="doc_subtype_key='7099'" Url=""   /> 
+     </Item>
+    <Item Text="Photos (80)" MenuItemId = "UnqId80_0808000" ToolTip="Click to show only Photos (80) documents" Filter="" Url=""  >
+         <Item Text="All Photos" MenuItemId = "UnqId0000808001" ToolTip="Click to show all Photos documents" DocTypeKey="80" Filter="doc_type_key='80'" Url=""   /> 
+         <Item Text="Photos - GEN" MenuItemId = "UnqId8000808010" ToolTip="Click to show only Photos - GEN documents" DocTypeKey="8000" Filter="doc_subtype_key='8000'" Url=""   /> 
+         <Item Text="Photos - PIX" MenuItemId = "UnqId8088808088" ToolTip="Click to show only Photos - PIX documents" DocTypeKey="8088" Filter="doc_subtype_key='8088'" Url=""   /> 
+         <Item Text="Photos - FRM" MenuItemId = "UnqId8099808099" ToolTip="Click to show only Photos - FRM documents" DocTypeKey="8099" Filter="doc_subtype_key='8099'" Url=""   /> 
+     </Item>
+    <Item Text="QA/QC Docs (90)" MenuItemId = "UnqId90_0909000" ToolTip="Click to show only QA/QC  (90) documents" Filter="" Url=""  >
+         <Item Text="All QA/QC Docs" MenuItemId = "UnqId0000909001" ToolTip="Click to show all QA/QC  documents" DocTypeKey="90" Filter="doc_type_key='90'" Url=""   /> 
+         <Item Text="QAQC Review - GEN" MenuItemId = "UnqId9000909010" ToolTip="Click to show only QAQC Review - GEN documents" DocTypeKey="9000" Filter="doc_subtype_key='9000'" Url=""   /> 
+         <Item Text="QAQC Review - RPT" MenuItemId = "UnqId9010909020" ToolTip="Click to show only QAQC Review - RPT documents" DocTypeKey="9010" Filter="doc_subtype_key='9010'" Url=""   /> 
+         <Item Text="QAQC Review - PIX" MenuItemId = "UnqId9088909088" ToolTip="Click to show only QAQC Review - PIX documents" DocTypeKey="9088" Filter="doc_subtype_key='9088'" Url=""   /> 
+         <Item Text="QAQC Review - FRM" MenuItemId = "UnqId9099909099" ToolTip="Click to show only QAQC Review - FRM documents" DocTypeKey="9099" Filter="doc_subtype_key='9099'" Url=""   /> 
+     </Item>
+  </Items>

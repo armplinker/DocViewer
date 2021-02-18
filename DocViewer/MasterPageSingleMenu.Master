@@ -32,7 +32,7 @@
                         <telerik:RadMenuItem IsSeparator="true" />
                         <telerik:RadMenuItem Text="Dashboard" />
                         <telerik:RadMenuItem IsSeparator="true" />
-                        <telerik:RadMenuItem Text="..." />
+                        <telerik:RadMenuItem Text="Viewer" NavigateUrl="DocViewerMain.aspx"/>
                         <telerik:RadMenuItem IsSeparator="true" />
                         <telerik:RadMenuItem Text="..." />
                         <telerik:RadMenuItem IsSeparator="true" />
