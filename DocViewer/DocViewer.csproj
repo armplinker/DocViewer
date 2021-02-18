@@ -130,6 +130,7 @@
     <Content Include="MasterPage.Master" />
     <Content Include="MasterPageSingleMenu.Master" />
     <Content Include="App_Data\MenuItems.xml" />
+    <Content Include="Testing\Url_Values_Dialog.aspx" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -230,6 +231,13 @@
       <DependentUpon>MasterPageSingleMenu.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Testing\Url_Values_Dialog.aspx.cs">
+      <DependentUpon>Url_Values_Dialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testing\Url_Values_Dialog.aspx.designer.cs">
+      <DependentUpon>Url_Values_Dialog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -282,7 +290,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

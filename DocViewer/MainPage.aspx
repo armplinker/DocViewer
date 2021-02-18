@@ -47,7 +47,7 @@
                 <script type="text/javascript">
                     window.$=$telerik.$;
                     function openWin() {
-                        var oWnd = radopen("MainPage_Dialog.aspx", "RadWindow1");
+                        var oWnd = radopen("Url_Values_Dialog.aspx", "RadWindow1");
                     }
                     function OnClientClose(sender, args) {
                         var txtField = $get("<%= UserControl1.TextBox1.ClientID %>");

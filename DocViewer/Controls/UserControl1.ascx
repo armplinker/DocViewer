@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="~/Controls/UserControl1.ascx.cs" Inherits="DocViewer.Controls.UserControl1" %>
-<%--<telerik:RadPersistenceManagerProxy ID="RadPersistenceManagerProxy1" runat="server">
+<%--<telerik:RadPersistenceManagerProxy ID="RadPersistenceManagerProxy1" runat="server"  UniqueKey="UC1PM1">
     <PersistenceSettings>
         <telerik:PersistenceSetting ControlID="lblPlaceholder1" />
     </PersistenceSettings>
