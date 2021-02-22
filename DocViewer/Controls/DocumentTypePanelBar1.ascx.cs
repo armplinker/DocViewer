@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -75,11 +76,46 @@ namespace DocViewer.Controls
             if (xmlElement != null)
 
             {
+                
+                var menuItemIdText = xmlElement?.Attributes["MenuItemId"]?.Value;
+                if (!string.IsNullOrEmpty(menuItemIdText))
+                {
+                    e.Item.Attributes["MenuItemId"] = menuItemIdText;
+                    //(string)DataBinder.Eval(e.Item.DataItem, "ToolTip"); //"Read more about " + (string)DataBinder.Eval(e.Item.DataItem, "Text");
+                }
+
                 var toolTipText = xmlElement?.Attributes["ToolTip"]?.Value;
                 if (!string.IsNullOrEmpty(toolTipText))
                 {
                     e.Item.ToolTip = toolTipText;
                     //(string)DataBinder.Eval(e.Item.DataItem, "ToolTip"); //"Read more about " + (string)DataBinder.Eval(e.Item.DataItem, "Text");
+                }
+
+                var filterText = xmlElement?.Attributes["FilterExpression"]?.Value;
+                if (!string.IsNullOrEmpty(filterText))
+                {
+                    e.Item.Attributes["FilterExpression"] = filterText;
+                     
+                }
+
+                var docClass = xmlElement?.Attributes["DocumentClass"]?.Value;
+                if (!string.IsNullOrEmpty(filterText))
+                {
+                    e.Item.Attributes["DocumentClass"] = docClass;
+
+                }
+                var docTypeKey = xmlElement?.Attributes["DocTypeKey"]?.Value;
+                if (!string.IsNullOrEmpty(docTypeKey))
+                {
+                    e.Item.Attributes["DocTypeKey"] = docClass;
+
+                }
+
+                var docSubTypeKey = xmlElement?.Attributes["DocSubTypeKey"]?.Value;
+                if (!string.IsNullOrEmpty(docTypeKey))
+                {
+                    e.Item.Attributes["DocSubTypeKey"] = docClass;
+
                 }
 
                 SetPanelBarItemVisibility(e);
@@ -113,8 +149,8 @@ namespace DocViewer.Controls
                 return;
             }
 
-            ((DocViewerMain)this.Page).CheckDocTypeMenuItemAccess(docTypeKey, "", out bool isVisible,
-                out bool isEnabled);
+            ((DocViewerMain)this.Page).CheckDocTypeMenuItemAccess(docTypeKey, "", out var isVisible,
+                out var isEnabled);
             e.Item.Visible = isVisible;
             e.Item.Enabled = isVisible && isEnabled;
         }

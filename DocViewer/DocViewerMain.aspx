@@ -60,7 +60,7 @@
 
                 function openWin( ) {
                    
-                    var oWnd = radopen("Testing/Url_Values_Dialog.aspx", "RadWindow1");
+                    var oWnd = window.radopen("Testing/Url_Values_Dialog.aspx", "RadWindow1");
                 }
                 function OnClientClose(sender, args) {
                     var txtField = $get("<%= UserControl1.TextBox1.ClientID %>");

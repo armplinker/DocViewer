@@ -22,6 +22,60 @@ namespace DocViewer.Controls {
         protected global::Telerik.Web.UI.RadPersistenceManagerProxy RadPersistenceManagerProxy1;
         
         /// <summary>
+        /// currPonAppUsersGd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField currPonAppUsersGd;
+        
+        /// <summary>
+        /// currBridgeGd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField currBridgeGd;
+        
+        /// <summary>
+        /// currInspevntGd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField currInspevntGd;
+        
+        /// <summary>
+        /// currEventGd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField currEventGd;
+        
+        /// <summary>
+        /// currDocTypeKey control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField currDocTypeKey;
+        
+        /// <summary>
+        /// currDocSubTypeKey1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField currDocSubTypeKey1;
+        
+        /// <summary>
         /// SaveButton control.
         /// </summary>
         /// <remarks>
@@ -56,6 +110,15 @@ namespace DocViewer.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource1;
+        
+        /// <summary>
+        /// RAPRPB1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadAjaxPanel RAPRPB1;
         
         /// <summary>
         /// RadPanelBar1 control.
