@@ -42,14 +42,14 @@
         <Name>ExpandedIndices</Name>
         <Value Type="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
           <ArrayOfString>
-            <string>10</string>
+            <string>1</string>
           </ArrayOfString>
         </Value>
       </ControlSetting>
       <ControlSetting>
         <Name>SelectedIndex</Name>
         <Value Type="System.String">
-          <string>10:2</string>
+          <string>1</string>
         </Value>
       </ControlSetting>
     </ControlSettings>

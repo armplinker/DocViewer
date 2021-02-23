@@ -13,7 +13,7 @@
 
     <telerik:RadScriptBlock runat="server">
         <script type="text/javascript">
-           
+
             /* RadPanelBar */
             function collapseRoots(sender, args) {
                 if (args.get_item().get_items().get_count() < 1 && args.get_item().get_parent().get_parent() == null) {
@@ -31,7 +31,7 @@
                     args.get_item().set_expanded(false);
                 }
             }
-           
+
 
         </script>
     </telerik:RadScriptBlock>
@@ -56,10 +56,9 @@
 
         <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
             <script type="text/javascript"> 
-                
 
-                function openWin( ) {
-                   
+
+                function openWin() {
                     var oWnd = window.radopen("Testing/Url_Values_Dialog.aspx", "RadWindow1");
                 }
                 function OnClientClose(sender, args) {
@@ -68,12 +67,53 @@
 
                 }
 
+                function getRPBLevel(args) {
+                    var level = args.get_item().get_level();
+                    return (level) ? level : 0;
+                }
+
+                function openDialogWin2(sender, args) {
+                    
+                    if (getLevel(args) !== 0) {
+                        
+                        var navigateUrl = args.get_item().get_navigateUrl();
+                        //var oWnd = window.radopen("Testing/Url_Values_Dialog.aspx", "RadWindow1");
+                        var oWnd = GetRadWindow().radopen(navigateUrl, "RadWindow1");
+                    }
+                }
+
             </script>
 
         </telerik:RadCodeBlock>
 
         <ucDocsRPB:DocumentTypePanelBar1 runat="server" ID="DocumentTypePanelBar1" />
-
+        <p>
+            <asp:Label ID="Label0" runat="server" Text="Label0"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Label1" runat="server" Text="Label1"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Label2" runat="server" Text="Label2"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Label3" runat="server" Text="Label3"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Label4" runat="server" Text="Label4"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Label5" runat="server" Text="Label5"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Label6" runat="server" Text="Label6"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Label7" runat="server" Text="Label7"></asp:Label>
+        </p>
+        <p>
+            <asp:Label ID="Label8" runat="server" Text="Label8"></asp:Label>
+        </p>
     </div>
 
 </asp:Content>

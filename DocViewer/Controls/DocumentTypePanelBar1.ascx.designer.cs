@@ -22,13 +22,13 @@ namespace DocViewer.Controls {
         protected global::Telerik.Web.UI.RadPersistenceManagerProxy RadPersistenceManagerProxy1;
         
         /// <summary>
-        /// currPonAppUsersGd control.
+        /// DTPB1RM_Proxy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField currPonAppUsersGd;
+        protected global::Telerik.Web.UI.RadAjaxManagerProxy DTPB1RM_Proxy;
         
         /// <summary>
         /// currBridgeGd control.
@@ -67,13 +67,22 @@ namespace DocViewer.Controls {
         protected global::System.Web.UI.WebControls.HiddenField currDocTypeKey;
         
         /// <summary>
-        /// currDocSubTypeKey1 control.
+        /// currDocSubTypeKey control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField currDocSubTypeKey1;
+        protected global::System.Web.UI.WebControls.HiddenField currDocSubTypeKey;
+        
+        /// <summary>
+        /// currPonAppUsersGd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField currPonAppUsersGd;
         
         /// <summary>
         /// SaveButton control.
@@ -110,6 +119,15 @@ namespace DocViewer.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.XmlDataSource XmlDataSource1;
+        
+        /// <summary>
+        /// DTPB1RCB_Proxy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadCodeBlock DTPB1RCB_Proxy;
         
         /// <summary>
         /// RAPRPB1 control.

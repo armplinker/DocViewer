@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using DocumentManagerUtil;
 using Telerik.Web.UI;
 using Telerik.Web.Design;
 
@@ -16,7 +17,9 @@ namespace DocViewer.Controls
         protected void Page_Load(object sender, EventArgs e)
         {
             RadPanelBar1.Enabled = true;
-           
+            currBridgeGd.Value = @"AAAA";
+            currInspevntGd.Value = @"BBBB";
+
         }
 
         protected void SaveButton_Click(object sender, EventArgs e)
@@ -76,7 +79,19 @@ namespace DocViewer.Controls
             if (xmlElement != null)
 
             {
-                
+                var idText = xmlElement?.Attributes["Id"]?.Value;
+                if (!string.IsNullOrEmpty(idText))
+                {
+                    e.Item.Attributes["Id"] = idText;
+                    //(string)DataBinder.Eval(e.Item.DataItem, "ToolTip"); //"Read more about " + (string)DataBinder.Eval(e.Item.DataItem, "Text");
+                }
+
+                var parentIdText = xmlElement?.Attributes["ParentId"]?.Value;
+                if (!string.IsNullOrEmpty(parentIdText))
+                {
+                    e.Item.Attributes["ParentId"] = parentIdText;
+                    //(string)DataBinder.Eval(e.Item.DataItem, "ToolTip"); //"Read more about " + (string)DataBinder.Eval(e.Item.DataItem, "Text");
+                }
                 var menuItemIdText = xmlElement?.Attributes["MenuItemId"]?.Value;
                 if (!string.IsNullOrEmpty(menuItemIdText))
                 {
@@ -90,35 +105,83 @@ namespace DocViewer.Controls
                     e.Item.ToolTip = toolTipText;
                     //(string)DataBinder.Eval(e.Item.DataItem, "ToolTip"); //"Read more about " + (string)DataBinder.Eval(e.Item.DataItem, "Text");
                 }
-
-                var filterText = xmlElement?.Attributes["FilterExpression"]?.Value;
-                if (!string.IsNullOrEmpty(filterText))
-                {
-                    e.Item.Attributes["FilterExpression"] = filterText;
-                     
-                }
-
-                var docClass = xmlElement?.Attributes["DocumentClass"]?.Value;
-                if (!string.IsNullOrEmpty(filterText))
-                {
-                    e.Item.Attributes["DocumentClass"] = docClass;
-
-                }
                 var docTypeKey = xmlElement?.Attributes["DocTypeKey"]?.Value;
                 if (!string.IsNullOrEmpty(docTypeKey))
                 {
-                    e.Item.Attributes["DocTypeKey"] = docClass;
+                    e.Item.Attributes["DocTypeKey"] = docTypeKey;
 
                 }
+
+                if (string.IsNullOrEmpty(docTypeKey))
+                    return;
 
                 var docSubTypeKey = xmlElement?.Attributes["DocSubTypeKey"]?.Value;
-                if (!string.IsNullOrEmpty(docTypeKey))
+                if (!string.IsNullOrEmpty(docSubTypeKey))
                 {
-                    e.Item.Attributes["DocSubTypeKey"] = docClass;
+                    e.Item.Attributes["DocSubTypeKey"] = docSubTypeKey;
 
                 }
 
+                if (!string.IsNullOrEmpty(docTypeKey) && !string.Equals(docTypeKey, "*.*") && string.IsNullOrEmpty(docSubTypeKey))
+                    return; // type root item e.g. 10
+
+                var filterExpression = xmlElement?.Attributes["FilterExpression"]?.Value;
+                if (!string.IsNullOrEmpty(filterExpression))
+                {
+                    e.Item.Attributes["FilterExpression"] = filterExpression;
+
+                }
+
+                var docClass = xmlElement?.Attributes["DocumentClass"]?.Value;
+                if (!string.IsNullOrEmpty(docClass))
+                {
+                    e.Item.Attributes["DocumentClass"] = docClass;
+                }
+
+                docClass = docClass ?? "D"; // default to Document
+
+                var utils = DocMgrUtils.Instance;
+                string docUrl;
+
+                if (string.Equals(docTypeKey, "*.*"))// All documents (*.*)  // all documents
+                {
+
+                    docUrl = utils.GenDocViewerNavigateUrl(theDocTypeKey: docTypeKey, theDocSubtypeKey: docSubTypeKey, theDocViewerPageName: "DocViewer.aspx",
+                        theBridgeGd: !string.Equals(docClass, "F", StringComparison.OrdinalIgnoreCase)
+                            ? currBridgeGd.Value
+                            : string.Empty,
+                        theInspevntGd: !string.Equals(docClass, "F", StringComparison.OrdinalIgnoreCase)
+                            ? currInspevntGd.Value
+                            : string.Empty, theShowWaitDialog: false);
+
+                }
+
+                else // must have a subtype if not the all documents menu item
+                {
+                    // convert any docSubTypeKey = 1000, 2000, 3000 etc. to "" 
+                    var iKey = int.TryParse(docSubTypeKey, out var result);
+                    if (iKey == true)
+                    {
+                        if (int.Parse(docTypeKey) * 100 == result)
+                        {
+                            docSubTypeKey = "";
+                        }
+                    }
+
+                    docUrl = utils.GenDocViewerNavigateUrl(theDocTypeKey: docTypeKey, theDocSubtypeKey: docSubTypeKey, theDocViewerPageName: "Testing/Url_Values_Dialog.aspx",
+                        theBridgeGd: !string.Equals(docClass, "F", StringComparison.OrdinalIgnoreCase)
+                            ? currBridgeGd?.Value
+                            : "FORMS",
+                        theInspevntGd: !string.Equals(docClass, "F", StringComparison.OrdinalIgnoreCase)
+                            ? currInspevntGd?.Value
+                            : "FORMS", theShowWaitDialog: false);
+
+                }
+
+                e.Item.NavigateUrl = docUrl;
+
                 SetPanelBarItemVisibility(e);
+
             }
         }
 
@@ -174,25 +237,25 @@ namespace DocViewer.Controls
 
         protected void RadPanelBar1_Disposed(object sender, EventArgs e)
         {
-      
+
         }
 
         protected void RadPanelBar1_Load(object sender, EventArgs e)
         {
-        
-           
+
+
         }
 
         protected void RadPanelBar1_Unload(object sender, EventArgs e)
         {
 
-            
+
 
         }
 
         protected void RadPersistenceManagerProxy1_OnUnload(object sender, EventArgs e)
         {
-          
+
         }
 
         protected void RadPersistenceManagerProxy1_Load(object sender, EventArgs e)

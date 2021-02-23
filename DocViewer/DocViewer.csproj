@@ -49,6 +49,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DocumentManagerUtil">
+      <HintPath>..\..\DocumentManagerUtil\bin\Debug\DocumentManagerUtil.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -162,9 +165,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\DocumentTypePanelBar1.ascx.cs">
+      <DependentUpon>DocumentTypePanelBar1.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Controls\DocumentTypePanelBar1.ascx.designer.cs" />
+    <Compile Include="Controls\DocumentTypePanelBar1.ascx.designer.cs">
+      <DependentUpon>DocumentTypePanelBar1.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\UserControl1.ascx.cs">
       <DependentUpon>UserControl1.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

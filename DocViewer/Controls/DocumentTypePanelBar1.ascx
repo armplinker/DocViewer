@@ -5,7 +5,7 @@
         <telerik:PersistenceSetting ControlID="RadPanelBar1" />
     </PersistenceSettings>
 </telerik:RadPersistenceManagerProxy>
-<telerik:RadAjaxManagerProxy runat="server">
+<telerik:RadAjaxManagerProxy runat="server" ID="DTPB1RM_Proxy">
     <AjaxSettings>
         <telerik:AjaxSetting AjaxControlID="RadPanelBar1">
             <UpdatedControls>
@@ -16,12 +16,13 @@
 
 </telerik:RadAjaxManagerProxy>
 <div>
-    <asp:HiddenField runat="server" ID="currPonAppUsersGd" />
+
     <asp:HiddenField runat="server" ID="currBridgeGd" />
     <asp:HiddenField runat="server" ID="currInspevntGd" />
     <asp:HiddenField runat="server" ID="currEventGd" />
     <asp:HiddenField runat="server" ID="currDocTypeKey" />
-    <asp:HiddenField runat="server" ID="currDocSubTypeKey1" />
+    <asp:HiddenField runat="server" ID="currDocSubTypeKey" />
+    <asp:HiddenField runat="server" ID="currPonAppUsersGd" />
 
     <div class="demo-settings">
         <telerik:RadButton RenderMode="Lightweight" ID="SaveButton" runat="server" Text="Save state" OnClick="SaveButton_Click" />
@@ -33,7 +34,7 @@
         <%--onClientItemClicked="collapseRoots"
               OnClientMouseOver="expandItem"
         --%>
-        <telerik:RadCodeBlock runat="server">
+        <telerik:RadCodeBlock runat="server" ID="DTPB1RCB_Proxy">
             <script type="text/javascript">
                 //this function is used to get a reference to the RadWindow in which the content page is opened
                 function GetRadWindow() {
@@ -44,12 +45,88 @@
                         oWindow = window.frameElement.radWindow;
                     return oWindow;
                 }
-                function openWin2(sender, args) {
-                    //var docTypKey = args.get_item(0);
-                    console.log('%0', sender);
-                    console.log(JSON.stringify(args, null, 2));
-                    var oWnd = window.radopen("Testing/Url_Values_Dialog.aspx?bridge_gd=AAA&inspevnt_gd=BBBB&doctypekey=" + "10", "RadWindow1");
+
+
+                
+
+
+                function showItemAttributes(sender, args) {
+
+
+                    var level = getRPBLevel(args);//args.get_item().get_level();
+                    var label0 = document.getElementById("ContentPlaceHolder1_Label0");
+                    if (level) {
+
+                        label0.innerText = `Item Level: ${level}`;
+                    }
+                    else
+                        label0.innerText = `Item Level: ${0}`;
+
+                    var text = args.get_item().get_text();
+                    if (text) {
+                        var label1 = document.getElementById("ContentPlaceHolder1_Label1");
+                        label1.innerText = `Item Text: ${text}`;
+                    }
+
+                    var itemValue = args.get_item().get_value();
+                    if (itemValue) {
+                        var label2 = document.getElementById("ContentPlaceHolder1_Label2");
+                        label2.innerText = `Item Value: ${itemValue}`;
+                    }
+
+                    var navigateUrl = args.get_item().get_navigateUrl();
+
+                    var label3 = document.getElementById("ContentPlaceHolder1_Label3");
+                    if (navigateUrl) {
+
+                        label3.innerText = `URL: ${navigateUrl}`;
+                    } else {
+                        label3.innerText = `URL: ${"not set"}`;
+                    };
+
+                    var attributes = args.get_item().get_attributes();
+                    var docTypekey = attributes.getAttribute("DocTypeKey");
+                    var label4 = document.getElementById("ContentPlaceHolder1_Label4");
+                    if (docTypekey) {
+
+                        label4.innerText = `DocTypeKey: ${docTypekey}`;
+                    }
+                    else
+                        label4.innerText = `DocTypeKey: ${"not set"}`;
+
+                    var label5 = document.getElementById("ContentPlaceHolder1_Label5");
+                    var docSubtypekey = attributes.getAttribute("DocSubTypeKey");
+                    if (docSubtypekey) {
+
+                        label5.innerText = `DocSubTypeKey: ${docSubtypekey}`;
+                    }
+                    else
+                        label5.innerText = `DocSubTypeKey: ${"not set"}`;
+
+                    var documentClass = attributes.getAttribute("DocumentClass");
+                    if (documentClass) {
+                        var label6 = document.getElementById("ContentPlaceHolder1_Label6");
+                        label6.innerText = `DocumentClass: ${documentClass}`;
+                    }
+
+                    var menuItemId = attributes.getAttribute("MenuItemId");
+                    if (menuItemId) {
+                        var label7 = document.getElementById("ContentPlaceHolder1_Label7");
+                        label7.innerText = `MenuItemId: ${menuItemId}`;
+                    }
+                    var label8 = document.getElementById("ContentPlaceHolder1_Label8");
+                    var filterExpression = attributes.getAttribute("FilterExpression");
+                    if (filterExpression) {
+
+                        label8.innerText = `FilterExpression: ${filterExpression}`;
+                    }
+                    else
+                        label8.innerText = `FilterExpression: ${"not set"}`;
+
+
                 }
+
+
             </script>
         </telerik:RadCodeBlock>
         <telerik:RadAjaxPanel runat="server" ID="RAPRPB1" HorizontalAlign="NotSet" LoadingPanelID="RadAjaxLoadingPanel1">
@@ -59,7 +136,8 @@
                 DataValueField="Text"
                 DataNavigateUrlField="Url"
                 AllowCollapseAllItems="True"
-                OnClientItemClicked="openWin2"
+                OnClientItemClicked="openDialogWin2"
+                OnClientMouseOver="showItemAttributes"
                 OnItemDataBound="RadPanelBar1_ItemDataBound"
                 OnItemClick="RadPanelBar1_ItemClick"
                 OnItemCreated="RadPanelBar1_ItemCreated"
@@ -80,3 +158,4 @@
         </telerik:RadAjaxLoadingPanel>
     </div>
 </div>
+
