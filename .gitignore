@@ -259,3 +259,20 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/App_Data/RadCaptcha/*
+/App_Data/RadSpell/*
+/Content/Administration/*
+/Content/css/archive/*
+/Content/css/archive/keep/lbis-master - Copy.css
+/Content/css/archive/keep/lbis-master.min - Copy.css
+/Content/css/archive/lbis-master.css
+/Content/css/archive/lbis-master.min.css
+/Content/css/archive/lbis-new-master.css
+/Content/css/archive/normalize.css
+/Content/css/archive/xlbis-master - Copy_css.txt
+/Content/vendor/fa/less/*
+/Content/vendor/fa/scss/*
+/Content/vendor/*
+/Dummy/*
+/all.css
+/all.min.css

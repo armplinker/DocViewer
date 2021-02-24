@@ -1,0 +1,79 @@
+﻿/* POPUP EDITOR STYLES */
+/* rad-popup-editor.css*/
+
+/*
+    a:before {
+   font-family: "Font Awesome 5 Brands";
+   content: "\f51a";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+}
+*/
+
+
+/*Active state*/
+a.reTool.reResetContent.reToolIcon,
+a.reTool.ResetContent,
+.ResetContent,
+a.reTool.reResetContent.reToolIcon:after,
+a.reTool.ResetContent:after,
+.ResetContent:after {
+    background-position: center;
+    /* background-image: url("~/Content/css/img/lightning-delete.png");*/
+    content: url(img/lightning-delete.png);
+}
+
+a.reTool.reResetContent.reToolIcon:before,
+a.reTool.ResetContent:before,
+.ResetContent:before {
+    content: none !important;
+}
+
+a.reTool.reCleanNotes.reToolIcon,
+a.reTool.CleanNotes,
+.CleanNotes,
+a.reTool.reCleanNotes.reToolIcon:after,
+a.reTool.CleanNotes:after,
+.CleanNotes:after {
+    background-position: center;
+    /*background-image: url("~/Content/css/img/clear-all-text.png");*/
+    content: url(img/clear-all-text.png);
+}
+
+a.reTool.reCleanNotes.reToolIcon:before,
+a.reTool.CleanNotes:before,
+.CleanNotes:before {
+    content: none !important;
+}
+
+/* The generic class name is re<toolName> */
+a.reTool.reSaveAndClose.reToolIcon,
+a.reTool.reSaveAndClose.reToolIcon:after {
+    content: url(img/save-32.png);
+}
+
+/* remove the built-in icon */
+a.reTool.reSaveAndClose.reToolIcon:before {
+    content: none !important;
+}
+
+/* The generic class name is re<toolName> */
+a.reTool.reCancel.reToolIcon,
+a.reTool.reCancel.reToolIcon:after {
+    content: url(img/Cancel.gif);
+}
+
+/* remove the built-in icon */
+a.reTool.reCancel.reToolIcon:before,
+a.reTool.Cancel:before {
+    content: none !important;
+}
+
+.reModes,
+.reEditorModes,
+.reMode_design,
+.reMode_preview {
+    display: none !important;
+}

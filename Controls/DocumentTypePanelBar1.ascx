@@ -202,7 +202,7 @@
             ExpandMode="SingleExpandedItem"
             EnableItemTextHtmlEncoding="True"
             EnableAriaSupport="True"
-            EnableAjaxSkinRendering="True" Skin="WebBlue" RenderMode="Lightweight">
+            EnableAjaxSkinRendering="True" Skin="WebBlue" RenderMode="Auto">
             <CollapseAnimation Duration="100" Type="None" />
             <ExpandAnimation Duration="100" Type="None" />
         </telerik:RadPanelBar>
