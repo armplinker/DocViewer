@@ -12,8 +12,8 @@ function getViewPort(winArg) {
     //var e = winArg,
     //    h = $(winArg).height(),
     //    w = $(winArg).width();
-    //window.log_debug(`ViewPort: window: ${winArg.name} w: ${w} x h: ${h}`);
-    return { width: w, height: h };
+    //window.log_debug(`ViewPort:window:${winArg.name} w:${w} x h:${h}`);
+    return { width:w, height:h };
 
 }
 
@@ -29,8 +29,8 @@ function getDocumentSize(documentArg) {
     //    h = $(documentArg).height(),
     //    w = $(documentArg).width();
 
-    //window.log_debug(`Document Size: document: ${documentArg.name} w: ${w} x h: ${h}`);
-    return { width: w, height: h };
+    //window.log_debug(`Document Size:document:${documentArg.name} w:${w} x h:${h}`);
+    return { width:w, height:h };
 
 }
 
@@ -42,7 +42,7 @@ function getScreenSize(winArg) {
         hAvail = winArg.screen.availHeight,
         wAvail = winArg.screen.availWidth;
 
-    return { wMax: wMax, hMax: hMax, wAvail: wAvail, hAvail: hAvail };
+    return { wMax:wMax, hMax:hMax, wAvail:wAvail, hAvail:hAvail };
 }
 
 function setScreenDimensions(winArg, factor) {
@@ -51,15 +51,15 @@ function setScreenDimensions(winArg, factor) {
         var $ = $telerik.$;
 
         var vp = getViewPort(winArg);
-        log_debug(`In form-setup - ViewPort: w: ${vp.width} x h: ${vp.height}`);
+        log_debug(`In form-setup - ViewPort:w:${vp.width} x h:${vp.height}`);
 
         var docDims = winArg.getDocumentSize(winArg.document);
-        log_debug(`In form-setup - Document: w: ${docDims.width} x h: ${docDims.height}`);
+        log_debug(`In form-setup - Document:w:${docDims.width} x h:${docDims.height}`);
 
         var screenDims = getScreenSize(winArg);
         log_debug(
-            `In form-setup - Screen size: Max: w: ${screenDims.wMax} x h: ${screenDims.hMax} - available: ${
-            screenDims.wAvail} x h: ${screenDims.hAvail}`);
+            `In form-setup - Screen size:Max:w:${screenDims.wMax} x h:${screenDims.hMax} - available:${
+            screenDims.wAvail} x h:${screenDims.hAvail}`);
 
 
         var currentDimensions = null;
@@ -71,11 +71,11 @@ function setScreenDimensions(winArg, factor) {
 
             if (radWin) //!== null && radWin !== 'undefined')
                 currentDimensions =
-                    `RADWINDOW: before setScreenDimensions (radWindow): w${radWin.get_width()} x h: ${
+                    `RADWINDOW:before setScreenDimensions (radWindow):w${radWin.get_width()} x h:${
                     radWin.get_height()}`;
         } else
             currentDimensions =
-                `WINDOW: before setScreenDimensions (browserWindow): w${winArg.width} x h: ${winArg.height}`;
+                `WINDOW:before setScreenDimensions (browserWindow):w${winArg.width} x h:${winArg.height}`;
 
 
         log_debug(currentDimensions);
@@ -95,15 +95,15 @@ function setScreenDimensions(winArg, factor) {
             w = winArg.innerWidth || docElem.clientWidth || body.clientWidth,
             h = winArg.innerHeight || docElem.clientHeight || body.clientHeight;
         var calculatedDimensions =
-            w * (factor !== null && factor !== 'undefined' && factor > 0 ? factor : defaultFactor);
+            w * (factor !== null && factor !== 'undefined' && factor > 0 ? factor :defaultFactor);
 
-        log_debug(`Calculated: ${calculatedDimensions}`);
+        log_debug(`Calculated:${calculatedDimensions}`);
         var ajaxRequest = `CLIENT_WIDTH:${calculatedDimensions}`;
 
         log_debug(ajaxRequest);
     }
 
-    return (ajaxRequest !== null && ajaxRequest !== "undefined") ? ajaxRequest : "";
+    return (ajaxRequest !== null && ajaxRequest !== "undefined") ? ajaxRequest :"";
 }
 
 function GetRadWindow(winArg, winOpenArg) {

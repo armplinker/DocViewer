@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace DocViewer.Controls
 {
-    public partial class UserControl1 : System.Web.UI.UserControl
+    public partial class UserControl1 :System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {

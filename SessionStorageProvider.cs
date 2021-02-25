@@ -4,7 +4,7 @@ using Telerik.Web.UI.PersistenceFramework;
 
 namespace DocViewer 
 {
-    public class SessionStorageProvider : IStateStorageProvider
+    public class SessionStorageProvider :IStateStorageProvider
     {
         private System.Web.SessionState.HttpSessionState session = HttpContext.Current.Session;
         static string storageKey;

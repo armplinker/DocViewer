@@ -7,7 +7,7 @@ using Telerik.Web.UI;
 
 namespace DocViewer
 {
-    public partial class Grid : System.Web.UI.Page
+    public partial class Grid :System.Web.UI.Page
     {
         public DataTable Sellers
         {

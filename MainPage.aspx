@@ -1,7 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MainPage.aspx.cs" Inherits="DocViewer.MainPage" %>
 
 <%@ Register Src="~/Controls/UserControl1.ascx" TagPrefix="uc1" TagName="UserControl1" %>
-<%@ Register Src="~/Controls/DocumentTypePanelBar1.ascx" TagPrefix="ucDocsRPB" TagName="DocumentTypePanelBar1" %>
+
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -58,7 +59,7 @@
                 </script>
 
             </telerik:RadCodeBlock>
-            <ucDocsRPB:DocumentTypePanelBar1  runat="server" ID="DocumentTypePanelBar1" />
+        
         </div>
     </form>
 </body>

@@ -7,13 +7,83 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DocViewer
-{
-
-
-    public partial class ListView
-    {
-
+namespace DocViewer {
+    
+    
+    public partial class ListView {
+        
+        /// <summary>
+        /// LV_RadStyleSheetManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadStyleSheetManager LV_RadStyleSheetManager1;
+        
+        /// <summary>
+        /// LV_RadScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadScriptManager LV_RadScriptManager1;
+        
+        /// <summary>
+        /// LV_RadAjaxManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadAjaxManager LV_RadAjaxManager1;
+        
+        /// <summary>
+        /// LV_RadPersistenceManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadPersistenceManager LV_RadPersistenceManager1;
+        
+        /// <summary>
+        /// LV_RadWindowManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadWindowManager LV_RadWindowManager1;
+        
+        /// <summary>
+        /// RadWindow1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadWindow RadWindow1;
+        
+        /// <summary>
+        /// LV_RadScriptBlock1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadScriptBlock LV_RadScriptBlock1;
+        
+        /// <summary>
+        /// LV_RadCodeBlock1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadCodeBlock LV_RadCodeBlock1;
+        
         /// <summary>
         /// JumbotronLayout control.
         /// </summary>
@@ -22,7 +92,7 @@ namespace DocViewer
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadPageLayout JumbotronLayout;
-
+        
         /// <summary>
         /// RadButton0 control.
         /// </summary>
@@ -31,7 +101,7 @@ namespace DocViewer
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadButton RadButton0;
-
+        
         /// <summary>
         /// RadListViewImages control.
         /// </summary>
@@ -40,7 +110,7 @@ namespace DocViewer
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadListView RadListViewImages;
-
+        
         /// <summary>
         /// RadListViewArticles control.
         /// </summary>
@@ -49,7 +119,7 @@ namespace DocViewer
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadListView RadListViewArticles;
-
+        
         /// <summary>
         /// RadLightBoxImageDetails control.
         /// </summary>
@@ -58,5 +128,14 @@ namespace DocViewer
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadLightBox RadLightBoxImageDetails;
+        
+        /// <summary>
+        /// LV_RadAjaxLoadingPanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadAjaxLoadingPanel LV_RadAjaxLoadingPanel1;
     }
 }

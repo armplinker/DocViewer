@@ -50,23 +50,24 @@ function toggle_logging(onOff) {
     DIRLOG = onOff;
     WARNLEVEL = onOff;
     ERRORLEVEL = onOff;
-    console.log(`Setting logging enabled to: ${onOff}`);
+    console.log(`Setting logging enabled to:${onOff}`);
     show_logging_levels();
     return false;
 }
 
 function show_logging_levels() {
-    console.info(`Debug: ${DEBUGLEVEL}`);
-    console.info(`Info: ${INFOLEVEL}`);
-    console.info(`Warn: ${WARNLEVEL}`);
-    console.info(`Object (dir()): ${DIRLOG}`);
-    console.info(`Error: ${ERRORLEVEL}`);
+    console.info(`Debug:${DEBUGLEVEL}`);
+    console.info(`Info:${INFOLEVEL}`);
+    console.info(`Warn:${WARNLEVEL}`);
+    console.info(`Object (dir()):${DIRLOG}`);
+    console.info(`Error:${ERRORLEVEL}`);
     return false;
 }
 
 window.setTimeout(function () {
-    "use strict";
-    $telerik.$(function () {
+  
+    window.$ = $telerik.$;
+    $(function () {
         toggle_logging(true);
         show_logging_levels();
         log_debug("Setting up logging functions (in toggle-debug.js)");

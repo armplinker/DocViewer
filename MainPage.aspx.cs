@@ -3,27 +3,16 @@ using Telerik.Web.UI;
 
 namespace DocViewer
 {
-    public partial class MainPage : System.Web.UI.Page
+    public partial class MainPage :System.Web.UI.Page
     {
+        private static readonly log4net.ILog Logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (UserControl1 != null)
-            //{
-            //    ((RadPersistenceManagerProxy) UserControl1.FindControl("RadPersistenceManagerProxy1")).UniqueKey = "1";
-            //}
-
-            if (DocumentTypePanelBar1 != null)
-            {
-                ((RadPersistenceManagerProxy)DocumentTypePanelBar1.FindControl("RadPersistenceManagerProxy1")).UniqueKey = "DTPB1";
-            }
+            Logger.Debug("Page_Load Event");
+            
         }
-
-        public bool CheckDocTypeVisibility(string docTypeKey, string userRole)
-        {
-            var visibleToUser = true;
-
-            return visibleToUser;
-        }
+ 
     }
 }
 

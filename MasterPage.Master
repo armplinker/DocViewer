@@ -96,7 +96,7 @@
                     <Columns>
                         <telerik:LayoutColumn CssClass="footer">
                             <hr />
-                            Footer: © 2002-2015 Company Inc, 201 Jones Rd, Waltham, MA 03451
+                            Footer:© 2002-2015 Company Inc, 201 Jones Rd, Waltham, MA 03451
                         </telerik:LayoutColumn>
                     </Columns>
                 </telerik:LayoutRow>

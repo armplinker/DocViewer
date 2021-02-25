@@ -12,9 +12,9 @@ This used to be StyleSheetMain.css. It's redundant with styles established in th
 
 BODY
 {
-	color: #000;
-	background: #FFF;
-	font-size: small;
+	color:#000;
+	background:#FFF;
+	font-size:small;
 }
 
 */
@@ -50,198 +50,198 @@ BODY
 \*------------------------------------*/
 body,
 html {
-    height: 100%;
-    background-color: #FFFFFF;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    height:100%;
+    background-color:#FFFFFF;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /*'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif; // ARMarshall, ARM LLC - 20160425 - this is the right font set list */
-    font-size: 11px;
-    line-height: normal;
-    padding: 0;
-    margin: 0;
-    /*-webkit-box-sizing: border-box; */
-    box-sizing: border-box;
+    font-size:11px;
+    line-height:normal;
+    padding:0;
+    margin:0;
+    /*-webkit-box-sizing:border-box; */
+    box-sizing:border-box;
 }
 
     /* ARMarshall, ARM LLC - 20160426 - Added per Telerik support recommendation to reduce textbox padding from 5 left/right to 1 during input*/
     html body .riSingle.RadInput_WebBlue .riTextBox {
-        padding-left: 1px;
-        padding-right: 1px;
+        padding-left:1px;
+        padding-right:1px;
     }
 
 /* IE9 and above - clear all floats before rendering section AFTER*/
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+    content:"";
+    display:table;
+    clear:both;
 }
 
 /* this is used in several places - About.aspx, GMap.aspx, SessionSummary.aspx*/
 .NormalFont {
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /*'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif; // ARMarshall, ARM LLC - 20160425 - this is the right font set list */
-    font-size: 11px;
-    font-weight: normal;
+    font-size:11px;
+    font-weight:normal;
 }
 
 /* #GENERIC END */
 /*------------------------------------*\
             #PAGE SPECIFIC
 \*------------------------------------*/
-/* #container: CreateBridgeDialogMC, TelerikWebForm */
-/* #header: LBIS9_Report.htm, Telerik/LBIS9_Report.htm */
-/* non-id <header> : CreateBridgeDialogMC.aspx, TelerikWebForm.aspx */
-/* non-id <footer> : CreateBridgeDialogMC.aspx, TelerikWebForm.aspx */
+/* #container:CreateBridgeDialogMC, TelerikWebForm */
+/* #header:LBIS9_Report.htm, Telerik/LBIS9_Report.htm */
+/* non-id <header> :CreateBridgeDialogMC.aspx, TelerikWebForm.aspx */
+/* non-id <footer> :CreateBridgeDialogMC.aspx, TelerikWebForm.aspx */
 header,
 #container #header {
-    display: block;
-    font-style: normal;
-    font-size: larger;
-    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-    float: left;
-    width: 100%;
-    margin-bottom: 2px;
-    border-bottom: #c00 solid 1px;
+    display:block;
+    font-style:normal;
+    font-size:larger;
+    /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    float:left;
+    width:100%;
+    margin-bottom:2px;
+    border-bottom:#c00 solid 1px;
 }
 
 footer,
 #container #footer {
-    display: block;
-    float: left;
-    font-style: normal;
-    font-size: smaller;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    display:block;
+    float:left;
+    font-style:normal;
+    font-size:smaller;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    width: 100%;
-    margin-top: 2px;
-    border-top: #c00 solid 1px;
+    width:100%;
+    margin-top:2px;
+    border-top:#c00 solid 1px;
 }
 
-/* .checkbox: used in WebForm1.aspx */
+/* .checkbox:used in WebForm1.aspx */
 .checkbox {
-    text-align: left;
-    margin-right: 4px;
-    margin-left: 2px;
+    text-align:left;
+    margin-right:4px;
+    margin-left:2px;
 }
 
-/* .dropwdownlistbox: used in WebForm1.aspx */
+/* .dropwdownlistbox:used in WebForm1.aspx */
 .dropdownlistbox {
-    width: 70% !important;
-    margin: 4px 0 4px 10px;
+    width:70% !important;
+    margin:4px 0 4px 10px;
 }
 
 /*----------------------------*\
             #TELERIK OVERRIDES
 \*-----------------------------*/
-/*source: http://docs.telerik.com/devtools/aspnet-ajax/controls/input/appearance-and-styling/using-the-css-class-to-set-the-width*/
+/*source:http://docs.telerik.com/devtools/aspnet-ajax/controls/input/appearance-and-styling/using-the-css-class-to-set-the-width*/
 /* This is a workaround from telerik to correct an issue where fieldset legends were getting hosed.*/
-/* .fieldset: used in obsoleteCreateBridgeDialog.aspx, TelerikStackedControlsExample.aspx, WebForm1.aspx */
+/* .fieldset:used in obsoleteCreateBridgeDialog.aspx, TelerikStackedControlsExample.aspx, WebForm1.aspx */
 .create-bridge-fieldset {
-    display: flex !important;
-    flex-direction: column !important;
-    background-color: whitesmoke;
-    font-size: 12px;
-    /*display: inline-block;*/
-    overflow: hidden;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding: 0.35em 0.75em 0.5em 0.75em;
-    border: 2px solid black;
+    display:flex !important;
+    flex-direction:column !important;
+    background-color:whitesmoke;
+    font-size:12px;
+    /*display:inline-block;*/
+    overflow:hidden;
+    margin-left:2px;
+    margin-right:2px;
+    padding:0.35em 0.75em 0.5em 0.75em;
+    border:2px solid black;
     /*groove (internal value);*/
-    vertical-align: middle;
+    vertical-align:middle;
 }
 
 .lbis-tab-form {
-    border: none;
-    border-collapse: collapse;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    background-color: cornsilk !important;
+    border:none;
+    border-collapse:collapse;
+    padding:0;
+    margin:0;
+    width:100%;
+    background-color:cornsilk !important;
 }
 
-/* .customClass, .riLabel inheriting from .customclass: used in CreateBridgeDialogMC.aspx, CreateBridgeIdentifiers.ascx, TelerikStackedControlsExample.aspx, TelerikWebForm.aspx, WebForm1.aspx*/
-/* .riLabel inheriting from .CustomClass: used in TelerikStackedControlsExample.aspx, WebForm1.aspx*/
+/* .customClass, .riLabel inheriting from .customclass:used in CreateBridgeDialogMC.aspx, CreateBridgeIdentifiers.ascx, TelerikStackedControlsExample.aspx, TelerikWebForm.aspx, WebForm1.aspx*/
+/* .riLabel inheriting from .CustomClass:used in TelerikStackedControlsExample.aspx, WebForm1.aspx*/
 .CustomClass {
-    padding: 1px;
+    padding:1px;
 }
 
 html .CustomClass .riLabel {
-    float: left;
+    float:left;
     /* was none */
-    font-style: normal;
-    font-size: 12px;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size:12px;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    /*font-size: initial;*/
-    font-weight: bold;
-    margin-left: 1px;
-    margin-right: 2px;
-    width: 150px !important;
-    text-align: left;
-    vertical-align: middle;
+    /*font-size:initial;*/
+    font-weight:bold;
+    margin-left:1px;
+    margin-right:2px;
+    width:150px !important;
+    text-align:left;
+    vertical-align:middle;
 }
 
 .CustomClass .riTextBox {
-    float: none;
-    font-weight: normal;
-    font-size: inherit;
-    margin-left: 1px;
-    margin-right: 2px;
-    /*width: 50% !important;*/
+    float:none;
+    font-weight:normal;
+    font-size:inherit;
+    margin-left:1px;
+    margin-right:2px;
+    /*width:50% !important;*/
 }
 
-/* .riTextBox: used in CreateBridgeDialogMC.aspx, TelerikStackedControlExample.aspx, TelerikWebForm.aspx, WebForm1.aspx  */
+/* .riTextBox:used in CreateBridgeDialogMC.aspx, TelerikStackedControlExample.aspx, TelerikWebForm.aspx, WebForm1.aspx  */
 .CustomClass .RadDropDownList,
 span.CustomClass,
 .riContentWrapper,
 span.CustomClass.riContButton.riContSpinButtons .riContentWrapper {
-    /*width: 60%;*/
-    padding-right: 0;
+    /*width:60%;*/
+    padding-right:0;
 }
 
 /*---------------------------*/
-/* .notesicon: used in CreateBridgeIdentifiers.ascx, NotesEditingPanel.ascx*/
+/* .notesicon:used in CreateBridgeIdentifiers.ascx, NotesEditingPanel.ascx*/
 /*
 .notesicon {
-    position: relative;
-    vertical-align: top;
-    height: 16px;
-    width: 16px;
+    position:relative;
+    vertical-align:top;
+    height:16px;
+    width:16px;
 }
 */
-/* .notestextboxarea: used in NotesEditingPanel.ascx */
+/* .notestextboxarea:used in NotesEditingPanel.ascx */
 /*
 .notestextboxarea {
-    background-color: whitesmoke;
-    resize: both;
-    margin: 5px;    
-    text-align: left;
-    vertical-align: top;
-    padding-right: 5px;
+    background-color:whitesmoke;
+    resize:both;
+    margin:5px;    
+    text-align:left;
+    vertical-align:top;
+    padding-right:5px;
 }
 */
-/* .sectionHeader: used in CreateBridgeIdentifiers.ascx CreateBridgeDialogMC.aspx, CreateBridgeIdentifiers.ascx, NotesEditingPanel.ascx, TelerikStackedControlsExample.aspx, TelerikWebForm.aspx, WebForm1.aspx  */
+/* .sectionHeader:used in CreateBridgeIdentifiers.ascx CreateBridgeDialogMC.aspx, CreateBridgeIdentifiers.ascx, NotesEditingPanel.ascx, TelerikStackedControlsExample.aspx, TelerikWebForm.aspx, WebForm1.aspx  */
 .sectionheader {
-    display: flex !important;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
+    display:flex !important;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:bold;
+    font-size:12px;
 }
 
-/* .checkidbutton, .checkidimage: used in CreateBridgeDialogMC.aspx, CreateBridgeIdentifiers.ascx */
+/* .checkidbutton, .checkidimage:used in CreateBridgeDialogMC.aspx, CreateBridgeIdentifiers.ascx */
 .checkidbutton {
-    height: auto;
-    vertical-align: middle;
-    padding: 0 8px 0 8px;
-    top: 0;
-    left: 0;
+    height:auto;
+    vertical-align:middle;
+    padding:0 8px 0 8px;
+    top:0;
+    left:0;
 }
 
 .checkidimage {
-    width: 22px;
-    height: 22px;
-    vertical-align: middle;
+    width:22px;
+    height:22px;
+    vertical-align:middle;
 }
 
 /* ----- Validation and error messages class starts -----*/
@@ -251,409 +251,409 @@ span.CustomClass.riContButton.riContSpinButtons .riContentWrapper {
         BackColor="#FFFF99" BorderColor="Red"
                                 BorderStyle="Solid" BorderWidth="1px"
     */
-    border: 2px solid red;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    border:2px solid red;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-weight: normal;
-    background-color: rgb(255, 255, 153);
-    float: left;
-    font-size: smaller;
-    list-style-type: disc;
-    list-style: disc;
-    width: 98%;
-    margin: 10px;
-    padding: 4px;
-    visibility: visible;
+    font-weight:normal;
+    background-color:rgb(255, 255, 153);
+    float:left;
+    font-size:smaller;
+    list-style-type:disc;
+    list-style:disc;
+    width:98%;
+    margin:10px;
+    padding:4px;
+    visibility:visible;
 }
 
 /* used in CreateBridgeIdentifiers.ascx */
 .validationsummaryheader {
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    left: 0;
-    float: left;
-    position: relative;
-    font-size: small;
-    background-color: goldenrod;
-    color: black;
-    height: 14px;
-    font-weight: bold;
-    border-bottom: 1px solid #b08b34;
-    padding-top: 3px;
+    left:0;
+    float:left;
+    position:relative;
+    font-size:small;
+    background-color:goldenrod;
+    color:black;
+    height:14px;
+    font-weight:bold;
+    border-bottom:1px solid #b08b34;
+    padding-top:3px;
 }
 
 /* squish controls when page is complicated -  used in CreateBridgeIdentifiers.ascx, */
 .short-control {
-    height: 85%;
+    height:85%;
     /* of inherited height*/
 }
 
-/* .Notes-Button-Image, .Notes-Button-Pressed-Image, .Notes-Button-Hovered-Image: used in NotesEditingPanel.ascx */
+/* .Notes-Button-Image, .Notes-Button-Pressed-Image, .Notes-Button-Hovered-Image:used in NotesEditingPanel.ascx */
 /*
     .Notes-Button-Image {
-    background: url('/Images/editor.gif') 0 0;
-    width: 16px;
-    height: 16px;
-    top: 0;
-    left: 0;
+    background:url('/Images/editor.gif') 0 0;
+    width:16px;
+    height:16px;
+    top:0;
+    left:0;
 }
 
 .Notes-Button-Hovered-Image {
-    background-position: 0 -90px;
+    background-position:0 -90px;
 }
 
 .Notes-Button-Pressed-Image {
-    background-position: 0 -180px;
+    background-position:0 -180px;
 }
 */
 /* -- --Validation and error messages class ends -- --*/
 /* classes below merged from LBIS9 StyleSheet.css (NABM 1/22/16) */
 /* most of the following classes containing the filename are new work, don't touch these (NABM 1/22/16) */
-/* .ValidSummary classes: Used in validsummary-HTML5-CSS.aspx */
+/* .ValidSummary classes:Used in validsummary-HTML5-CSS.aspx */
 .ValidSummaryHeaderTable {
-    width: 100px;
+    width:100px;
 }
 
 .ValidSummaryColumnWidth {
-    width: 100px;
+    width:100px;
 }
 
 /* IE 8 hates nth-child. */
 td:nth-child(2).ValidSummaryColumnWidth {
-    text-align: right;
+    text-align:right;
 }
 
 .ValidSummaryTopColumn {
-    height: 300px;
-    text-align: center;
-    vertical-align: middle;
+    height:300px;
+    text-align:center;
+    vertical-align:middle;
 }
 
 .ValidSummaryTable2 {
-    border: 0;
-    padding: 1px;
-    border-spacing: 0;
-    text-align: center;
+    border:0;
+    padding:1px;
+    border-spacing:0;
+    text-align:center;
 }
 
-/* ARMarshall 20150125 - changed CSS3 non-compliant column-span: 2 here to compliant CSS3 column-count:2 which is what it needs to do*/
+/* ARMarshall 20150125 - changed CSS3 non-compliant column-span:2 here to compliant CSS3 column-count:2 which is what it needs to do*/
 .ValidSummaryAspColumn {
-    -webkit-column-count: 2;
-    column-count: 2;
-    text-align: left;
-    height: 18px;
+    -webkit-column-count:2;
+    column-count:2;
+    text-align:left;
+    height:18px;
 }
 
 #Taller {
-    height: 25px;
+    height:25px;
 }
 
 /* from StyleSheet1.css - NABM 1/22/16*/
 a:link {
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    color: #669999;
-    text-decoration: none;
+    color:#669999;
+    text-decoration:none;
 }
 
 a:visited {
-    /* text-decoration: none;  
-  font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-  font-style: normal;*/
-    color: #669999;
+    /* text-decoration:none;  
+  font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-style:normal;*/
+    color:#669999;
 }
 
 a:hover,
 a:active {
-    /* text-decoration: underline;
-  font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;*/
+    /* text-decoration:underline;
+  font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;*/
     /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-style: normal;
+    font-style:normal;
 }
 
-/* .StyleHeader, .StyleHeaderBottom : used in TBRidgeListS.ascx, WUCArrearsReport2.ascx
-   .StyleHeaderRepGrid: used in RepGrid.aspx
+/* .StyleHeader, .StyleHeaderBottom :used in TBRidgeListS.ascx, WUCArrearsReport2.ascx
+   .StyleHeaderRepGrid:used in RepGrid.aspx
 */
 .StyleHeader {
-    font-weight: bold;
-    font-size: 18px;
-    color: yellow;
-    font-style: italic;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:18px;
+    color:yellow;
+    font-style:italic;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    background-color: #003366;
-    font-variant: small-caps;
+    background-color:#003366;
+    font-variant:small-caps;
 }
 
 .StyleHeaderBottom {
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-weight: bold;
-    color: white;
-    background-color: #003366;
-    padding: 3px 3px 3px 3px;
-    font-size: small;
+    font-weight:bold;
+    color:white;
+    background-color:#003366;
+    padding:3px 3px 3px 3px;
+    font-size:small;
 }
 
 .StyleHeaderRepGrid {
-    font-family: 'Segoe UI', Arial, Helvetica, Verdana, sans-serif;
-    font-weight: bold;
-    color: white;
-    background-color: #003366;
-    padding: 3px 3px 3px 3px;
-    font-size: x-small;
+    font-family:'Segoe UI', Arial, Helvetica, Verdana, sans-serif;
+    font-weight:bold;
+    color:white;
+    background-color:#003366;
+    padding:3px 3px 3px 3px;
+    font-size:x-small;
 }
 
 /* these inherit in the same files as the StyleHeader classes*/
 .StyleHeaderBottom li a:link,
 .StyleHeaderBottom li a:visited {
-    /* text-decoration: none;
-  font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif; 
-  font-style: normal; */
-    color: white;
-    /*text-align: left; */
+    /* text-decoration:none;
+  font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+  font-style:normal; */
+    color:white;
+    /*text-align:left; */
 }
 
-/* StyleHeaderBottom2: used in TBridgeListS.ascx */
+/* StyleHeaderBottom2:used in TBridgeListS.ascx */
 .StyleHeaderBottom2 {
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    color: white;
-    background-color: #6363ce;
-    padding: 3px 3px 3px 3px;
-    font-size: 12px;
+    color:white;
+    background-color:#6363ce;
+    padding:3px 3px 3px 3px;
+    font-size:12px;
 }
 /* Specific to TBridgeListS.ascx */
 .LayoutsComboBox {
-    height: inherit;
-    width: 300px;
+    height:inherit;
+    width:300px;
 }
 
 /*.LayoutsComboBoxItem {
-    height: 20px;
+    height:20px;
 }*/
 
 /*.LayoutComboBoxItem:hover {
-    background-color: Blue !important;
+    background-color:Blue !important;
 }*/
 .RadComboBox_WebBlue .rcbInputCell {
-    height: 18px;
+    height:18px;
 }
 
 .LayoutsComboBoxItemToolTip {
-    width: 350px;
-    height: 25px;
+    width:350px;
+    height:25px;
 }
 
-/* .Admin: used in SessionSummary.aspx, SIAReportLIst.aspx, ValidSummary.aspx */
+/* .Admin:used in SessionSummary.aspx, SIAReportLIst.aspx, ValidSummary.aspx */
 .Admin {
-    font-weight: bold;
-    font-size: small;
+    font-weight:bold;
+    font-size:small;
 }
 
-/* .GoodNews: used in About.aspx, ChangePassword.aspx, CreateUser.aspx, CredentialDetail.ascx, DeleteUser.aspx, EditGroupContacts.aspx, LockUser.aspx, UnlockUser.aspx, EditFormCS.aspx, NABMAbout.aspx, SessionSummary.aspx*/
+/* .GoodNews:used in About.aspx, ChangePassword.aspx, CreateUser.aspx, CredentialDetail.ascx, DeleteUser.aspx, EditGroupContacts.aspx, LockUser.aspx, UnlockUser.aspx, EditFormCS.aspx, NABMAbout.aspx, SessionSummary.aspx*/
 .GoodNews-disabled {
-    font-style: inherit;
-    font-weight: bold;
+    font-style:inherit;
+    font-weight:bold;
     /* ARMarshall, ARM LLC - 20190722 - bolder, larger */
-    font-size: larger;
-    color: darkgreen;
-    border: none;
+    font-size:larger;
+    color:darkgreen;
+    border:none;
 }
 
 .SmallGoodNews-disabled {
-    font-style: inherit;
-    font-weight: bold;
+    font-style:inherit;
+    font-weight:bold;
     /* ARMarshall, ARM LLC - 20190722 - bolder, larger */
-    font-size: smaller;
-    color: darkgreen;
-    border: none;
+    font-size:smaller;
+    color:darkgreen;
+    border:none;
 }
 
-/* .BadNews: used in About.aspx, ChangePassword.aspx, CreateUser.aspx, CredentialDetail.ascx, DeleteUser.aspx, EditGroupContacts.aspx, LockUser.aspx, UnlockUser.aspx, EditFormCS.aspx, ErrorItem.ascx, NABMAbout.aspx, SessionSummary.aspx*/
+/* .BadNews:used in About.aspx, ChangePassword.aspx, CreateUser.aspx, CredentialDetail.ascx, DeleteUser.aspx, EditGroupContacts.aspx, LockUser.aspx, UnlockUser.aspx, EditFormCS.aspx, ErrorItem.ascx, NABMAbout.aspx, SessionSummary.aspx*/
 .BadNews-disabled {
-    font-style: inherit;
-    font-weight: bold;
+    font-style:inherit;
+    font-weight:bold;
     /* ARMarshall, ARM LLC - 20190722 - bolder, larger */
-    font-size: larger;
-    color: red;
-    border: none;
+    font-size:larger;
+    color:red;
+    border:none;
 }
 
 .BadNews2-disabled {
-    font-style: inherit;
-    font-size: inherit;
-    font-weight: normal;
-    color: red;
+    font-style:inherit;
+    font-size:inherit;
+    font-weight:normal;
+    color:red;
 }
 
-/* .ValidatorStyle: used in ChangePassword.aspx, CreateUser.aspx, DeleteUser.aspx, LockUser.aspx, CreateBridgeDialogMC.aspx, CreateBridgeIdentifiers.ascx */
+/* .ValidatorStyle:used in ChangePassword.aspx, CreateUser.aspx, DeleteUser.aspx, LockUser.aspx, CreateBridgeDialogMC.aspx, CreateBridgeIdentifiers.ascx */
 /*ValidatorStyle {
-    font-style: inherit;
-    font-size: inherit;
-    font-weight: normal;
-    color: red;
-    background-color: transparent;
+    font-style:inherit;
+    font-size:inherit;
+    font-weight:normal;
+    color:red;
+    background-color:transparent;
 }*/
-/* .XSmall: used in RepGrid.aspx */
+/* .XSmall:used in RepGrid.aspx */
 .XSmall {
-    font-size: x-small;
+    font-size:x-small;
 }
 
-/* .StyleWelcome, .StylePrompt: used in Login.aspx, Login1.aspx, LoginErrorPane.aspx */
+/* .StyleWelcome, .StylePrompt:used in Login.aspx, Login1.aspx, LoginErrorPane.aspx */
 .StyleWelcome {
-    font-size: large;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size:large;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    color: #003366;
+    color:#003366;
 }
 
 .StylePrompt {
-    font-size: small;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    color: #003366;
+    font-size:small;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color:#003366;
 }
 
-/* .StyleErrorPane: used in LoginErrorPane.aspx */
+/* .StyleErrorPane:used in LoginErrorPane.aspx */
 .StyleErrorPane {
-    direction: ltr;
-    text-indent: 0;
-    line-height: normal;
-    text-align: left;
-    padding: 8px 5px 5px 5px;
-    color: #003366;
+    direction:ltr;
+    text-indent:0;
+    line-height:normal;
+    text-align:left;
+    padding:8px 5px 5px 5px;
+    color:#003366;
 }
 
-/* .MapStatistics: used in GMap.aspx */
+/* .MapStatistics:used in GMap.aspx */
 /* moved to map-page.scss*/
 /*.MapStatistics {
-    font-size: 11px;
-    padding-bottom: 3px;
-    padding-top: 10px;
-    font: inherit;
-    font-family:  $base-font-family; //'Segoe UI', Arial, Helvetica, Verdana, sans-serif; 
-text-decoration: none
+    font-size:11px;
+    padding-bottom:3px;
+    padding-top:10px;
+    font:inherit;
+    font-family: $base-font-family; //'Segoe UI', Arial, Helvetica, Verdana, sans-serif; 
+text-decoration:none
 ;
-font-weight: normal
+font-weight:normal
 ;
 }
 
 */
-/* .FilterMenuClass1: used in TBridgeListS.ascx */
+/* .FilterMenuClass1:used in TBridgeListS.ascx */
 .FilterMenuClass1 td {
-    font-size: 11px;
+    font-size:11px;
 }
 
     .FilterMenuClass1 td input {
-        font-size: 11px;
-        background-color: ivory;
+        font-size:11px;
+        background-color:ivory;
     }
 
 .std-button {
-    height: 30px; /* tailwind h-2 */
-    width: 115px;
-    font-size: 12pt;
-    overflow: hidden;
+    height:30px; /* tailwind h-2 */
+    width:115px;
+    font-size:12pt;
+    overflow:hidden;
 }
 
 .std-button-WideX {
-    height: 30px;
-    width: 165px;
-    font-size: 12pt;
-    overflow: hidden;
+    height:30px;
+    width:165px;
+    font-size:12pt;
+    overflow:hidden;
 }
 
 .btn-LBIS-ShortX {
-    height: 25px;
-    width: 115px;
-    font-size: 10pt;
-    overflow: hidden;
+    height:25px;
+    width:115px;
+    font-size:10pt;
+    overflow:hidden;
 }
 
 .btn-LBIS-AutoSize {
-    height: 100%;
-    width: auto;
-    overflow: hidden;
+    height:100%;
+    width:auto;
+    overflow:hidden;
 }
 
 /* Working around Telerik's "known issue" with rad buttons disappearing after postback in IE */
-/* .ie7buttondist: used in EditFormCs.aspx, .rbDecorated: used nowhere */
+/* .ie7buttondist:used in EditFormCs.aspx, .rbDecorated:used nowhere */
 .ie7buttondist .rbDecorated {
-    overflow: hidden;
+    overflow:hidden;
 }
 
 /* !important */
-/* .FileUploadPanel: used in FileUploader.ascx */
+/* .FileUploadPanel:used in FileUploader.ascx */
 .FileUploadPanel {
-    border-width: 2px 2px 2px 2px;
-    padding-top: 2px;
-    padding-left: 2px;
-    border-color: #6D859F;
-    border-style: solid;
+    border-width:2px 2px 2px 2px;
+    padding-top:2px;
+    padding-left:2px;
+    border-color:#6D859F;
+    border-style:solid;
 }
 
 /* from styles.css */
-/* .header: used in Telerik UI xml */
+/* .header:used in Telerik UI xml */
 .header {
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    background-color: #669900;
-    color: #339999;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size:20px;
+    background-color:#669900;
+    color:#339999;
 }
 
-/* .footer: used in TelerikStackedControlsExample.aspx, WebForm1.aspx*/
+/* .footer:used in TelerikStackedControlsExample.aspx, WebForm1.aspx*/
 .footer {
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.57;
-    color: #333333;
-    background-color: #CCFF99;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    line-height:1.57;
+    color:#333333;
+    background-color:#CCFF99;
 }
 
-/* .SRTableHead: used in CalculateSR.aspx, NABMCalculateSR.aspx, PrintSR.aspx,*/
+/* .SRTableHead:used in CalculateSR.aspx, NABMCalculateSR.aspx, PrintSR.aspx,*/
 .SRTableHead {
-    background-color: #6363ce;
-    border: navy 2px solid;
-    color: white;
-    font-weight: bold;
+    background-color:#6363ce;
+    border:navy 2px solid;
+    color:white;
+    font-weight:bold;
 }
 
-/* .SRYellowCell, .SRNormalCell: used in CalculateSR.aspx.cs */
+/* .SRYellowCell, .SRNormalCell:used in CalculateSR.aspx.cs */
 .SRYellowCell {
-    background-color: yellow;
-    /*text-align: center;*/
+    background-color:yellow;
+    /*text-align:center;*/
 }
 
 .SRNormalCell {
     /* Added ARMarshall, ARM LLC 20150617 */
-    background-color: #d8f5ff;
-    /*text-align: center;*/
+    background-color:#d8f5ff;
+    /*text-align:center;*/
 }
 
 /* used in DocViewer.aspx */
 .ScourHyperLinkStyle {
-    margin-left: 50px;
+    margin-left:50px;
 }
 
 /* used nowhere */
 .UpperBorder {
-    padding: 1px;
-    margin: 1px;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-color: #C0C0C0;
+    padding:1px;
+    margin:1px;
+    border-top-style:solid;
+    border-top-width:1px;
+    border-color:#C0C0C0;
 }
 
-/* .UploadTextArea: used in FileUploader.ascx */
+/* .UploadTextArea:used in FileUploader.ascx */
 .UploadTextArea {
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
 }
 
-/* .WrappingLabel: used in SingleDocView.ascx */
+/* .WrappingLabel:used in SingleDocView.ascx */
 .WrappingLabel {
-    overflow: hidden;
+    overflow:hidden;
 }
 
 /* legacy classes moved to styles_archive.css in the same dir. 2/1/16 NABM.*/
@@ -666,11 +666,11 @@ font-weight: normal
     - needs to test IE and different screen resolutions.
 */
 #AboutMainTable {
-    text-align: left;
-    width: 100%;
-    border: 0;
-    margin: 0;
-    padding: 1%;
+    text-align:left;
+    width:100%;
+    border:0;
+    margin:0;
+    padding:1%;
 }
 
 
@@ -679,349 +679,349 @@ font-weight: normal
 #AboutMainTable>div:first-child,
 #AboutMainTable>div:nth-child(2),
 #AboutMainTable>div:nth-child(3) {
-    margin-bottom: 5px;
+    margin-bottom:5px;
 }
 */
     #AboutMainTable > div:first-child,
     #AboutMainTable > div:nth-child(n) {
-        margin-bottom: 3px;
+        margin-bottom:3px;
     }
 
     #AboutMainTable > div:last-child {
-        margin-top: 0;
-        clear: both;
+        margin-top:0;
+        clear:both;
     }
 
     #AboutMainTable label.Label {
-        width: 30%;
-        font-weight: bold;
-        padding-left: 2%;
-        min-width: 100px;
+        width:30%;
+        font-weight:bold;
+        padding-left:2%;
+        min-width:100px;
     }
 
     #AboutMainTable div.Value {
-        width: 68%;
-        min-width: 280px;
-        border: 0 solid black;
-        font-weight: bold;
-        float: right;
+        width:68%;
+        min-width:280px;
+        border:0 solid black;
+        font-weight:bold;
+        float:right;
     }
 
     /* buttons and errors */
     #AboutMainTable .ButtonAndErrors {
-        width: 40%;
+        width:40%;
     }
 
         #AboutMainTable .ButtonAndErrors > div:first-child {
-            width: 80%;
-            margin: 10% 3% 2% 3%;
+            width:80%;
+            margin:10% 3% 2% 3%;
         }
 
         #AboutMainTable .ButtonAndErrors > div:nth-child(2) {
-            max-width: 95%;
+            max-width:95%;
         }
 
     #AboutMainTable .CloseButton {
-        height: 25px;
-        width: 40%;
-        margin: 5% 29% 5% 29%;
+        height:25px;
+        width:40%;
+        margin:5% 29% 5% 29%;
     }
 
 /* ADMINISTRATION FOLDER ASPX FILES */
 /* not doing all of these right now */
 #ChangePasswordMainTable .CPMainContainer {
-    width: 50%;
-    text-align: left;
-    border: 0;
-    font-weight: bold;
-    margin: 0 auto;
+    width:50%;
+    text-align:left;
+    border:0;
+    font-weight:bold;
+    margin:0 auto;
 }
 
 #ChangePasswordMainTable div.form-row {
-    margin-top: 2%;
-    width: 100%;
-    min-height: 20px;
+    margin-top:2%;
+    width:100%;
+    min-height:20px;
 }
 
     #ChangePasswordMainTable div.form-row label {
-        width: 25%;
-        text-align: left;
-        float: left;
+        width:25%;
+        text-align:left;
+        float:left;
     }
 
     #ChangePasswordMainTable div.form-row div,
     #ChangePasswordMainTable div.form-row input[type='password'] {
-        max-width: 45%;
-        float: right;
+        max-width:45%;
+        float:right;
     }
 
     #ChangePasswordMainTable div.form-row input[type='password'] {
-        border: 1px solid;
+        border:1px solid;
     }
 
     #ChangePasswordMainTable div.form-row.buttons {
-        margin-top: 5%;
+        margin-top:5%;
     }
 
         #ChangePasswordMainTable div.form-row.buttons * {
-            border: 1px solid black;
-            min-height: 100%;
-            float: right;
-            vertical-align: middle;
-            margin: 0 auto;
+            border:1px solid black;
+            min-height:100%;
+            float:right;
+            vertical-align:middle;
+            margin:0 auto;
         }
 
             #ChangePasswordMainTable div.form-row.buttons *:first-child {
-                float: left;
+                float:left;
             }
 
 /* LOCK USER */
 /* repeating styles from last version*/
 #LockUserMainTable {
-    width: 80%;
-    border: 1px solid black;
-    min-height: 100%;
-    text-align: left;
-    margin: 0 auto;
-    margin-top: 12.5%;
+    width:80%;
+    border:1px solid black;
+    min-height:100%;
+    text-align:left;
+    margin:0 auto;
+    margin-top:12.5%;
 }
 
     #LockUserMainTable div.form-row {
-        margin-top: 2%;
-        width: 100%;
-        min-height: 20px;
-        min-height: 50%;
+        margin-top:2%;
+        width:100%;
+        min-height:20px;
+        min-height:50%;
     }
 
         #LockUserMainTable div.form-row label {
-            font-weight: bold;
-            width: 25%;
-            text-align: left;
-            float: left;
+            font-weight:bold;
+            width:25%;
+            text-align:left;
+            float:left;
         }
 
         #LockUserMainTable div.form-row input {
-            float: right;
+            float:right;
         }
 
         #LockUserMainTable div.form-row div {
-            max-width: 45%;
-            float: right;
+            max-width:45%;
+            float:right;
         }
 
         #LockUserMainTable div.form-row input[type='password'] {
-            border: 1px solid;
+            border:1px solid;
         }
 
         #LockUserMainTable div.form-row.buttons {
-            margin-top: 10%;
-            padding: 0;
+            margin-top:10%;
+            padding:0;
         }
 
             #LockUserMainTable div.form-row.buttons * {
-                border: 1px solid black;
-                min-height: 100%;
-                float: right;
-                vertical-align: middle;
-                margin: 0 auto;
+                border:1px solid black;
+                min-height:100%;
+                float:right;
+                vertical-align:middle;
+                margin:0 auto;
             }
 
                 #LockUserMainTable div.form-row.buttons *:first-child {
-                    float: left;
+                    float:left;
                 }
 
 /* UNLOCKUSER.aspx */
 /* identical to lockuser, same CSS implemented*/
 #UnlockUserMainTable {
-    width: 80%;
-    border: 1px solid black;
-    min-height: 100%;
-    text-align: left;
-    margin: 0 auto;
-    margin-top: 12.5%;
+    width:80%;
+    border:1px solid black;
+    min-height:100%;
+    text-align:left;
+    margin:0 auto;
+    margin-top:12.5%;
 }
 
     #UnlockUserMainTable div.form-row {
-        margin-top: 2%;
-        width: 100%;
-        min-height: 20px;
-        min-height: 50%;
+        margin-top:2%;
+        width:100%;
+        min-height:20px;
+        min-height:50%;
     }
 
         #UnlockUserMainTable div.form-row label {
-            font-weight: bold;
-            width: 25%;
-            text-align: left;
-            float: left;
+            font-weight:bold;
+            width:25%;
+            text-align:left;
+            float:left;
         }
 
         #UnlockUserMainTable div.form-row input {
-            float: right;
+            float:right;
         }
 
         #UnlockUserMainTable div.form-row div {
-            max-width: 45%;
-            float: right;
+            max-width:45%;
+            float:right;
         }
 
         #UnlockUserMainTable div.form-row.buttons {
-            margin-top: 10%;
-            padding: 0;
+            margin-top:10%;
+            padding:0;
         }
 
             #UnlockUserMainTable div.form-row.buttons * {
-                border: 1px solid black;
-                min-height: 100%;
-                float: right;
-                vertical-align: middle;
-                margin: 0 auto;
+                border:1px solid black;
+                min-height:100%;
+                float:right;
+                vertical-align:middle;
+                margin:0 auto;
             }
 
                 #UnlockUserMainTable div.form-row.buttons *:first-child {
-                    float: left;
+                    float:left;
                 }
 
 /* DELETEUSER.ASPX */
 #DeleteUserMainTable {
-    width: 80%;
-    border: 1px solid black;
-    min-height: 100%;
-    text-align: left;
-    margin: 0 auto;
-    margin-top: 12.5%;
+    width:80%;
+    border:1px solid black;
+    min-height:100%;
+    text-align:left;
+    margin:0 auto;
+    margin-top:12.5%;
 }
 
     #DeleteUserMainTable div.form-row {
-        margin-top: 2%;
-        width: 100%;
-        min-height: 20px;
-        min-height: 50%;
+        margin-top:2%;
+        width:100%;
+        min-height:20px;
+        min-height:50%;
     }
 
         #DeleteUserMainTable div.form-row label {
-            font-weight: bold;
-            width: 25%;
-            text-align: left;
-            float: left;
+            font-weight:bold;
+            width:25%;
+            text-align:left;
+            float:left;
         }
 
         #DeleteUserMainTable div.form-row input {
-            float: right;
+            float:right;
         }
 
         #DeleteUserMainTable div.form-row div {
-            max-width: 45%;
-            float: right;
+            max-width:45%;
+            float:right;
         }
 
         #DeleteUserMainTable div.form-row input[type='password'] {
-            border: 1px solid;
+            border:1px solid;
         }
 
         #DeleteUserMainTable div.form-row.buttons {
-            margin-top: 20%;
-            padding: 0;
+            margin-top:20%;
+            padding:0;
         }
 
             #DeleteUserMainTable div.form-row.buttons * {
-                border: 1px solid black;
-                min-height: 100%;
-                float: right;
-                vertical-align: middle;
-                margin: 0 auto;
+                border:1px solid black;
+                min-height:100%;
+                float:right;
+                vertical-align:middle;
+                margin:0 auto;
             }
 
                 #DeleteUserMainTable div.form-row.buttons *:first-child {
-                    float: left;
+                    float:left;
                 }
 
 /* CREATEUSER.ASPX */
 /* I'm modifying this file to demo "specificity in redeveloping radgrid interface." (2/2/2016) */
 /* main table ID */
 #CreateUserGrid {
-    width: 100%;
+    width:100%;
 }
 
 /* telerik Panel */
 #MainPanel1 {
-    width: 100%;
+    width:100%;
 }
 
 /* panes div */
 #CreateUserPanes {
-    font-weight: bold;
-    font-size: small;
-    width: 100%;
-    background-color: whitesmoke;
-    text-align: left;
+    font-weight:bold;
+    font-size:small;
+    width:100%;
+    background-color:whitesmoke;
+    text-align:left;
 }
 
     /* top-level structure */
     #CreateUserPanes > div {
-        width: 50%;
-        float: left;
-        min-width: 350px;
+        width:50%;
+        float:left;
+        min-width:350px;
     }
 
         #CreateUserPanes > div.CredentialsPane {
-            width: 100%;
+            width:100%;
         }
 
 /* UserInformation Pane*/
 /* - SJH (3/12/2016) - modified Createuser.aspx styles starting from here */
 div.UserInformation #UserInfoPanel {
-    color: White;
-    background-color: #6363ce;
-    border-color: Silver;
-    border-width: 1px;
-    border-style: Solid;
-    width: 100%;
-    text-align: left;
+    color:White;
+    background-color:#6363ce;
+    border-color:Silver;
+    border-width:1px;
+    border-style:Solid;
+    width:100%;
+    text-align:left;
 }
 
 div.UserInformation #UserInfoTable {
-    display: table;
-    border-spacing: 2.5px;
-    width: 100%;
-    text-align: left;
+    display:table;
+    border-spacing:2.5px;
+    width:100%;
+    text-align:left;
 }
 
 div.UserInformation .td1 {
-    display: table-cell;
-    width: 120px;
-    height: 10px;
+    display:table-cell;
+    width:120px;
+    height:10px;
 }
 
 div.UserInformation .td2 {
-    display: table-cell;
-    width: 205px;
-    height: 10px;
+    display:table-cell;
+    width:205px;
+    height:10px;
 }
 
 div.UserInformation .td3 {
-    display: table-cell;
+    display:table-cell;
 }
 
 /* second div */
 #CreateUserPanesX > div.CreateUserValidationPaneX {
-    display: table;
-    width: 100%;
-    text-align: left;
-    vertical-align: middle;
-    padding-top: 1px;
-    padding-left: 1px;
-    border-spacing: 1px;
+    display:table;
+    width:100%;
+    text-align:left;
+    vertical-align:middle;
+    padding-top:1px;
+    padding-left:1px;
+    border-spacing:1px;
 }
 
 #CreateUserButtonsX {
-    display: table;
-    width: 100%;
-    text-align: left;
-    vertical-align: middle;
-    padding-top: 1px;
-    padding-left: 1px;
-    padding-right: 2px;
-    border-spacing: 1px;
+    display:table;
+    width:100%;
+    text-align:left;
+    vertical-align:middle;
+    padding-top:1px;
+    padding-left:1px;
+    padding-right:2px;
+    border-spacing:1px;
 }
 
 /* Used throughout
@@ -1029,78 +1029,78 @@ div.UserInformation .td3 {
     - SJH (3/10/16)
 */
 div.table {
-    display: table;
-    width: 100%;
+    display:table;
+    width:100%;
 }
 
 div.tr {
-    display: table-row;
-    width: 100%;
+    display:table-row;
+    width:100%;
 }
 
 div.trCenter {
-    display: table-row;
-    width: 100%;
-    text-align: center;
+    display:table-row;
+    width:100%;
+    text-align:center;
 }
 
 div.td {
-    display: table-cell;
-    text-align: left;
-    vertical-align: middle;
+    display:table-cell;
+    text-align:left;
+    vertical-align:middle;
 }
 
 div.tdHalf {
-    display: table-cell;
-    text-align: left;
-    vertical-align: middle;
-    width: 50%;
+    display:table-cell;
+    text-align:left;
+    vertical-align:middle;
+    width:50%;
 }
 
 div.tdCenter {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
 }
 
 div.tdRight {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
+    display:table-cell;
+    text-align:right;
+    vertical-align:middle;
 }
 
 div.tdCentered {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
 }
 
 div.right {
-    text-align: right;
+    text-align:right;
 }
 
 .EmptyRow3 {
-    display: table-row;
-    width: 100%;
-    height: 3px;
+    display:table-row;
+    width:100%;
+    height:3px;
 }
 
 .EmptyRow14 {
-    display: table-row;
-    width: 100%;
-    height: 14px;
+    display:table-row;
+    width:100%;
+    height:14px;
 }
 
 .EmptyRow15 {
-    display: table-row;
-    width: 100%;
-    height: 15px;
+    display:table-row;
+    width:100%;
+    height:15px;
 }
 
 .EmptyRow60 {
-    display: table-row;
-    width: 100%;
-    height: 60px;
+    display:table-row;
+    width:100%;
+    height:60px;
 }
 
 /* CreateUser.aspx
@@ -1108,17 +1108,17 @@ div.right {
     - SJH (3/12/16)
 */
 #CreateUserTable {
-    display: table;
-    width: 96%;
-    text-align: left;
-    vertical-align: middle;
-    padding-left: 2px;
-    border-spacing: 2px;
+    display:table;
+    width:96%;
+    text-align:left;
+    vertical-align:middle;
+    padding-left:2px;
+    border-spacing:2px;
 }
 
     #CreateUserTable div.tdRight {
-        display: table-cell;
-        text-align: right;
+        display:table-cell;
+        text-align:right;
     }
 
 /* EditGroupContacts.aspx
@@ -1126,17 +1126,17 @@ div.right {
     - SJH (3/12/16)
 */
 #EditGroupContactsTable {
-    display: table;
-    width: 96%;
-    text-align: left;
-    vertical-align: middle;
-    padding-left: 2px;
-    border-spacing: 2px;
+    display:table;
+    width:96%;
+    text-align:left;
+    vertical-align:middle;
+    padding-left:2px;
+    border-spacing:2px;
 }
 
     #EditGroupContactsTable div.tdRight {
-        display: table-cell;
-        text-align: right;
+        display:table-cell;
+        text-align:right;
     }
 
 /* LockUnlockInspections.aspx
@@ -1144,18 +1144,18 @@ div.right {
     - SJH (3/12/16)
 */
 #LockUnlockInsp > div.table {
-    display: table;
-    margin: auto;
-    width: 95%;
-    text-align: center;
-    vertical-align: middle;
-    /*height: 300px;*/
+    display:table;
+    margin:auto;
+    width:95%;
+    text-align:center;
+    vertical-align:middle;
+    /*height:300px;*/
 }
 
 #LockUnlockInsp .EmptyRow {
-    display: table-row;
-    text-align: center;
-    height: 70px;
+    display:table-row;
+    text-align:center;
+    height:70px;
 }
 
 /* ValidSummary.aspx
@@ -1163,49 +1163,49 @@ div.right {
     - SJH (3/12/16)
 */
 #ValidSummaryTable div.table {
-    display: table;
-    margin: auto;
-    width: 70%;
-    text-align: center;
-    vertical-align: middle;
-    height: 300px;
+    display:table;
+    margin:auto;
+    width:70%;
+    text-align:center;
+    vertical-align:middle;
+    height:300px;
 }
 
 #ValidSummaryTable div.LabelRow {
-    display: table-row;
-    -webkit-column-count: 2;
-    column-count: 2;
-    width: 100%;
-    height: 18px;
+    display:table-row;
+    -webkit-column-count:2;
+    column-count:2;
+    width:100%;
+    height:18px;
 }
 
 #ValidSummaryTable .td200 {
-    display: table-cell;
-    width: 100%;
-    vertical-align: bottom;
-    border-spacing: 0.1em 1.5em;
+    display:table-cell;
+    width:100%;
+    vertical-align:bottom;
+    border-spacing:0.1em 1.5em;
 }
 
 #ValidSummaryTable .td100 {
-    display: table-cell;
-    /*width: 100px;*/
-    text-align: center;
-    vertical-align: middle;
-    border-spacing: 0.1em 1.5em;
+    display:table-cell;
+    /*width:100px;*/
+    text-align:center;
+    vertical-align:middle;
+    border-spacing:0.1em 1.5em;
 }
 
 #ValidSummaryTable .td100Right {
-    display: table-cell;
-    /*width: 100px;*/
-    text-align: right;
-    vertical-align: middle;
-    border-spacing: 0.1em 1.5em;
+    display:table-cell;
+    /*width:100px;*/
+    text-align:right;
+    vertical-align:middle;
+    border-spacing:0.1em 1.5em;
 }
 
 #ValidSummaryTable .EmptyRow {
-    display: table-row;
-    width: 100%;
-    height: 5px;
+    display:table-row;
+    width:100%;
+    height:5px;
 }
 
 /* UploadDoc.aspx
@@ -1213,76 +1213,76 @@ div.right {
     - SJH (3/10/16)
 */
 #UploadDocMainTable {
-    display: table;
-    width: 100%;
-    border-spacing: 0.1em 0.1em;
+    display:table;
+    width:100%;
+    border-spacing:0.1em 0.1em;
 }
 
     #UploadDocMainTable div.tdContent {
-        display: table-cell;
-        padding-bottom: 5px;
+        display:table-cell;
+        padding-bottom:5px;
     }
 
     #UploadDocMainTable .tdLeft {
-        display: table-cell;
-        text-align: left;
-        vertical-align: middle;
-        border-spacing: 0.1em 1.5em;
+        display:table-cell;
+        text-align:left;
+        vertical-align:middle;
+        border-spacing:0.1em 1.5em;
     }
 
     #UploadDocMainTable .tdRight4 {
-        display: table-cell;
-        text-align: right;
-        vertical-align: middle;
-        padding-right: 4px;
+        display:table-cell;
+        text-align:right;
+        vertical-align:middle;
+        padding-right:4px;
     }
 
     #UploadDocMainTable div.FileUploader {
-        display: table-cell;
-        height: 300px;
+        display:table-cell;
+        height:300px;
     }
 
     #UploadDocMainTable div.Attention {
-        display: table-cell;
-        padding: 3px;
-        width: 100%;
-        background-color: #FFCC99;
+        display:table-cell;
+        padding:3px;
+        width:100%;
+        background-color:#FFCC99;
     }
 
 /*ARMarshall, ARM LLC - 20180923 - load-rating-panel Moved here fom UploadDoc.aspx*/
 /*.load-rating-panel {
-    width: 380px;
-    background-color: #DDDDDD;
+    width:380px;
+    background-color:#DDDDDD;
 }*/
 /* DownloadNBI2.aspx
 
     - SJH (3/6/16)
 */
 #DownloadNBI2MainTableDISABLED {
-    display: table;
-    text-align: left;
-    font-weight: bold;
-    width: 95%;
-    vertical-align: middle;
-    padding: 5px;
+    display:table;
+    text-align:left;
+    font-weight:bold;
+    width:95%;
+    vertical-align:middle;
+    padding:5px;
 }
 
     #DownloadNBI2MainTable .EmptyRow30 {
-        display: table-row;
-        height: 30px;
+        display:table-row;
+        height:30px;
     }
 
 #PW {
-    width: 100%;
-    color: midnightblue;
-    font-size: small;
+    width:100%;
+    color:midnightblue;
+    font-size:small;
 }
 
     #PW .td {
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
-        height: 300px;
+        display:table-cell;
+        text-align:center;
+        vertical-align:middle;
+        height:300px;
     }
 
 /* LogIn1.aspx
@@ -1290,85 +1290,85 @@ div.right {
     - SJH (3/13/16)
 */
 #mainZone-disabled {
-    margin: 0 auto;
-    background-color: cornsilk;
-    height: 100%;
+    margin:0 auto;
+    background-color:cornsilk;
+    height:100%;
 }
 
 #login-area {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: whitesmoke;
+    max-width:400px;
+    margin:0 auto;
+    background-color:whitesmoke;
 }
 
 #LoginPanel1 {
-    min-width: 350px;
-    min-height: 328px;
+    min-width:350px;
+    min-height:328px;
 }
 
 .LogInTable {
-    display: table;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    border-spacing: 2px;
-    font-size: small;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    color: darkblue;
+    display:table;
+    margin:auto;
+    text-align:center;
+    vertical-align:middle;
+    border-spacing:2px;
+    font-size:small;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color:darkblue;
 }
 
 .BadNewsSmall {
-    font-size: 12px;
-    color: red;
+    font-size:12px;
+    color:red;
 }
 
 .LogInTable .td {
-    display: table-cell;
-    text-align: left;
-    vertical-align: middle;
-    min-width: 60px;
-    font-size: smaller;
+    display:table-cell;
+    text-align:left;
+    vertical-align:middle;
+    min-width:60px;
+    font-size:smaller;
 }
 
 /* ValidationResults.aspx */
 /* ARMarshall, ARM LLC 20160425 - Extracted from Styles in ValidationResults.aspx and renamed.  This style is not used, though, AFAICT*/
 .ValidationResultsStyle1 {
-    display: inline-block;
-    height: 25px;
-    width: 115px;
-    /*font-family:  $base-font-family; //'Segoe UI', Arial, Helvetica, Verdana, sans-serif;*/
-    color: #669999;
-    text-decoration: none;
+    display:inline-block;
+    height:25px;
+    width:115px;
+    /*font-family: $base-font-family; //'Segoe UI', Arial, Helvetica, Verdana, sans-serif;*/
+    color:#669999;
+    text-decoration:none;
 }
 
 .Style1 {
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 .Style2 {
-    text-align: center;
-    height: 30px;
-    white-space: nowrap;
-    vertical-align: middle;
+    text-align:center;
+    height:30px;
+    white-space:nowrap;
+    vertical-align:middle;
 }
 
 .Style3 {
-    font-size: small;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: bottom;
+    font-size:small;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:bottom;
 }
 
 .Style4 {
-    font-size: 11px;
-    font-weight: bold;
-    white-space: nowrap;
-    text-align: center;
-    vertical-align: bottom;
+    font-size:11px;
+    font-weight:bold;
+    white-space:nowrap;
+    text-align:center;
+    vertical-align:bottom;
 }
 
 /* Expiration.aspx
@@ -1376,19 +1376,19 @@ div.right {
     - SJH (3/13/16)
 */
 #ExpirationTable {
-    display: table;
-    margin: auto;
-    text-align: center;
-    width: 350px;
-    height: 2em;
-    vertical-align: middle;
+    display:table;
+    margin:auto;
+    text-align:center;
+    width:350px;
+    height:2em;
+    vertical-align:middle;
 }
 
     #ExpirationTable .caption {
-        display: table-caption;
-        text-align: center;
-        padding-top: 2em;
-        padding-bottom: 2em;
+        display:table-caption;
+        text-align:center;
+        padding-top:2em;
+        padding-bottom:2em;
     }
 
 /* Error.aspx
@@ -1396,32 +1396,32 @@ div.right {
     - SJH (3/13/16)
 */
 #ErrorMainDiv {
-    border-spacing: 4px;
-    width: 100%;
+    border-spacing:4px;
+    width:100%;
 }
 
 #ErrorLabelTable {
-    display: table;
-    text-align: center;
-    width: 95%;
-    height: 2em;
-    vertical-align: middle;
-    border-spacing: 4px;
-    color: red;
-    font-size: 12px;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding: 10px;
+    display:table;
+    text-align:center;
+    width:95%;
+    height:2em;
+    vertical-align:middle;
+    border-spacing:4px;
+    color:red;
+    font-size:12px;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    padding:10px;
 }
 
 .ErrorDataListStyle {
     /* CSS style for the DataList in Error.aspx - not being used */
-    width: 100%;
-    color: #333333;
-    background-color: Red;
-    border: 5px solid red;
-    border-spacing: 20px;
-    padding: 20px;
+    width:100%;
+    color:#333333;
+    background-color:Red;
+    border:5px solid red;
+    border-spacing:20px;
+    padding:20px;
 }
 
 /* PrintSR.aspx
@@ -1429,57 +1429,57 @@ div.right {
     - SJH (3/14/16)
 */
 .PrintSRTable {
-    display: table;
-    width: 760px;
-    height: 30px;
-    padding: 4px;
-    font: bold 10pt Arial, Verdana, Sans-serif;
-    color: black;
+    display:table;
+    width:760px;
+    height:30px;
+    padding:4px;
+    font:bold 10pt Arial, Verdana, Sans-serif;
+    color:black;
 }
 
 .td5 {
-    text-align: center;
-    width: 5px;
+    text-align:center;
+    width:5px;
 }
 
 .td30 {
-    text-align: center;
-    width: 30px;
+    text-align:center;
+    width:30px;
 }
 
 .td50 {
-    text-align: center;
-    width: 50px;
+    text-align:center;
+    width:50px;
 }
 
 .td70 {
-    text-align: left;
-    width: 70px;
+    text-align:left;
+    width:70px;
 }
 
 .td100 {
-    text-align: left;
-    width: 100px;
+    text-align:left;
+    width:100px;
 }
 
 .td100C {
-    text-align: center;
-    width: 100px;
+    text-align:center;
+    width:100px;
 }
 
 .td130 {
-    text-align: right;
-    width: 130px;
+    text-align:right;
+    width:130px;
 }
 
 .td140 {
-    text-align: left;
-    width: 130px;
+    text-align:left;
+    width:130px;
 }
 
 .td160 {
-    text-align: left;
-    width: 160px;
+    text-align:left;
+    width:160px;
 }
 
 /* CalculateSR.aspx
@@ -1488,44 +1488,44 @@ div.right {
     - ARM (4/29/17 - updated name from CalSRTable to CalcSRTable )
 */
 .CalcSRTable-disabled {
-    width: 100%;
-    padding: 0;
-    border: 0;
-    font-weight: bold;
-    text-align: center;
+    width:100%;
+    padding:0;
+    border:0;
+    font-weight:bold;
+    text-align:center;
 }
 
 .CalculateSRHeader-disabled {
-    display: table;
-    width: 810px;
-    padding: 3px;
-    font-weight: bold;
+    display:table;
+    width:810px;
+    padding:3px;
+    font-weight:bold;
 }
 
 .CalculateSRButtons-disabled {
-    display: table;
-    width: 100%;
-    padding-bottom: 5px;
+    display:table;
+    width:100%;
+    padding-bottom:5px;
 }
 
     .CalculateSRButtons-disabled div:nth-child(1) {
-        text-align: center;
+        text-align:center;
     }
 
 
 .CalcSRTableBoldLabel-disabled {
-    display: table;
-    width: 99%;
-    font-weight: bold;
-    padding: 3px;
-    vertical-align: top;
+    display:table;
+    width:99%;
+    font-weight:bold;
+    padding:3px;
+    vertical-align:top;
 }
 
 .UpdateSRTableBoldLabel-disabled {
-    display: table;
-    width: 98%;
-    font-weight: bold;
-    padding: 2px;
+    display:table;
+    width:98%;
+    font-weight:bold;
+    padding:2px;
 }
 
 /* SessionSummary.aspx
@@ -1533,22 +1533,22 @@ div.right {
     - SJH (3/17/16)
 */
 .SessionSummaryTable {
-    display: table;
-    width: 500px;
-    height: 250px;
-    padding: 2px;
-    border-spacing: 2px;
+    display:table;
+    width:500px;
+    height:250px;
+    padding:2px;
+    border-spacing:2px;
 }
 
 .tc70per {
-    display: table-cell;
-    width: 70%;
+    display:table-cell;
+    width:70%;
 }
 
 .tc30per {
-    display: table-cell;
-    text-align: left;
-    width: 30%;
+    display:table-cell;
+    text-align:left;
+    width:30%;
 }
 
 /* LogOffUC.ascx
@@ -1556,14 +1556,14 @@ div.right {
     - SJH (3/17/16)
 */
 .LogOffUCTable {
-    display: table;
-    width: 480px;
-    margin: auto;
-    vertical-align: middle;
-    padding: 10px;
-    border-spacing: 20px;
-    border-radius: 5px;
-    border: 1px solid #6684A3;
+    display:table;
+    width:480px;
+    margin:auto;
+    vertical-align:middle;
+    padding:10px;
+    border-spacing:20px;
+    border-radius:5px;
+    border:1px solid #6684A3;
 }
 
 /* Used in LogOffUC.ascx and LogInErrorPane.aspx
@@ -1571,11 +1571,11 @@ div.right {
     - SJH (3/17/16)
 */
 .LogInOffLinksTable {
-    display: table;
-    width: 100%;
-    padding: 0;
-    border-spacing: 0;
-    font-weight: bold;
+    display:table;
+    width:100%;
+    padding:0;
+    border-spacing:0;
+    font-weight:bold;
 }
 
 /* WUCArrearsReport2.ascx
@@ -1583,36 +1583,36 @@ div.right {
     - SJH (3/17/16)
 */
 .WUCArrearsRpt {
-    display: table;
-    width: 99%;
+    display:table;
+    width:99%;
     /* to compensate for padding */
-    padding: 2px;
+    padding:2px;
 }
 
 .WUCArrearsRptTable-DISABLED {
-    display: table;
-    width: 99%;
-    border: 1px solid black;
-    border-style: solid;
+    display:table;
+    width:99%;
+    border:1px solid black;
+    border-style:solid;
 }
 
 .tdArrRptBlackDISABLED {
-    display: table-cell;
-    vertical-align: middle;
-    border-spacing: 0;
-    height: 20px;
-    background: black;
-    font-weight: bold;
-    color: white;
+    display:table-cell;
+    vertical-align:middle;
+    border-spacing:0;
+    height:20px;
+    background:black;
+    font-weight:bold;
+    color:white;
 }
 
 .tdArrRptDISABLED {
-    display: table-cell;
-    vertical-align: middle;
-    border-spacing: 0;
-    height: 30px;
-    border-right: 1px solid black;
-    padding-left: 3px;
+    display:table-cell;
+    vertical-align:middle;
+    border-spacing:0;
+    height:30px;
+    border-right:1px solid black;
+    padding-left:3px;
 }
 
 /* SIAReportList.aspx
@@ -1620,12 +1620,12 @@ div.right {
     - SJH (3/17/16)
 */
 .SIARptTable {
-    display: table;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    height: 300px;
+    display:table;
+    width:100%;
+    margin:auto;
+    text-align:center;
+    vertical-align:middle;
+    height:300px;
 }
 
 /* RepGrid.aspx
@@ -1633,7 +1633,7 @@ div.right {
     - SJH (3/18/16)
 */
 .RepGrid {
-    width: 99%;
+    width:99%;
 }
 
 /* DocViewer.aspx
@@ -1641,103 +1641,103 @@ div.right {
     - SJH (3/18/16)
 */
 .DocViewerTable {
-    display: table;
-    width: 530px;
-    padding: 2px;
+    display:table;
+    width:530px;
+    padding:2px;
 }
 
 /* used on LoadRatingDataEntry.ascx*/
 .DataEntryPanelTable {
-    display: table;
-    width: 100%;
-    border: none;
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 98%;
+    display:table;
+    width:100%;
+    border:none;
+    border-collapse:collapse;
+    border-spacing:0;
+    width:98%;
 }
 
 .DataEntryPanelBackground {
-    background-color: #F9F6DD;
+    background-color:#F9F6DD;
 }
 
 .DataEntryPanelSpaces {
-    border-spacing: 2px;
+    border-spacing:2px;
 }
 
 *.FormSectionHeadings {
-    /*text-decoration: underline; */
-    border-bottom: 2px solid black;
-    border-collapse: collapse;
-    text-align: left;
-    font-weight: bold;
+    /*text-decoration:underline; */
+    border-bottom:2px solid black;
+    border-collapse:collapse;
+    text-align:left;
+    font-weight:bold;
 }
 
 *.FormFieldLabels {
-    /*text-decoration: underline; */
-    border: none;
-    width: 15%;
-    -ms-text-overflow: clip;
-    text-overflow: clip;
-    text-align: left;
-    vertical-align: middle;
-    font-weight: bold;
-    margin: 0;
+    /*text-decoration:underline; */
+    border:none;
+    width:15%;
+    -ms-text-overflow:clip;
+    text-overflow:clip;
+    text-align:left;
+    vertical-align:middle;
+    font-weight:bold;
+    margin:0;
 }
 
 *.FormTextBox {
-    text-overflow: ellipsis;
+    text-overflow:ellipsis;
 }
 
 table.ImctlTable1,
 table.ImctlTable2 {
-    border: none;
-    border-collapse: collapse;
+    border:none;
+    border-collapse:collapse;
 }
 
 table.ImctlTable2 {
-    width: 100%;
+    width:100%;
 }
 
 td.ImctlTd2 {
-    white-space: nowrap;
-    vertical-align: top;
+    white-space:nowrap;
+    vertical-align:top;
 }
 
 td.ImctlTd3 {
-    text-align: left;
+    text-align:left;
 }
 
 body,
 html {
-    font-size: 1em;
+    font-size:1em;
 }
 
 .label,
 .label--left,
 .label--center,
 .label--right {
-    font-weight: bold;
+    font-weight:bold;
 }
 
 .label {
-    text-align: initial;
+    text-align:initial;
 }
 
 .label--left {
-    text-align: left;
+    text-align:left;
 }
 
 .label--center {
-    text-align: center;
+    text-align:center;
 }
 
 .label--right {
-    text-align: right;
+    text-align:right;
 }
 
 .hoverable {
-    background-color: rgba(0, 0, 51, 0.1);
-    cursor: pointer;
+    background-color:rgba(0, 0, 51, 0.1);
+    cursor:pointer;
 }
 
 .flex-parent,
@@ -2251,15 +2251,15 @@ html {
 .delete-bridge-form__panel,
 .delete-bridge-form__row,
 .table-row {
-    /*display: -webkit-box;*/
-    /* display: -ms-flexbox;*/
-    display: flex;
-    /* -ms-flex-wrap: wrap;*/
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+    /*display:-webkit-box;*/
+    /* display:-ms-flexbox;*/
+    display:flex;
+    /* -ms-flex-wrap:wrap;*/
+    -moz-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    -o-flex-wrap:wrap;
+    -webkit-flex-wrap:wrap;
+    flex-wrap:wrap;
 }
 
     .flex-child,
@@ -2766,14 +2766,14 @@ html {
     .lbis-form__column,
     .load-rating-form__label-lock,
     .lbis-form__label-lock {
-        -ms-flex-basis: 50%;
-        /*  -ms-flex-preferred-size: 50%; */
-        flex-basis: 50%;
-        -moz-flex-grow: 1;
-        -ms-flex-grow: 1;
-        /*-webkit-box-flex: 1;*/
-        /* -ms-flex-positive: 1;*/
-        flex-grow: 1;
+        -ms-flex-basis:50%;
+        /*  -ms-flex-preferred-size:50%; */
+        flex-basis:50%;
+        -moz-flex-grow:1;
+        -ms-flex-grow:1;
+        /*-webkit-box-flex:1;*/
+        /* -ms-flex-positive:1;*/
+        flex-grow:1;
     }
 
         .cell,
@@ -3239,11 +3239,11 @@ html {
         .lbis-form__pen-image,
         .load-rating-form__lock-image,
         .lbis-form__lock-image {
-            -moz-justify-content: flex-start;
-            -ms-justify-content: flex-start;
-            /*-webkit-box-pack: start;*/
-            justify-content: flex-start;
-            /*  -ms-flex-pack: start;*/
+            -moz-justify-content:flex-start;
+            -ms-justify-content:flex-start;
+            /*-webkit-box-pack:start;*/
+            justify-content:flex-start;
+            /*  -ms-flex-pack:start;*/
         }
 
             .cell-5,
@@ -3268,32 +3268,32 @@ html {
             .lbis-form__cell.pct-5,
             .lbis-form__label-cell.pct-5,
             .lbis-form__column-heading.pct-5 {
-                -ms-flex-basis: 5%;
-                /*  -ms-flex-preferred-size: 5%; */
-                flex-basis: 5%;
-                /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+                -ms-flex-basis:5%;
+                /*  -ms-flex-preferred-size:5%; */
+                flex-basis:5%;
+                /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
             }
 
 .cell-5--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*-webkit-box-pack: center;*/
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*-webkit-box-pack:center;*/
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-5--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-10,
@@ -3318,32 +3318,32 @@ html {
 .lbis-form__cell.pct-10,
 .lbis-form__label-cell.pct-10,
 .lbis-form__column-heading.pct-10 {
-    -ms-flex-basis: 10%;
-    /*  -ms-flex-preferred-size: 10%; */
-    flex-basis: 10%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:10%;
+    /*  -ms-flex-preferred-size:10%; */
+    flex-basis:10%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-10--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*-webkit-box-pack: center;*/
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*-webkit-box-pack:center;*/
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-10--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-15,
@@ -3368,32 +3368,32 @@ html {
 .lbis-form__cell.pct-15,
 .lbis-form__label-cell.pct-15,
 .lbis-form__column-heading.pct-15 {
-    -ms-flex-basis: 15%;
-    /*  -ms-flex-preferred-size: 15%; */
-    flex-basis: 15%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:15%;
+    /*  -ms-flex-preferred-size:15%; */
+    flex-basis:15%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-15--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*-webkit-box-pack: center;*/
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*-webkit-box-pack:center;*/
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-15--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-20,
@@ -3418,32 +3418,32 @@ html {
 .lbis-form__cell.pct-20,
 .lbis-form__label-cell.pct-20,
 .lbis-form__column-heading.pct-20 {
-    -ms-flex-basis: 20%;
-    /*  -ms-flex-preferred-size: 20%; */
-    flex-basis: 20%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:20%;
+    /*  -ms-flex-preferred-size:20%; */
+    flex-basis:20%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-20--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*-webkit-box-pack: center;*/
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*-webkit-box-pack:center;*/
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-20--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-25,
@@ -3468,32 +3468,32 @@ html {
 .lbis-form__cell.pct-25,
 .lbis-form__label-cell.pct-25,
 .lbis-form__column-heading.pct-25 {
-    -ms-flex-basis: 25%;
-    /*  -ms-flex-preferred-size: 25%; */
-    flex-basis: 25%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:25%;
+    /*  -ms-flex-preferred-size:25%; */
+    flex-basis:25%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-25--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*-webkit-box-pack: center;*/
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*-webkit-box-pack:center;*/
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-25--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-30,
@@ -3518,32 +3518,32 @@ html {
 .lbis-form__cell.pct-30,
 .lbis-form__label-cell.pct-30,
 .lbis-form__column-heading.pct-30 {
-    -ms-flex-basis: 30%;
-    /*  -ms-flex-preferred-size: 30%; */
-    flex-basis: 30%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:30%;
+    /*  -ms-flex-preferred-size:30%; */
+    flex-basis:30%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-30--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*-webkit-box-pack: center;*/
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*-webkit-box-pack:center;*/
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-30--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-35,
@@ -3568,32 +3568,32 @@ html {
 .lbis-form__cell.pct-35,
 .lbis-form__label-cell.pct-35,
 .lbis-form__column-heading.pct-35 {
-    -ms-flex-basis: 35%;
-    /*  -ms-flex-preferred-size: 35%; */
-    flex-basis: 35%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:35%;
+    /*  -ms-flex-preferred-size:35%; */
+    flex-basis:35%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-35--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-35--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-40,
@@ -3618,38 +3618,38 @@ html {
 .lbis-form__cell.pct-40,
 .lbis-form__label-cell.pct-40,
 .lbis-form__column-heading.pct-40 {
-    -ms-flex-basis: 40%;
-    /*  -ms-flex-preferred-size: 40%; */
-    -o-flex-basis: 40%;
-    -webkit-flex-basis: 40%;
-    flex-basis: 40%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:40%;
+    /*  -ms-flex-preferred-size:40%; */
+    -o-flex-basis:40%;
+    -webkit-flex-basis:40%;
+    flex-basis:40%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-40--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    -o-justify-content: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    -o-justify-content:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-40--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    -o-justify-content: flex-end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    -o-justify-content:flex-end;
+    -webkit-justify-content:flex-end;
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-45,
@@ -3674,32 +3674,32 @@ html {
 .lbis-form__cell.pct-45,
 .lbis-form__label-cell.pct-45,
 .lbis-form__column-heading.pct-45 {
-    -ms-flex-basis: 45%;
-    /*  -ms-flex-preferred-size: 45%; */
-    flex-basis: 45%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:45%;
+    /*  -ms-flex-preferred-size:45%; */
+    flex-basis:45%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-45--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-45--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-50,
@@ -3724,32 +3724,32 @@ html {
 .lbis-form__cell.pct-50,
 .lbis-form__label-cell.pct-50,
 .lbis-form__column-heading.pct-50 {
-    -ms-flex-basis: 50%;
-    /*  -ms-flex-preferred-size: 50%; */
-    flex-basis: 50%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:50%;
+    /*  -ms-flex-preferred-size:50%; */
+    flex-basis:50%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-50--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-50--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-55,
@@ -3774,32 +3774,32 @@ html {
 .lbis-form__cell.pct-55,
 .lbis-form__label-cell.pct-55,
 .lbis-form__column-heading.pct-55 {
-    -ms-flex-basis: 55%;
-    /*  -ms-flex-preferred-size: 55%; */
-    flex-basis: 55%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:55%;
+    /*  -ms-flex-preferred-size:55%; */
+    flex-basis:55%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-55--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-55--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-60,
@@ -3824,36 +3824,36 @@ html {
 .lbis-form__cell.pct-60,
 .lbis-form__label-cell.pct-60,
 .lbis-form__column-heading.pct-60 {
-    -ms-flex-basis: 60%;
-    /*  -ms-flex-preferred-size: 60%; */
-    -o-flex-basis: 60%;
-    -webkit-flex-basis: 60%;
-    flex-basis: 60%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:60%;
+    /*  -ms-flex-preferred-size:60%; */
+    -o-flex-basis:60%;
+    -webkit-flex-basis:60%;
+    flex-basis:60%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-60--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-60--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    -o-justify-content: flex-end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    -o-justify-content:flex-end;
+    -webkit-justify-content:flex-end;
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-65,
@@ -3878,36 +3878,36 @@ html {
 .lbis-form__cell.pct-65,
 .lbis-form__label-cell.pct-65,
 .lbis-form__column-heading.pct-65 {
-    -ms-flex-basis: 65%;
-    /*  -ms-flex-preferred-size: 65%; */
-    flex-basis: 65%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:65%;
+    /*  -ms-flex-preferred-size:65%; */
+    flex-basis:65%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-65--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    -o-justify-content: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    -o-justify-content:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-65--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    -o-justify-content: flex-end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    -o-justify-content:flex-end;
+    -webkit-justify-content:flex-end;
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-70,
@@ -3932,32 +3932,32 @@ html {
 .lbis-form__cell.pct-70,
 .lbis-form__label-cell.pct-70,
 .lbis-form__column-heading.pct-70 {
-    -ms-flex-basis: 70%;
-    /*  -ms-flex-preferred-size: 70%; */
-    flex-basis: 70%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:70%;
+    /*  -ms-flex-preferred-size:70%; */
+    flex-basis:70%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-70--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-70--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-75,
@@ -3982,32 +3982,32 @@ html {
 .lbis-form__cell.pct-75,
 .lbis-form__label-cell.pct-75,
 .lbis-form__column-heading.pct-75 {
-    -ms-flex-basis: 75%;
-    /*  -ms-flex-preferred-size: 75%; */
-    flex-basis: 75%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:75%;
+    /*  -ms-flex-preferred-size:75%; */
+    flex-basis:75%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-75--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-75--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-80,
@@ -4032,32 +4032,32 @@ html {
 .lbis-form__cell.pct-80,
 .lbis-form__label-cell.pct-80,
 .lbis-form__column-heading.pct-80 {
-    -ms-flex-basis: 80%;
-    /*  -ms-flex-preferred-size: 80%; */
-    flex-basis: 80%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:80%;
+    /*  -ms-flex-preferred-size:80%; */
+    flex-basis:80%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-80--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-80--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-85,
@@ -4082,32 +4082,32 @@ html {
 .lbis-form__cell.pct-85,
 .lbis-form__label-cell.pct-85,
 .lbis-form__column-heading.pct-85 {
-    -ms-flex-basis: 85%;
-    /*  -ms-flex-preferred-size: 85%; */
-    flex-basis: 85%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:85%;
+    /*  -ms-flex-preferred-size:85%; */
+    flex-basis:85%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-85--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-85--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-90,
@@ -4132,32 +4132,32 @@ html {
 .lbis-form__cell.pct-90,
 .lbis-form__label-cell.pct-90,
 .lbis-form__column-heading.pct-90 {
-    -ms-flex-basis: 90%;
-    /*  -ms-flex-preferred-size: 90%; */
-    flex-basis: 90%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:90%;
+    /*  -ms-flex-preferred-size:90%; */
+    flex-basis:90%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-90--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-90--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-95,
@@ -4182,32 +4182,32 @@ html {
 .lbis-form__cell.pct-95,
 .lbis-form__label-cell.pct-95,
 .lbis-form__column-heading.pct-95 {
-    -ms-flex-basis: 95%;
-    /*  -ms-flex-preferred-size: 95%; */
-    flex-basis: 95%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:95%;
+    /*  -ms-flex-preferred-size:95%; */
+    flex-basis:95%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-95--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-95--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .cell-100,
@@ -4232,32 +4232,32 @@ html {
 .lbis-form__cell.pct-100,
 .lbis-form__label-cell.pct-100,
 .lbis-form__column-heading.pct-100 {
-    -ms-flex-basis: 100%;
-    /*  -ms-flex-preferred-size: 100%; */
-    flex-basis: 100%;
-    /*-webkit-flex-basis: $flex-size;
-            -moz-flex-basis: $flex-size;
-            flex-basis: $flex-size;*/
+    -ms-flex-basis:100%;
+    /*  -ms-flex-preferred-size:100%; */
+    flex-basis:100%;
+    /*-webkit-flex-basis:$flex-size;
+            -moz-flex-basis:$flex-size;
+            flex-basis:$flex-size;*/
 }
 
 .cell-100--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    /*-webkit-justify-content: center;
-            justify-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    /*-webkit-justify-content:center;
+            justify-content:center;*/
 }
 
 .cell-100--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    /*-webkit-justify-content: flex-end;
-            justify-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    /*-webkit-justify-content:flex-end;
+            justify-content:flex-end;*/
 }
 
 .root-container,
@@ -4266,63 +4266,63 @@ html {
 .delete-bridge-form,
 .delete-bridge-form__panel,
 .delete-bridge-form__row {
-    width: 98%;
-    height: 100%;
+    width:98%;
+    height:100%;
 }
 
 .container {
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    padding: 0.1%;
-    width: 100%;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    padding:0.1%;
+    width:100%;
 }
 
 .table-wrapper {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    padding: 0;
-    margin: 0;
+    width:100%;
+    height:100%;
+    border:0;
+    padding:0;
+    margin:0;
 }
 
 .table-wrapper__main-div {
-    margin: 1px;
-    border: 1px solid currentColor;
-    /*-o-border-image: none; */
-    border-image: none;
-    padding: 5px;
-    vertical-align: top;
-    background-color: #f9f6dd;
+    margin:1px;
+    border:1px solid currentColor;
+    /*-o-border-image:none; */
+    border-image:none;
+    padding:5px;
+    vertical-align:top;
+    background-color:#f9f6dd;
 }
 
 /*.table-grid {
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  grid-gap: 2% 2%;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr); */
-/* -webkit-box-align: stretch; */
-/*-ms-flex-align: stretch;
-          align-items: stretch;
-   -ms-flex-line-pack: justify; 
-      align-content: space-between; */
-/* -webkit-box-pack: justify; */
-/*  -ms-flex-pack: justify; 
-          justify-content: space-between;
+  display:-ms-grid;
+  display:grid;
+  width:100%;
+  grid-gap:2% 2%;
+  -ms-grid-columns:(1fr)[2];
+      grid-template-columns:repeat(2, 1fr); */
+/* -webkit-box-align:stretch; */
+/*-ms-flex-align:stretch;
+          align-items:stretch;
+   -ms-flex-line-pack:justify; 
+      align-content:space-between; */
+/* -webkit-box-pack:justify; */
+/*  -ms-flex-pack:justify; 
+          justify-content:space-between;
 }*/
 
-/*@media (min-width: 700px) {
+/*@media (min-width:700px) {
   .table-grid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns:(1fr)[3];
+        grid-template-columns:repeat(3, 1fr);
   }
 }*/
 
 /*
-@media (min-width: 900px) {
+@media (min-width:900px) {
   .table-grid {
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-columns:(1fr)[6];
+        grid-template-columns:repeat(6, 1fr);
   }
 }*/
 
@@ -4335,27 +4335,27 @@ html {
 .lbis-form .full-width-text-row--right,
 .load-rating-form .full-width-text-row--justify,
 .lbis-form .full-width-text-row--justify {
-    padding-top: 2%;
-    /*  -ms-flex-preferred-size: 100%; */
-    -webkit-flex-basis: 100%;
-    flex-basis: 100%;
-    text-align: center;
+    padding-top:2%;
+    /*  -ms-flex-preferred-size:100%; */
+    -webkit-flex-basis:100%;
+    flex-basis:100%;
+    text-align:center;
 }
 
 .required-field,
 .hidden-required-field {
-    color: red;
+    color:red;
 }
 
 .hidden-required-field {
-    display: none;
+    display:none;
 }
 
 .tooltip-question-mark {
-    padding: 0;
-    background: url("img/question-small.gif") no-repeat 0 0;
-    height: 12px;
-    width: 12px;
+    padding:0;
+    background:url("img/question-small.gif") no-repeat 0 0;
+    height:12px;
+    width:12px;
 }
 
 
@@ -4363,115 +4363,115 @@ html {
 .notes-edit-button,
 .notes-edit-button__icon,
 .notes-edit-button__icon--small {
-    padding: 0;
-    color: inherit;
-    background: url("img/editor.gif") no-repeat center center;
-    border: 1px solid lightgray;
-    margin-left: 4px;
-    cursor: pointer;
+    padding:0;
+    color:inherit;
+    background:url("img/editor.gif") no-repeat center center;
+    border:1px solid lightgray;
+    margin-left:4px;
+    cursor:pointer;
 }
 
 .notes-edit-button__icon,
 .notes-edit-button__icon--small {
-    position: relative;
-    vertical-align: top;
+    position:relative;
+    vertical-align:top;
 }
 
 .notes-edit-button,
 .notes-edit-button__icon {
-    width: 22px;
-    height: 22px;
+    width:22px;
+    height:22px;
 }
 
 .notes-edit-button__icon--small {
-    position: relative;
-    vertical-align: top;
-    height: 16px;
-    width: 16px;
+    position:relative;
+    vertical-align:top;
+    height:16px;
+    width:16px;
 }
 
-/* .notestextboxarea: used in NotesEditingPanel.ascx */
+/* .notestextboxarea:used in NotesEditingPanel.ascx */
 .notestextboxareaDISABLED {
-    background-color: cornsilk !important;
-    resize: both;
-    margin: 5px;
-    text-align: left;
-    vertical-align: top;
-    padding-right: 5px;
+    background-color:cornsilk !important;
+    resize:both;
+    margin:5px;
+    text-align:left;
+    vertical-align:top;
+    padding-right:5px;
 }
 
-/* .Notes-Button-Image, .Notes-Button-Pressed-Image, .Notes-Button-Hovered-Image: used in NotesEditingPanel.ascx */
+/* .Notes-Button-Image, .Notes-Button-Pressed-Image, .Notes-Button-Hovered-Image:used in NotesEditingPanel.ascx */
 .Notes-Button-Image {
-    background: url("img/editor.gif") no-repeat 0 0;
-    width: 22px;
-    height: 22px;
-    top: 0;
-    left: 0;
+    background:url("img/editor.gif") no-repeat 0 0;
+    width:22px;
+    height:22px;
+    top:0;
+    left:0;
 }
 
 .Notes-Button-Hovered-Image {
-    background: url("img/editor.gif") no-repeat 0 -90px;
-    /*width: 16px;
-    height: 16px;*/
+    background:url("img/editor.gif") no-repeat 0 -90px;
+    /*width:16px;
+    height:16px;*/
 }
 
 .Notes-Button-Pressed-Image {
-    background: url("img/editor.gif") no-repeat 0 -180px;
-    /*width: 16px;
-    height: 16px;*/
+    background:url("img/editor.gif") no-repeat 0 -180px;
+    /*width:16px;
+    height:16px;*/
 }
 
 .bolded {
-    font-weight: bold;
+    font-weight:bold;
 }
 
 .create-bridge-form {
-    background-color: whitesmoke;
+    background-color:whitesmoke;
 }
 
 .notes-editing-panel {
-    background-color: cornsilk;
+    background-color:cornsilk;
 }
 
 .create-user-panels {
-    background-color: #003366;
-    Border-Style: solid;
-    Border-Color: silver;
-    Border-Width: 1px;
+    background-color:#003366;
+    Border-Style:solid;
+    Border-Color:silver;
+    Border-Width:1px;
 }
 
 .create-user-form {
-    background-color: whitesmoke;
-    border-style: None;
-    Background-Color: whitesmoke;
-    Color: Black;
-    Border-Color: silver;
+    background-color:whitesmoke;
+    border-style:None;
+    Background-Color:whitesmoke;
+    Color:Black;
+    Border-Color:silver;
     /*desktop;  do not use system colors as of CSS3 */
-    Border-width: 1px;
+    Border-width:1px;
 }
 
 .credentials-panelx {
-    height: 300px;
-    width: 100%;
+    height:300px;
+    width:100%;
 }
 
 .credential-detail-formx {
-    height: 230px;
+    height:230px;
 }
 
 .credentials-detail-form-action-button {
-    height: 18px;
-    width: 18px;
+    height:18px;
+    width:18px;
 }
 
 label.UserInformationTableHeader {
-    color: white;
-    background-color: #003366;
+    color:white;
+    background-color:#003366;
 }
 
 body,
 html {
-    font-size: 0.9em;
+    font-size:0.9em;
 }
 
 /*.load-rating-form, .lbis-form {*/
@@ -4486,101 +4486,101 @@ html {
 .load-rating-form__panel--data-columns,
 .lbis-form__panel--data-columns,
 .lbis-form__panel {
-    /*  -webkit-box-flex: 0; */
-    /* -webkit-box-orient: vertical;*/
-    /* webkit-box-direction: normal;*/
-    /* -webkit-box-align: start;*/
-    -webkit-flex-flow: column nowrap;
-    /*-webkit-flex: 0; */
-    /*   -webkit-box-pack: start; */
+    /*  -webkit-box-flex:0; */
+    /* -webkit-box-orient:vertical;*/
+    /* webkit-box-direction:normal;*/
+    /* -webkit-box-align:start;*/
+    -webkit-flex-flow:column nowrap;
+    /*-webkit-flex:0; */
+    /*   -webkit-box-pack:start; */
     /* this used to be column initial*/
-    /* -webkit-box-align: start;*/
-    -moz-justify-content: flex-start;
-    -ms-justify-content: flex-start;
-    -moz-align-items: flex-start;
-    /*-ms-flex: 1 0 98%;*/
-    /* -ms-flex-flow: column nowrap; */
-    /*  -ms-flex-pack: start;*/
-    -ms-align-items: flex-start;
-    -ms-align-content: space-between;
-    /*-ms-flex-line-pack: justify;*/
-    /*-ms-flex-align: start;*/
-    flex: 0 0 98%;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: space-between;
+    /* -webkit-box-align:start;*/
+    -moz-justify-content:flex-start;
+    -ms-justify-content:flex-start;
+    -moz-align-items:flex-start;
+    /*-ms-flex:1 0 98%;*/
+    /* -ms-flex-flow:column nowrap; */
+    /*  -ms-flex-pack:start;*/
+    -ms-align-items:flex-start;
+    -ms-align-content:space-between;
+    /*-ms-flex-line-pack:justify;*/
+    /*-ms-flex-align:start;*/
+    flex:0 0 98%;
+    flex-flow:column nowrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+    align-content:space-between;
 }
 
 .load-rating-form__panel--edit-permissions,
 .lbis-form__panel--edit-permissions {
-    /* -webkit-box-orient: horizontal; */
-    /* webkit-box-direction: normal;*/
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
+    /* -webkit-box-orient:horizontal; */
+    /* webkit-box-direction:normal;*/
+    -webkit-flex-flow:row wrap;
+    -ms-flex-flow:row wrap;
+    flex-flow:row wrap;
 }
 
 .load-rating-form__panel--data-columns,
 .lbis-form__panel--data-columns {
-    /*-webkit-box-flex: 1;*/
-    /* -webkit-box-orient: horizontal; */
-    /* webkit-box-direction: normal;*/
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    /* -ms-flex-positive: 1;*/
-    flex-grow: 1;
-    /* -ms-flex-negative: 1;*/
-    flex-shrink: 1;
+    /*-webkit-box-flex:1;*/
+    /* -webkit-box-orient:horizontal; */
+    /* webkit-box-direction:normal;*/
+    -webkit-flex-flow:row wrap;
+    -ms-flex-flow:row wrap;
+    flex-flow:row wrap;
+    /* -ms-flex-positive:1;*/
+    flex-grow:1;
+    /* -ms-flex-negative:1;*/
+    flex-shrink:1;
 }
 
 .load-rating-form__panel-heading,
 .lbis-form__panel-heading {
-    /*  -ms-flex-preferred-size: 100%; */
-    flex-basis: 100%;
-    font-weight: bold;
-    border-bottom: 1px solid black;
-    font-size: 1.2em;
-    padding-top: 3%;
-    padding-bottom: 0;
+    /*  -ms-flex-preferred-size:100%; */
+    flex-basis:100%;
+    font-weight:bold;
+    border-bottom:1px solid black;
+    font-size:1.2em;
+    padding-top:3%;
+    padding-bottom:0;
 }
 
 .load-rating-form__section-heading,
 .lbis-form__section-heading {
-    font-size: 1em;
-    /*  -ms-flex-preferred-size: 40%; */
-    flex-basis: 40%;
-    /*  -webkit-box-flex: 0; */
-    /*-ms-flex-positive: 0; */
-    flex-grow: 0;
-    border-bottom: 1px solid black;
+    font-size:1em;
+    /*  -ms-flex-preferred-size:40%; */
+    flex-basis:40%;
+    /*  -webkit-box-flex:0; */
+    /*-ms-flex-positive:0; */
+    flex-grow:0;
+    border-bottom:1px solid black;
 }
 
     .load-rating-form__section-heading span,
     .lbis-form__section-heading span {
-        font-weight: bold;
-        /*  -webkit-box-flex: 0; */
-        /*-ms-flex-positive: 0; */
-        flex-grow: 0;
+        font-weight:bold;
+        /*  -webkit-box-flex:0; */
+        /*-ms-flex-positive:0; */
+        flex-grow:0;
     }
 
 .load-rating-form__sub-section-heading,
 .lbis-form__sub-section-heading {
-    font-size: 1em;
-    /*  -ms-flex-preferred-size: 30%; */
-    flex-basis: 30%;
-    /*  -webkit-box-flex: 0; */
-    /*-ms-flex-positive: 0; */
-    flex-grow: 0;
+    font-size:1em;
+    /*  -ms-flex-preferred-size:30%; */
+    flex-basis:30%;
+    /*  -webkit-box-flex:0; */
+    /*-ms-flex-positive:0; */
+    flex-grow:0;
 }
 
     .load-rating-form__sub-section-heading span,
     .lbis-form__sub-section-heading span {
-        font-weight: bold;
-        /*  -webkit-box-flex: 0; */
-        /*-ms-flex-positive: 0; */
-        flex-grow: 0;
+        font-weight:bold;
+        /*  -webkit-box-flex:0; */
+        /*-ms-flex-positive:0; */
+        flex-grow:0;
     }
 
 .load-rating-form__row,
@@ -4589,53 +4589,53 @@ html {
 .load-rating-form__row--headers,
 .lbis-form__row--headers,
 .lbis-form__row {
-    /* -ms-flex-flow: row nowrap; */
-    /* -webkit-box-orient: horizontal; */
-    /* webkit-box-direction: normal;*/
-    -webkit-flex-flow: row nowrap;
-    -moz-justify-content: flex-start;
-    -ms-justify-content: flex-start;
-    /*   -webkit-box-pack: start; */
-    /*  -ms-flex-pack: start;*/
-    /*-webkit-box-flex: 1;*/
-    /*--ms-flex-flow: row nowrap;
-        --ms-justify-content: flex-start;
-        --ms-flex: 1 1 100%;
-        -webkit-justify-content: flex-start;
-        -webkit-flex-flow: row nowrap;
-        -webkit-flex: 1 1 100%;
-        justify-content: flex-start;
-        flex-flow: row nowrap;*/
-    padding: 0;
-    -webkit-flex: 1 1 100%;
-    -ms-flex: 1 1 100%;
-    -o-flex: 1 1 100%;
-    flex: 1 1 100%;
-    -moz-flex-flow: row nowrap;
-    -ms-flex-flow: row nowrap;
-    -o-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -o-justify-content: flex-start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
+    /* -ms-flex-flow:row nowrap; */
+    /* -webkit-box-orient:horizontal; */
+    /* webkit-box-direction:normal;*/
+    -webkit-flex-flow:row nowrap;
+    -moz-justify-content:flex-start;
+    -ms-justify-content:flex-start;
+    /*   -webkit-box-pack:start; */
+    /*  -ms-flex-pack:start;*/
+    /*-webkit-box-flex:1;*/
+    /*--ms-flex-flow:row nowrap;
+        --ms-justify-content:flex-start;
+        --ms-flex:1 1 100%;
+        -webkit-justify-content:flex-start;
+        -webkit-flex-flow:row nowrap;
+        -webkit-flex:1 1 100%;
+        justify-content:flex-start;
+        flex-flow:row nowrap;*/
+    padding:0;
+    -webkit-flex:1 1 100%;
+    -ms-flex:1 1 100%;
+    -o-flex:1 1 100%;
+    flex:1 1 100%;
+    -moz-flex-flow:row nowrap;
+    -ms-flex-flow:row nowrap;
+    -o-flex-flow:row nowrap;
+    flex-flow:row nowrap;
+    -o-justify-content:flex-start;
+    -webkit-justify-content:flex-start;
+    justify-content:flex-start;
 }
 
 .load-rating-form__row--compact,
 .lbis-form__row--compact {
-    /*-webkit-box-flex: 1;*/
-    flex: 1 1 50%;
-    padding: .25%;
-    margin: 1px;
-    /*--ms-flex: 1 1 50%;
-            -webkit-flex: 1 1 50%;
-            flex: 1 1 51%; // changed from 0 0 51% 20181126*/
+    /*-webkit-box-flex:1;*/
+    flex:1 1 50%;
+    padding:.25%;
+    margin:1px;
+    /*--ms-flex:1 1 50%;
+            -webkit-flex:1 1 50%;
+            flex:1 1 51%; // changed from 0 0 51% 20181126*/
 }
 
 .load-rating-form__row--headers,
 .lbis-form__row--headers {
-    font-weight: bold;
-    text-decoration: underline;
-    margin-bottom: 6px;
+    font-weight:bold;
+    text-decoration:underline;
+    margin-bottom:6px;
 }
 
 .load-rating-form__column,
@@ -4656,22 +4656,22 @@ html {
 .load-rating-form__column.pct-100,
 .lbis-form__column.pct-100,
 .lbis-form__column {
-    /* -ms-flex-flow: column nowrap; */
-    /* -webkit-box-orient: vertical;*/
-    /* webkit-box-direction: normal;*/
-    -webkit-flex-flow: column nowrap;
-    -ms-flex-basis: 49%;
-    flex-flow: column nowrap;
-    /*-ms-flex-preferred-size: 49%; */
-    flex-basis: 49%;
-    /*-ms-flex-negative: 0; */
-    flex-shrink: 0;
-    padding: 2px;
+    /* -ms-flex-flow:column nowrap; */
+    /* -webkit-box-orient:vertical;*/
+    /* webkit-box-direction:normal;*/
+    -webkit-flex-flow:column nowrap;
+    -ms-flex-basis:49%;
+    flex-flow:column nowrap;
+    /*-ms-flex-preferred-size:49%; */
+    flex-basis:49%;
+    /*-ms-flex-negative:0; */
+    flex-shrink:0;
+    padding:2px;
 }
 
 .load-rating-form__column--center,
 .lbis-form__column--center {
-    margin: 0 auto;
+    margin:0 auto;
 }
 
     .pct-20.load-rating-form__column--left,
@@ -4683,9 +4683,9 @@ html {
     .pct-20.load-rating-form__column,
     .lbis-form__column.pct-20,
     .lbis-form__column.pct-20 {
-        -ms-flex-basis: 20%;
-        /*  -ms-flex-preferred-size: 20%; */
-        flex-basis: 20%;
+        -ms-flex-basis:20%;
+        /*  -ms-flex-preferred-size:20%; */
+        flex-basis:20%;
     }
 
     .pct-40.load-rating-form__column--left,
@@ -4697,9 +4697,9 @@ html {
     .pct-40.load-rating-form__column,
     .lbis-form__column.pct-40,
     .lbis-form__column.pct-40 {
-        -ms-flex-basis: 40%;
-        /*  -ms-flex-preferred-size: 40%; */
-        flex-basis: 40%;
+        -ms-flex-basis:40%;
+        /*  -ms-flex-preferred-size:40%; */
+        flex-basis:40%;
     }
 
     .pct-60.load-rating-form__column--left,
@@ -4711,9 +4711,9 @@ html {
     .pct-60.load-rating-form__column,
     .lbis-form__column.pct-60,
     .lbis-form__column.pct-60 {
-        -ms-flex-basis: 60%;
-        /*  -ms-flex-preferred-size: 60%; */
-        flex-basis: 60%;
+        -ms-flex-basis:60%;
+        /*  -ms-flex-preferred-size:60%; */
+        flex-basis:60%;
     }
 
     .pct-80.load-rating-form__column--left,
@@ -4725,9 +4725,9 @@ html {
     .pct-80.load-rating-form__column,
     .lbis-form__column.pct-80,
     .lbis-form__column.pct-80 {
-        -ms-flex-basis: 80%;
-        /*  -ms-flex-preferred-size: 80%; */
-        flex-basis: 80%;
+        -ms-flex-basis:80%;
+        /*  -ms-flex-preferred-size:80%; */
+        flex-basis:80%;
     }
 
     .pct-100.load-rating-form__column--left,
@@ -4739,18 +4739,18 @@ html {
     .pct-100.load-rating-form__column,
     .lbis-form__column.pct-100,
     .lbis-form__column.pct-100 {
-        -ms-flex-basis: 100%;
-        /*  -ms-flex-preferred-size: 100%; */
-        flex-basis: 100%;
+        -ms-flex-basis:100%;
+        /*  -ms-flex-preferred-size:100%; */
+        flex-basis:100%;
     }
 
 .load-rating-form__cell,
 .lbis-form__cell {
-    /*-ms-flex-line-pack: start; */
-    align-content: flex-start;
-    /*  -webkit-box-flex: 0; */
-    /*-ms-flex-positive: 0; */
-    flex-grow: 0;
+    /*-ms-flex-line-pack:start; */
+    align-content:flex-start;
+    /*  -webkit-box-flex:0; */
+    /*-ms-flex-positive:0; */
+    flex-grow:0;
 }
 
 .load-rating-form__column-heading,
@@ -4761,14 +4761,14 @@ html {
 .load-rating-form__column-heading--center,
 .lbis-form__column-heading--center,
 .lbis-form__column-heading {
-    -moz-justify-content: flex-start;
-    -ms-justify-content: flex-start;
-    /*   -webkit-box-pack: start; */
-    justify-content: flex-start;
-    /*  -ms-flex-pack: start;*/
-    -ms-align-content: flex-start;
-    /*-ms-flex-line-pack: start; */
-    align-content: flex-start;
+    -moz-justify-content:flex-start;
+    -ms-justify-content:flex-start;
+    /*   -webkit-box-pack:start; */
+    justify-content:flex-start;
+    /*  -ms-flex-pack:start;*/
+    -ms-align-content:flex-start;
+    /*-ms-flex-line-pack:start; */
+    align-content:flex-start;
 }
 
     .load-rating-form__column-heading span,
@@ -4779,41 +4779,41 @@ html {
     .load-rating-form__column-heading--center span,
     .lbis-form__column-heading--center span,
     .lbis-form__column-heading span {
-        padding-left: 2%;
-        padding-right: 2%;
-        width: 100%;
+        padding-left:2%;
+        padding-right:2%;
+        width:100%;
     }
 
 .load-rating-form__column-heading--right,
 .lbis-form__column-heading--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    -ms-align-content: flex-end;
-    /*-ms-flex-line-pack: end; */
-    align-content: flex-end;
-    /*-webkit-justify-content: flex-end;
-            -webkit-align-content: flex-end;
-            justify-content: flex-end;
-            align-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    -ms-align-content:flex-end;
+    /*-ms-flex-line-pack:end; */
+    align-content:flex-end;
+    /*-webkit-justify-content:flex-end;
+            -webkit-align-content:flex-end;
+            justify-content:flex-end;
+            align-content:flex-end;*/
 }
 
 .load-rating-form__column-heading--center,
 .lbis-form__column-heading--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    -ms-align-content: center;
-    /*-ms-flex-line-pack: center; */
-    align-content: center;
-    /*-webkit-justify-content: center;
-            -webkit-align-content: center;
-            justify-content: center;
-            align-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    -ms-align-content:center;
+    /*-ms-flex-line-pack:center; */
+    align-content:center;
+    /*-webkit-justify-content:center;
+            -webkit-align-content:center;
+            justify-content:center;
+            align-content:center;*/
 }
 
 .load-rating-form__label-cell,
@@ -4824,15 +4824,15 @@ html {
 .load-rating-form__label-cell--center,
 .lbis-form__label-cell--center,
 .lbis-form__label-cell {
-    /*   -webkit-box-pack: start; */
-    /*  -ms-flex-pack: start;*/
-    justify-content: flex-start;
-    /*-ms-flex-line-pack: start; */
-    align-content: flex-start;
-    font-weight: bold;
-    /*  -webkit-box-flex: 0; */
-    /*-ms-flex-positive: 0; */
-    flex-grow: 0;
+    /*   -webkit-box-pack:start; */
+    /*  -ms-flex-pack:start;*/
+    justify-content:flex-start;
+    /*-ms-flex-line-pack:start; */
+    align-content:flex-start;
+    font-weight:bold;
+    /*  -webkit-box-flex:0; */
+    /*-ms-flex-positive:0; */
+    flex-grow:0;
 }
 
     .load-rating-form__label-cell span,
@@ -4843,112 +4843,112 @@ html {
     .load-rating-form__label-cell--center span,
     .lbis-form__label-cell--center span,
     .lbis-form__label-cell span {
-        padding-left: 2%;
-        padding-right: 2%;
-        width: 100%;
+        padding-left:2%;
+        padding-right:2%;
+        width:100%;
     }
 
 .load-rating-form__label-cell--right,
 .lbis-form__label-cell--right {
-    -moz-justify-content: flex-end;
-    -ms-justify-content: flex-end;
-    /* -webkit-box-pack: end; */
-    justify-content: flex-end;
-    /* -ms-flex-pack: end; */
-    -ms-align-content: flex-end;
-    /*-ms-flex-line-pack: end; */
-    align-content: flex-end;
-    /*-webkit-justify-content: flex-end;
-            -webkit-align-content: flex-end;
-            justify-content: flex-end;
-            align-content: flex-end;*/
+    -moz-justify-content:flex-end;
+    -ms-justify-content:flex-end;
+    /* -webkit-box-pack:end; */
+    justify-content:flex-end;
+    /* -ms-flex-pack:end; */
+    -ms-align-content:flex-end;
+    /*-ms-flex-line-pack:end; */
+    align-content:flex-end;
+    /*-webkit-justify-content:flex-end;
+            -webkit-align-content:flex-end;
+            justify-content:flex-end;
+            align-content:flex-end;*/
 }
 
 .load-rating-form__label-cell--center,
 .lbis-form__label-cell--center {
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    /*   -webkit-box-pack: center; */
-    justify-content: center;
-    /*  -ms-flex-pack: center; */
-    -ms-align-content: center;
-    /*-ms-flex-line-pack: center; */
-    align-content: center;
-    /*-webkit-justify-content: center;
-            -webkit-align-content: center;
-            justify-content: center;
-            align-content: center;*/
+    -moz-justify-content:center;
+    -ms-justify-content:center;
+    /*   -webkit-box-pack:center; */
+    justify-content:center;
+    /*  -ms-flex-pack:center; */
+    -ms-align-content:center;
+    /*-ms-flex-line-pack:center; */
+    align-content:center;
+    /*-webkit-justify-content:center;
+            -webkit-align-content:center;
+            justify-content:center;
+            align-content:center;*/
 }
 
 .load-rating-form__label-lock,
 .lbis-form__label-lock {
-    -ms-flex-basis: 90%;
-    /*  -ms-flex-preferred-size: 90%; */
-    flex-basis: 90%;
-    text-align: left;
-    padding-top: 6px;
-    padding-left: 5px;
-    font-weight: bold;
+    -ms-flex-basis:90%;
+    /*  -ms-flex-preferred-size:90%; */
+    flex-basis:90%;
+    text-align:left;
+    padding-top:6px;
+    padding-left:5px;
+    font-weight:bold;
 }
 
 .load-rating-form__pen-image,
 .lbis-form__pen-image {
-    /*-ms-flex-preferred-size: 3%; */
-    flex-basis: 3%;
-    /*  -webkit-box-flex: 0; */
-    /*-ms-flex-positive: 0; */
-    flex-grow: 0;
+    /*-ms-flex-preferred-size:3%; */
+    flex-basis:3%;
+    /*  -webkit-box-flex:0; */
+    /*-ms-flex-positive:0; */
+    flex-grow:0;
 }
 
     .load-rating-form__pen-image img:after,
     .lbis-form__pen-image img:after {
-        width: 32px;
-        height: 32px;
-        content: url("img/pen.gif");
+        width:32px;
+        height:32px;
+        content:url("img/pen.gif");
     }
 
     .load-rating-form__pen-image img:before,
     .lbis-form__pen-image img:before {
-        content: none !important;
+        content:none !important;
     }
 
 .load-rating-form__lock-image,
 .lbis-form__lock-image {
-    /* -ms-flex-preferred-size: 3%; */
-    flex-basis: 3%;
-    /*  -webkit-box-flex: 0; */
-    /*-ms-flex-positive: 0; */
-    flex-grow: 0;
+    /* -ms-flex-preferred-size:3%; */
+    flex-basis:3%;
+    /*  -webkit-box-flex:0; */
+    /*-ms-flex-positive:0; */
+    flex-grow:0;
 }
 
     .load-rating-form__lock-image img:after,
     .lbis-form__lock-image img:after {
-        width: 32px;
-        height: 32px;
-        content: url("img/lock.gif");
+        width:32px;
+        height:32px;
+        content:url("img/lock.gif");
     }
 
     .load-rating-form__lock-image img:before,
     .lbis-form__lock-image img:before {
-        content: none !important;
+        content:none !important;
     }
 
 .load-rating-form .load-rating-form-lock-panel_icon,
 .lbis-form .load-rating-form-lock-panel_icon {
-    /* -ms-flex-preferred-size: 3%; */
-    flex-basis: 3%;
-    /*  -webkit-box-flex: 0; */
-    /*-ms-flex-positive: 0; */
-    flex-grow: 0;
+    /* -ms-flex-preferred-size:3%; */
+    flex-basis:3%;
+    /*  -webkit-box-flex:0; */
+    /*-ms-flex-positive:0; */
+    flex-grow:0;
 }
 
 .load-rating-form .load-rating-form__message-panel,
 .lbis-form .load-rating-form__message-panel {
-    /*-webkit-box-flex: 1;*/
-    flex: 1 1 80%;
-    margin: 5% auto;
-    border: 1px solid black;
-    padding: 10px;
+    /*-webkit-box-flex:1;*/
+    flex:1 1 80%;
+    margin:5% auto;
+    border:1px solid black;
+    padding:10px;
 }
 
 .load-rating-form__message-panel-text,
@@ -4961,29 +4961,29 @@ html {
 .load-rating-form__message-panel-text--justify,
 .lbis-form__message-panel-text--justify,
 .lbis-form__message-panel-text {
-    font-weight: bold;
-    -ms-word-wrap: normal;
-    word-wrap: normal;
+    font-weight:bold;
+    -ms-word-wrap:normal;
+    word-wrap:normal;
 }
 
 .load-rating-form__message-panel-text--left,
 .lbis-form__message-panel-text--left {
-    text-align: left;
+    text-align:left;
 }
 
 .load-rating-form__message-panel-text--center,
 .lbis-form__message-panel-text--center {
-    text-align: center;
+    text-align:center;
 }
 
 .load-rating-form__message-panel-text--right,
 .lbis-form__message-panel-text--right {
-    text-align: right;
+    text-align:right;
 }
 
 .load-rating-form__message-panel-text--justify,
 .lbis-form__message-panel-text--justify {
-    text-align: justify;
+    text-align:justify;
 }
 
 .load-rating-form .full-width-text-row,
@@ -5004,341 +5004,341 @@ html {
 .lbis-form .load-rating-form .full-width-text-row--justify,
 .load-rating-form .lbis-form .full-width-text-row--justify,
 .lbis-form .full-width-text-row--justify {
-    padding-top: 2%;
-    /*-webkit-box-flex: 1;*/
-    flex: 1 1 100%;
+    padding-top:2%;
+    /*-webkit-box-flex:1;*/
+    flex:1 1 100%;
 }
 
 .load-rating-form .full-width-text-row--left,
 .lbis-form .full-width-text-row--left {
-    text-align: left;
+    text-align:left;
 }
 
 .load-rating-form .full-width-text-row--centered,
 .lbis-form .full-width-text-row--centered {
-    text-align: center;
+    text-align:center;
 }
 
 .load-rating-form .full-width-text-row--right,
 .lbis-form .full-width-text-row--right {
-    text-align: right;
+    text-align:right;
 }
 
 .load-rating-form .full-width-text-row--justify,
 .lbis-form .full-width-text-row--justify {
-    text-align: justify;
+    text-align:justify;
 }
 
 .load-rating-form .tiny-centered-units-labelx,
 .lbis-form .tiny-centered-units-labelx {
     /* all */
-    font-size: xx-small;
-    font-weight: bold;
-    /*display: -webkit-inline-box; // no such thing*/
-    display: inline-block;
-    padding-left: 3px;
+    font-size:xx-small;
+    font-weight:bold;
+    /*display:-webkit-inline-box; // no such thing*/
+    display:inline-block;
+    padding-left:3px;
 }
 
 html,
 form,
 body {
-    background-color: whitesmoke;
-    color: black;
+    background-color:whitesmoke;
+    color:black;
 }
 
 .delete-bridge-form,
 .delete-bridge-form__panel,
 .delete-bridge-form__row {
-    /*-webkit-box-flex: 1;*/
-    -webkit-flex-flow: column nowrap;
+    /*-webkit-box-flex:1;*/
+    -webkit-flex-flow:column nowrap;
     /*@include justify-content(space-between);*/
-    /* -ms-flex-flow: column nowrap; */
-    /* -webkit-box-orient: vertical;*/
-    /* webkit-box-direction: normal;*/
-    flex: 1;
-    flex-flow: column nowrap;
-    background-color: whitesmoke;
-    color: black;
-    padding: 3px;
+    /* -ms-flex-flow:column nowrap; */
+    /* -webkit-box-orient:vertical;*/
+    /* webkit-box-direction:normal;*/
+    flex:1;
+    flex-flow:column nowrap;
+    background-color:whitesmoke;
+    color:black;
+    padding:3px;
 }
 
 .delete-bridge-form__panel {
-    /* -ms-flex-flow: column nowrap; */
-    /* -webkit-box-orient: vertical;*/
-    /* webkit-box-direction: normal;*/
-    -webkit-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    -ms-flex-basis: 98%;
-    /*  -ms-flex-preferred-size: 98%;*/
-    flex-basis: 98%;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    /* -webkit-box-pack: justify; */
-    justify-content: space-between;
-    /*  -ms-flex-pack: start;*/
+    /* -ms-flex-flow:column nowrap; */
+    /* -webkit-box-orient:vertical;*/
+    /* webkit-box-direction:normal;*/
+    -webkit-flex-flow:column nowrap;
+    flex-flow:column nowrap;
+    -ms-flex-basis:98%;
+    /*  -ms-flex-preferred-size:98%;*/
+    flex-basis:98%;
+    -moz-justify-content:space-between;
+    -ms-justify-content:space-between;
+    /* -webkit-box-pack:justify; */
+    justify-content:space-between;
+    /*  -ms-flex-pack:start;*/
 }
 
 .delete-bridge-form__row {
-    -webkit-flex-flow: row nowrap;
-    /* -webkit-box-orient: horizontal; */
-    /* webkit-box-direction: normal;*/
-    flex-flow: row nowrap;
-    -ms-flex-basis: 100%;
-    /*  -ms-flex-preferred-size: 100%; */
-    flex-basis: 100%;
-    /*-ms-flex-negative: 0; */
-    flex-shrink: 0;
-    /*-webkit-box-flex: 1;*/
-    /* -ms-flex-positive: 1;*/
-    flex-grow: 1;
-    margin-bottom: 5px;
+    -webkit-flex-flow:row nowrap;
+    /* -webkit-box-orient:horizontal; */
+    /* webkit-box-direction:normal;*/
+    flex-flow:row nowrap;
+    -ms-flex-basis:100%;
+    /*  -ms-flex-preferred-size:100%; */
+    flex-basis:100%;
+    /*-ms-flex-negative:0; */
+    flex-shrink:0;
+    /*-webkit-box-flex:1;*/
+    /* -ms-flex-positive:1;*/
+    flex-grow:1;
+    margin-bottom:5px;
 }
 
 .delete-bridge-form__exclamation-img img:after {
-    width: 32px;
-    height: 32px;
-    content: url("img/exclamation.gif");
+    width:32px;
+    height:32px;
+    content:url("img/exclamation.gif");
 }
 
 
 .delete-bridge-form__exclamation-img img:before {
-    content: none !important;
+    content:none !important;
 }
 
 .delete-bridge-form__label-cell {
-    /*  -webkit-box-flex: 0; */
-    flex: 0 0 25%;
-    /* -ms-flex-wrap: wrap;*/
-    flex-wrap: wrap;
-    -moz-justify-content: flex-start;
-    -ms-justify-content: flex-start;
-    /*   -webkit-box-pack: start; */
-    justify-content: flex-start;
-    /*  -ms-flex-pack: start;*/
-    /*display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;*/
+    /*  -webkit-box-flex:0; */
+    flex:0 0 25%;
+    /* -ms-flex-wrap:wrap;*/
+    flex-wrap:wrap;
+    -moz-justify-content:flex-start;
+    -ms-justify-content:flex-start;
+    /*   -webkit-box-pack:start; */
+    justify-content:flex-start;
+    /*  -ms-flex-pack:start;*/
+    /*display:-ms-flexbox;
+    display:flex;
+    flex-wrap:wrap;*/
 }
 
 .message-box-action-buttons {
-    /* -webkit-box-pack: justify; */
-    /* -ms-flex-pack: justify;*/
-    justify-content: space-between;
-    /*  -ms-flex-preferred-size: 100%; */
-    flex-basis: 100%;
-    /*  -webkit-box-flex: 0; */
-    /*-ms-flex-positive: 0; */
-    flex-grow: 0;
-    margin-top: 10px;
+    /* -webkit-box-pack:justify; */
+    /* -ms-flex-pack:justify;*/
+    justify-content:space-between;
+    /*  -ms-flex-preferred-size:100%; */
+    flex-basis:100%;
+    /*  -webkit-box-flex:0; */
+    /*-ms-flex-positive:0; */
+    flex-grow:0;
+    margin-top:10px;
 }
 
 .warning-message,
 .warning-message--bordered,
 .warning-message--background {
-    font-weight: bold;
-    padding: 5px;
+    font-weight:bold;
+    padding:5px;
 }
 
 .warning-message--bordered {
-    border: 1px solid black;
+    border:1px solid black;
 }
 
 .warning-message--background {
-    background-color: whitesmoke;
+    background-color:whitesmoke;
 }
 
 .message-box__icon,
 .message-box__icon--25pct {
-    /*  -webkit-box-flex: 0; */
-    flex: 0 0 15%;
-    /*padding-left: 25px;*/
+    /*  -webkit-box-flex:0; */
+    flex:0 0 15%;
+    /*padding-left:25px;*/
 }
 
     .message-box__icon img,
     .message-box__icon--25pct img {
-        width: 32px;
-        height: 32px;
+        width:32px;
+        height:32px;
     }
 
 .message-box__icon--25pct {
-    /*  -webkit-box-flex: 0; */
-    flex: 0 0 25%;
+    /*  -webkit-box-flex:0; */
+    flex:0 0 25%;
 }
 
 .message-box__textarea,
 .message-box__textarea--transparent,
 .message-box__textarea--alert {
-    /*-ms-flex-line-pack: end; */
-    align-content: flex-end;
-    font-weight: bold;
-    /*-webkit-box-flex: 1;*/
-    /* -ms-flex-positive: 1;*/
-    flex-grow: 1;
-    /* -ms-flex-negative: 1;*/
-    flex-shrink: 1;
-    vertical-align: text-top;
-    background-color: whitesmoke;
+    /*-ms-flex-line-pack:end; */
+    align-content:flex-end;
+    font-weight:bold;
+    /*-webkit-box-flex:1;*/
+    /* -ms-flex-positive:1;*/
+    flex-grow:1;
+    /* -ms-flex-negative:1;*/
+    flex-shrink:1;
+    vertical-align:text-top;
+    background-color:whitesmoke;
 }
 
 .message-box__textarea--transparent {
-    background-color: transparent;
+    background-color:transparent;
 }
 
 .message-box__textarea--alert {
-    background-color: yellow;
-    color: black;
+    background-color:yellow;
+    color:black;
 }
 
 .centered-dismiss-button {
-    height: 22px;
-    width: 100%;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    height:22px;
+    width:100%;
+    margin-top:2px;
+    margin-bottom:2px;
 }
 
 .map-display__column {
-    /* -ms-flex-flow: column nowrap; */
-    /* -webkit-box-orient: vertical;*/
-    /* webkit-box-direction: normal;*/
-    -webkit-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    /*-ms-flex-direction: column;
-    -ms-flex-wrap: nowrap;
-    -webkit-flex-flow: column nowrap;
-    flex-flow: column nowrap;*/
-    /*-webkit-box-flex: 1;*/
-    flex: 1 1 100%;
-    /*-webkit-flex: 1 1 100%;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%;*/
+    /* -ms-flex-flow:column nowrap; */
+    /* -webkit-box-orient:vertical;*/
+    /* webkit-box-direction:normal;*/
+    -webkit-flex-flow:column nowrap;
+    flex-flow:column nowrap;
+    /*-ms-flex-direction:column;
+    -ms-flex-wrap:nowrap;
+    -webkit-flex-flow:column nowrap;
+    flex-flow:column nowrap;*/
+    /*-webkit-box-flex:1;*/
+    flex:1 1 100%;
+    /*-webkit-flex:1 1 100%;
+    -ms-flex:1 1 100%;
+    flex:1 1 100%;*/
 }
 
-/* .MapStatistics: used in GMap.aspx */
+/* .MapStatistics:used in GMap.aspx */
 .MapStatisticsX {
-    font-size: 11px;
-    padding-bottom: 3px;
-    padding-top: 10px;
-    font: inherit;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-weight: normal;
+    font-size:11px;
+    padding-bottom:3px;
+    padding-top:10px;
+    font:inherit;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    font-weight:normal;
 }
 
 .reBody {
-    color: black;
-    background-color: cornsilk;
+    color:black;
+    background-color:cornsilk;
     /* $whitesmoke; */
-    padding: 3px;
-    background-image: none;
-    margin: 0;
-    text-align: left;
-    font-family: "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12pt;
-    font-weight: normal;
+    padding:3px;
+    background-image:none;
+    margin:0;
+    text-align:left;
+    font-family:"Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size:12pt;
+    font-weight:normal;
 }
 
 .reBottomTable tr {
-    display: table-row !important;
+    display:table-row !important;
 }
 
 
 
 /* IM Control.ascx styles */
 .im-div-container {
-    display: flex;
-    border: none;
-    padding: 0;
-    border-spacing: 0;
-    border-collapse: collapse;
-    width: 100%;
-    height: 100%;
-    padding: 0;
+    display:flex;
+    border:none;
+    padding:0;
+    border-spacing:0;
+    border-collapse:collapse;
+    width:100%;
+    height:100%;
+    padding:0;
 }
 
 .im-table-defaults {
-    border: none;
-    padding: 0;
-    border-spacing: 0;
-    border-collapse: collapse;
-    width: 100%;
+    border:none;
+    padding:0;
+    border-spacing:0;
+    border-collapse:collapse;
+    width:100%;
 }
 
 .im-td-defaults {
-    height: 100%;
-    white-space: nowrap;
-    vertical-align: baseline;
+    height:100%;
+    white-space:nowrap;
+    vertical-align:baseline;
 }
 
 
 .im-prompt,
 .im-label {
-    font-weight: bold;
-    width: 100%;
-    height: 100%;
-    margin-right: 2px;
+    font-weight:bold;
+    width:100%;
+    height:100%;
+    margin-right:2px;
 }
 
     .im-label.LeftAlign {
-        text-align: left;
+        text-align:left;
     }
 
 .im-control-default {
-    display: flex;
+    display:flex;
 }
 
 .im-control-wrapper {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: auto;
-    /*padding: 4px;*/
+    display:flex;
+    flex-direction:row;
+    width:auto;
+    height:auto;
+    /*padding:4px;*/
 }
 
 .im-tb-alpha {
-    text-align: left;
-    /*padding: 4px 4px;*/
+    text-align:left;
+    /*padding:4px 4px;*/
 }
 
 .im-tb-numeric {
-    text-align: right;
-    /*padding: 4px 4px;*/
+    text-align:right;
+    /*padding:4px 4px;*/
 }
 
 .im-datepicker {
-    width: 105px;
-    height: auto;
+    width:105px;
+    height:auto;
 }
 
 .im-combobox {
-    Height: auto;
-    Width: 180px;
+    Height:auto;
+    Width:180px;
 }
 
 .im-upload-button {
-    margin-left: 8px;
+    margin-left:8px;
     /* space between button and the data input field / radio buttons */
-    width: auto;
-    height: auto;
+    width:auto;
+    height:auto;
 }
 
 .im-labels-units {
-    width: auto;
-    padding-left: 4px;
+    width:auto;
+    padding-left:4px;
 }
 
 .im-hidden-field {
-    Visibility: hidden;
-    Width: 0;
-    Height: 0;
+    Visibility:hidden;
+    Width:0;
+    Height:0;
 }
 
 .RadInput .riTextBox,
 .RadInputMgr {
-    border-width: 1px;
-    border-style: solid;
-    padding: 4px;
+    border-width:1px;
+    border-style:solid;
+    padding:4px;
     /* 4px 4px 4px 4px;*/
-    vertical-align: middle;
+    vertical-align:middle;
 }
 
 /* POPUP EDITOR STYLES */
@@ -5350,15 +5350,15 @@ a.reTool.ResetContent,
 a.reTool.reResetContent.reToolIcon:after,
 a.reTool.ResetContent:after,
 .ResetContent:after {
-    background-position: center;
-    /* background-image: url("~/Content/css/img/lightning-delete.png");*/
-    content: url(img/lightning-delete.png);
+    background-position:center;
+    /* background-image:url("~/Content/css/img/lightning-delete.png");*/
+    content:url(img/lightning-delete.png);
 }
 
     a.reTool.reResetContent.reToolIcon:before,
     a.reTool.ResetContent:before,
     .ResetContent:before {
-        content: none !important;
+        content:none !important;
     }
 
 a.reTool.reCleanNotes.reToolIcon,
@@ -5367,43 +5367,43 @@ a.reTool.CleanNotes,
 a.reTool.reCleanNotes.reToolIcon:after,
 a.reTool.CleanNotes:after,
 .CleanNotes:after {
-    background-position: center;
-    /*background-image: url("~/Content/css/img/clear-all-text.png");*/
-    content: url(img/clear-all-text.png);
+    background-position:center;
+    /*background-image:url("~/Content/css/img/clear-all-text.png");*/
+    content:url(img/clear-all-text.png);
 }
 
     a.reTool.reCleanNotes.reToolIcon:before,
     a.reTool.CleanNotes:before,
     .CleanNotes:before {
-        content: none !important;
+        content:none !important;
     }
 
 /* The generic class name is re<toolName> */
 a.reTool.reSaveAndClose.reToolIcon,
 a.reTool.reSaveAndClose.reToolIcon:after {
-    content: url(img/save-32.png);
+    content:url(img/save-32.png);
 }
 
     /* remove the built-in icon */
     a.reTool.reSaveAndClose.reToolIcon:before {
-        content: none !important;
+        content:none !important;
     }
 
 /* The generic class name is re<toolName> */
 a.reTool.reCancel.reToolIcon,
 a.reTool.reCancel.reToolIcon:after {
-    content: url(img/Cancel.gif);
+    content:url(img/Cancel.gif);
 }
 
     /* remove the built-in icon */
     a.reTool.reCancel.reToolIcon:before,
     a.reTool.Cancel:before {
-        content: none !important;
+        content:none !important;
     }
 
 .reModes,
 .reEditorModes,
 .reMode_design,
 .reMode_preview {
-    display: none !important;
+    display:none !important;
 }

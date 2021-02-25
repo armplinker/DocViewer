@@ -1,8 +1,8 @@
 // Comment.js
 // specs found in spec/CommentSpec.js
 //
-// author: Nicholas Allen Bickford Marshall, 11/14/2015
-// email: nialbima@gmail.com
+// author:Nicholas Allen Bickford Marshall, 11/14/2015
+// email:nialbima@gmail.com
 // https://github.com/nialbima/text_cleaner
 // provide a variety of simple string cleanup operations for tidying up input
 // -------------------------------------------------------------------------------

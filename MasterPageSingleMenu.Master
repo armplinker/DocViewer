@@ -5,21 +5,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>MasterPageSingleMenu.Master</title>
     <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
     <link href="styles/base.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
-        <telerik:RadStyleSheetManager runat="server" id="RadStyleSheetManager1">
-            <StyleSheets>
-                <telerik:StyleSheetReference Path="~/Content/css/tailwind.css" OrderIndex="1" IsRequiredCss="True" IsCommonCss="True" />
-                <telerik:StyleSheetReference Path="~/Content/css/fontawesome.min.css" OrderIndex="2" IsRequiredCss="True" IsCommonCss="True" />
-                <telerik:StyleSheetReference Path="~/Content/css/solid.min.css" OrderIndex="3" IsRequiredCss="True" IsCommonCss="True" />
-            </StyleSheets>
-        </telerik:RadStyleSheetManager>
+        
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
+    
         <asp:ContentPlaceHolder ID="CommonContentPlaceHolder1" runat="server">
             
         </asp:ContentPlaceHolder>
@@ -55,9 +50,9 @@
             </asp:ContentPlaceHolder>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
             </asp:ContentPlaceHolder>
-            <hr style="margin-top: 40px" />
+            <hr style="margin-top:40px" />
             <div class="footer">
-                Footer: © 2002-2015 Company Inc, 201 Jones Rd, Waltham, MA 03451
+                Footer:© 2002-2015 Company Inc, 201 Jones Rd, Waltham, MA 03451
             </div>
         </div>
     </form>

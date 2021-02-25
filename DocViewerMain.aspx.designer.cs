@@ -13,31 +13,40 @@ namespace DocViewer {
     public partial class DocViewerMain {
         
         /// <summary>
-        /// RadScriptManager1 control.
+        /// DVM_RadStyleSheetManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadScriptManager RadScriptManager1;
+        protected global::Telerik.Web.UI.RadStyleSheetManager DVM_RadStyleSheetManager1;
         
         /// <summary>
-        /// RadAjaxManager1 control.
+        /// DVM_RadScriptManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadAjaxManager RadAjaxManager1;
+        protected global::Telerik.Web.UI.RadScriptManager DVM_RadScriptManager1;
         
         /// <summary>
-        /// RadScriptBlock1 control.
+        /// DVM_RadAjaxManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadScriptBlock RadScriptBlock1;
+        protected global::Telerik.Web.UI.RadAjaxManager DVM_RadAjaxManager1;
+        
+        /// <summary>
+        /// DVM_RadPersistenceManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadPersistenceManager DVM_RadPersistenceManager1;
         
         /// <summary>
         /// RadWindowManager1 control.
@@ -58,13 +67,22 @@ namespace DocViewer {
         protected global::Telerik.Web.UI.RadWindow RadWindow1;
         
         /// <summary>
-        /// RadPersistenceManager1 control.
+        /// DVM_RadScriptBlock1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPersistenceManager RadPersistenceManager1;
+        protected global::Telerik.Web.UI.RadScriptBlock DVM_RadScriptBlock1;
+        
+        /// <summary>
+        /// DVM_RadCodeBlock1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadCodeBlock DVM_RadCodeBlock1;
         
         /// <summary>
         /// Panel1 control.
@@ -85,13 +103,13 @@ namespace DocViewer {
         protected global::DocViewer.Controls.UserControl1 UserControl1;
         
         /// <summary>
-        /// RadCodeBlock1 control.
+        /// DVM_RadCodeBlock2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadCodeBlock RadCodeBlock1;
+        protected global::Telerik.Web.UI.RadCodeBlock DVM_RadCodeBlock2;
         
         /// <summary>
         /// RadTextBoxBrkey1 control.
@@ -148,13 +166,13 @@ namespace DocViewer {
         protected global::System.Web.UI.WebControls.Panel Panel2;
         
         /// <summary>
-        /// DocumentTypePanelBar1 control.
+        /// UcDocumentTypeChooser1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DocViewer.Controls.DocumentTypePanelBar1 DocumentTypePanelBar1;
+        protected global::DocViewer.Controls.UcDocumentTypeChooser UcDocumentTypeChooser1;
         
         /// <summary>
         /// Label0 control.

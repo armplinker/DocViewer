@@ -1,5 +1,5 @@
 // beat the heart
-// 'times' (int): nr of times to beat
+// 'times' (int):nr of times to beat
 
 var $ = $telerik.$;
 
