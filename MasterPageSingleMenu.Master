@@ -14,7 +14,30 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    
+        <telerik:RadScriptManager ID="DVM_RadScriptManager1" runat="server" EnableScriptCombine="True">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+                <telerik:RadScriptReference Path="~/scripts/scripts.js" />
+                <%--added this to turn on and off debug and provide a wrapper for log.debug....--%>
+                <telerik:RadScriptReference Path="~/Content/js/toggle-debug.js" />
+
+                <%--Font-Awesome--%>
+                <%-- <telerik:RadScriptReference Path="~/Content/vendor/fa/js/fontawesome.min.js" />
+            <telerik:RadScriptReference Path="~/Content/vendor/fa/js/solid.min.js" />--%>
+            </Scripts>
+        </telerik:RadScriptManager>
+        <telerik:RadAjaxManager ID="DVM_RadAjaxManager1" runat="server"
+                                DefaultLoadingPanelID="DVM_RadAjaxLoadingPanel1"
+                                OnAjaxRequest="DVM_AjaxRequest">
+        </telerik:RadAjaxManager>
+        <telerik:RadPersistenceManager ID="DVM_RadPersistenceManager1" runat="server"
+                                       OnSaveCustomSettings="DVMRPM1_SaveCustomSettings"
+                                       OnLoadCustomSettings="DVMRPM1_LoadCustomSettings"
+                                       OnLoadSettings="DVMRPM1_LoadSettings"
+                                       OnSaveSettings="DVMRPM1_SaveSettings">
+        </telerik:RadPersistenceManager>
         <asp:ContentPlaceHolder ID="CommonContentPlaceHolder1" runat="server">
             
         </asp:ContentPlaceHolder>

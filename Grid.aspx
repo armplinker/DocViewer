@@ -5,24 +5,7 @@
     <link href="styles/grid.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content runat="server" ID="CommonContent1" ContentPlaceHolderID="CommonContentPlaceHolder1">
-<telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptCombine="True">
-    <Scripts>
-        <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
-        <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
-        <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
 
-
-        <%--added this to turn on and off debug and provide a wrapper for log.debug....--%>
-        <telerik:RadScriptReference Path="~/Content/js/toggle-debug.js" />
-        <telerik:RadScriptReference Path="~/Content/js/form-setup.js" />
-        <telerik:RadScriptReference Path="~/Content/js/heart-beat.js" />
-
-        <%--Font-Awesome--%>
-        <telerik:RadScriptReference Path="~/Content/vendor/fa/js/fontawesome.min.js" />
-        <telerik:RadScriptReference Path="~/Content/vendor/fa/js/solid.min.js" />
-
-    </Scripts>
-</telerik:RadScriptManager>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <telerik:RadPageLayout runat="server" ID="JumbotronLayout" CssClass="jumbotron" GridType="Fluid">

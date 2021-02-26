@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<ArrayOfRadControlState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <RadControlState>
-    <ControlSettings />
-    <UniqueId>Telerik.Web.UI_PersistanceManager_CustomSettings</UniqueId>
-  </RadControlState>
-</ArrayOfRadControlState>

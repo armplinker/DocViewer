@@ -13,15 +13,6 @@ namespace DocViewer.Controls {
     public partial class UcDocumentTypeChooser {
         
         /// <summary>
-        /// UCDTC_RadPersistenceManagerProxy1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadPersistenceManagerProxy UCDTC_RadPersistenceManagerProxy1;
-        
-        /// <summary>
         /// DTPBScriptManagerProxy1 control.
         /// </summary>
         /// <remarks>
@@ -38,6 +29,15 @@ namespace DocViewer.Controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadAjaxManagerProxy UCDTCRM1_Proxy;
+        
+        /// <summary>
+        /// UCDTC_RadPersistenceManagerProxy1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadPersistenceManagerProxy UCDTC_RadPersistenceManagerProxy1;
         
         /// <summary>
         /// currBridgeGd control.

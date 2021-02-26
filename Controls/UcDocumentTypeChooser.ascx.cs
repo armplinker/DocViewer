@@ -20,10 +20,16 @@ namespace DocViewer.Controls
     public partial class UcDocumentTypeChooser : System.Web.UI.UserControl
     {
         private static readonly log4net.ILog Logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        private const string StateKeyName = @"UcDocumentTypeChooserState";
+        private const string StateKeyName = @"DocViewerControlStates";
         protected void Page_Init()
         {
-            UCDTC_RadPersistenceManagerProxy1?.PersistenceSettings.AddSetting(DTCRadPanelBar1);
+            Logger?.Debug("UcDocumentTypeChooser Page_Init Event");
+            UCDTC_RadPersistenceManagerProxy1?.PersistenceSettings.AddSetting("DTCRadPanelBar1");
+            RadPersistenceManager persistenceManager1 = RadPersistenceManager.GetCurrent(Page);
+            if (persistenceManager1 == null) return;
+            persistenceManager1.StorageProvider = new SessionStorageProvider(StateKeyName);
+            persistenceManager1.StorageProviderKey = StateKeyName;
+
         }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -32,51 +38,16 @@ namespace DocViewer.Controls
             currBridgeGd.Value = @"AAAA";
             currInspevntGd.Value = @"BBBB";
 
-            Logger?.Debug("Page_Load Event");
+            Logger?.Debug("UcDocumentTypeChooser Page_Load Event");
 
-            switch (IsPostBack)
-            {
-                case false:
-                {
-                    Logger?.Debug("NOT a PostBack");
-                    RadPersistenceManager persistenceManager1 = RadPersistenceManager.GetCurrent(Page);
-                    if (persistenceManager1 == null) return;
-                    persistenceManager1.StorageProviderKey = StateKeyName;
-                    try
-                    {
-                       // persistenceManager1.LoadState();
-                    }
-                    catch (Exception ex)
-                    {
-                        //Path.GetFullPath(Path.Combine(currentDir, relPath1))
-                        Logger?.Error($"Persistence file {(Path.GetFullPath(Path.Combine("~\\App_Data", $"{StateKeyName}")))} not found during LoadState() ", ex);
-                    }
 
-                    break;
-                }
-                case true:
-                {
-                    Logger?.Debug("PostBack");
-                    RadPersistenceManager persistenceManager1 = RadPersistenceManager.GetCurrent(Page);
-                    if (persistenceManager1 == null) return;
-                    persistenceManager1.StorageProviderKey = StateKeyName;
-
-                    try
-                    {
-                      //  persistenceManager1.SaveState();
-
-                    }
-                    catch (Exception ex)
-                    {
-                        //Path.GetFullPath(Path.Combine(currentDir, relPath1))
-                        Logger?.Error($"Persistence file {(Path.GetFullPath(Path.Combine("~\\App_Data", $"{StateKeyName}")))} not found during SaveState() ", ex);
-                    }
-
-                    break;
-                }
-            } // end switch
         }
 
+        protected void Page_Unload(object sender, EventArgs e)
+        {
+            Logger?.Debug("UcDocumentTypeChooser Page_Unload Event");
+
+        }
 
         protected void DTRadPanelBar1_ItemCreated(object sender, Telerik.Web.UI.RadPanelBarEventArgs e)
         {

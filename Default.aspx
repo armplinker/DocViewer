@@ -4,7 +4,9 @@
 <asp:Content ID="Content0" ContentPlaceHolderID="head" Runat="Server">
     <link href="styles/default.css" rel="stylesheet" />
 </asp:Content>
+<asp:Content runat="server" ID="CommonContent1" ContentPlaceHolderID="CommonContentPlaceHolder1">
 
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <telerik:RadPageLayout runat="server" ID="RadPageLayout1">
         <Rows>
@@ -12,7 +14,7 @@
                 <Columns>
                     <telerik:LayoutColumn CssClass="jumbotron">
                         <h1>H1 title, font size 36px</h1>
-                        <h2>H2 Title, font size 30 px. Duis nibh dolor, rhoncus in euismod at, feugiat id magna.
+                        <h2>H2 Title, font size 30px. Duis nibh dolor, rhoncus in euismod at, feugiat id magna.
                             <telerik:RadButton runat="server" ID="RadButton0" Text="Button" ButtonType="SkinnedButton"></telerik:RadButton>
                         </h2>
 

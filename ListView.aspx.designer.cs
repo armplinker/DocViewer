@@ -13,22 +13,13 @@ namespace DocViewer {
     public partial class ListView {
         
         /// <summary>
-        /// LV_RadStyleSheetManager1 control.
+        /// LV_ScriptManagerProxy1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadStyleSheetManager LV_RadStyleSheetManager1;
-        
-        /// <summary>
-        /// LV_RadScriptManager1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadScriptManager LV_RadScriptManager1;
+        protected global::System.Web.UI.ScriptManagerProxy LV_ScriptManagerProxy1;
         
         /// <summary>
         /// LV_RadAjaxManager1 control.
@@ -37,16 +28,16 @@ namespace DocViewer {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadAjaxManager LV_RadAjaxManager1;
+        protected global::Telerik.Web.UI.RadAjaxManagerProxy LV_RadAjaxManager1;
         
         /// <summary>
-        /// LV_RadPersistenceManager1 control.
+        /// LV_RadPersistenceManagerProxy1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadPersistenceManager LV_RadPersistenceManager1;
+        protected global::Telerik.Web.UI.RadPersistenceManagerProxy LV_RadPersistenceManagerProxy1;
         
         /// <summary>
         /// LV_RadWindowManager1 control.
@@ -58,13 +49,13 @@ namespace DocViewer {
         protected global::Telerik.Web.UI.RadWindowManager LV_RadWindowManager1;
         
         /// <summary>
-        /// RadWindow1 control.
+        /// LV_RadAjaxLoadingPanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadWindow RadWindow1;
+        protected global::Telerik.Web.UI.RadAjaxLoadingPanel LV_RadAjaxLoadingPanel1;
         
         /// <summary>
         /// LV_RadScriptBlock1 control.
@@ -128,14 +119,5 @@ namespace DocViewer {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::Telerik.Web.UI.RadLightBox RadLightBoxImageDetails;
-        
-        /// <summary>
-        /// LV_RadAjaxLoadingPanel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadAjaxLoadingPanel LV_RadAjaxLoadingPanel1;
     }
 }

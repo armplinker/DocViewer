@@ -10,7 +10,7 @@ namespace DocViewer
     {
         #region DECLARATIONS
         private static readonly log4net.ILog Logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        private const string StateKeyName = "ListViewStates";
+        private const string StateKeyName = @"DocViewerControlStates";
 
         public List<Image> Images
         {
@@ -91,6 +91,7 @@ namespace DocViewer
             Logger?.Debug("Page_Init Event");
             RadPersistenceManager persistenceManager1 = RadPersistenceManager.GetCurrent(Page);
             if (persistenceManager1 == null) return;
+
             persistenceManager1.StorageProvider = new SessionStorageProvider(StateKeyName);
             persistenceManager1.StorageProviderKey = StateKeyName;
             persistenceManager1.LoadState();

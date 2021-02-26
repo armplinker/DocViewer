@@ -13,6 +13,24 @@ namespace DocViewer.Controls {
     public partial class UserControl1 {
         
         /// <summary>
+        /// UCDEMORAM1_Proxy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadAjaxManagerProxy UCDEMORAM1_Proxy;
+        
+        /// <summary>
+        /// UCDEMO_RadPersistenceManagerProxy1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Telerik.Web.UI.RadPersistenceManagerProxy UCDEMO_RadPersistenceManagerProxy1;
+        
+        /// <summary>
         /// lblPlaceholder1 control.
         /// </summary>
         /// <remarks>

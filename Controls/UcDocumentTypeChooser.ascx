@@ -1,7 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UcDocumentTypeChooser.ascx.cs" Inherits="DocViewer.Controls.UcDocumentTypeChooser" %>
 
-<telerik:RadPersistenceManagerProxy ID="UCDTC_RadPersistenceManagerProxy1" runat="server"/>
-
 <asp:ScriptManagerProxy ID="DTPBScriptManagerProxy1" runat="server"></asp:ScriptManagerProxy>
 
 <telerik:RadAjaxManagerProxy runat="server" ID="UCDTCRM1_Proxy">
@@ -23,6 +21,8 @@
         </telerik:AjaxSetting>
     </AjaxSettings>
 </telerik:RadAjaxManagerProxy>
+
+<telerik:RadPersistenceManagerProxy ID="UCDTC_RadPersistenceManagerProxy1" runat="server" /><%--UniqueKey="UCDTCPM1"/>--%>
 
 <div>
 

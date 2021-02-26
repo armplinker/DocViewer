@@ -7,95 +7,42 @@
 <asp:Content ID="DVM_Head_Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Document Viewer Dialog</title>
     <%--<link href="styles/grid.css" rel="stylesheet" />--%>
-    <telerik:RadStyleSheetManager runat="server" ID="DVM_RadStyleSheetManager1">
-        <StyleSheets>
-            <telerik:StyleSheetReference Path="~/Content/css/tailwind.css" OrderIndex="1" IsRequiredCss="True" IsCommonCss="True" />
-            <telerik:StyleSheetReference Path="~/Content/css/fontawesome.min.css" OrderIndex="2" IsRequiredCss="True" IsCommonCss="True" />
-            <telerik:StyleSheetReference Path="~/Content/css/solid.min.css" OrderIndex="3" IsRequiredCss="True" IsCommonCss="True" />
-            <%--<telerik:StyleSheetReference Path="~/styles/grid.css" OrderIndex="4" IsRequiredCss="True" IsCommonCss="True" />--%>
-        </StyleSheets>
-    </telerik:RadStyleSheetManager>
+   
 </asp:Content>
 
 
 <%--COMMON CONTENT--%>
 <asp:Content runat="server" ID="DVM_CommonContent1" ContentPlaceHolderID="CommonContentPlaceHolder1">
 
-    <telerik:RadScriptManager ID="DVM_RadScriptManager1" runat="server" EnableScriptCombine="True">
-        <Scripts>
-            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
-            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
-            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
-
-
-            <%--added this to turn on and off debug and provide a wrapper for log.debug....--%>
-            <telerik:RadScriptReference Path="~/Content/js/toggle-debug.js" />
-
-            <%--Font-Awesome--%>
-            <telerik:RadScriptReference Path="~/Content/vendor/fa/js/fontawesome.min.js" />
-            <telerik:RadScriptReference Path="~/Content/vendor/fa/js/solid.min.js" />
-        </Scripts>
-    </telerik:RadScriptManager>
-    <telerik:RadAjaxManager ID="DVM_RadAjaxManager1" runat="server"
-        DefaultLoadingPanelID="DVM_RadAjaxLoadingPanel1"
-        OnAjaxRequest="DVM_AjaxRequest">
+    <asp:ScriptManagerProxy runat="server" ID="DVM_ScriptManagerProxy1"/>
+    <telerik:RadAjaxManagerProxy runat="server" ID="DVM_RadAjaxManagerProxy1">
         <AjaxSettings>
-            <telerik:AjaxSetting AjaxControlID="Panel1">
+            <telerik:AjaxSetting AjaxControlID="SaveButton">
                 <UpdatedControls>
-                    <telerik:AjaxUpdatedControl ControlID="Panel1"  />
-                </UpdatedControls>
-            </telerik:AjaxSetting>
-           <telerik:AjaxSetting AjaxControlID="SaveButton">
-                <UpdatedControls>
-                    <telerik:AjaxUpdatedControl ControlID="SaveButton"  />
-                    <telerik:AjaxUpdatedControl ControlID="Panel2"  />
+                    <telerik:AjaxUpdatedControl ControlID="Panel2" UpdatePanelCssClass="" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="ResetButton">
                 <UpdatedControls>
-                    <telerik:AjaxUpdatedControl ControlID="ResetButton"  />
-                    <telerik:AjaxUpdatedControl ControlID="Panel2"  />
+                    <telerik:AjaxUpdatedControl ControlID="Panel2" UpdatePanelCssClass="" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
             <telerik:AjaxSetting AjaxControlID="LoadButton">
                 <UpdatedControls>
-                    <telerik:AjaxUpdatedControl ControlID="LoadButton"  />
-                    <telerik:AjaxUpdatedControl ControlID="Panel2"  />
+                    <telerik:AjaxUpdatedControl ControlID="Panel2" UpdatePanelCssClass="" />
                 </UpdatedControls>
-            </telerik:AjaxSetting> 
-            <%--<telerik:AjaxSetting AjaxControlID="Panel2">
+            </telerik:AjaxSetting>
+            <telerik:AjaxSetting AjaxControlID="Panel2">
                 <UpdatedControls>
-                    <telerik:AjaxUpdatedControl ControlID="Panel2"  />
+                    <telerik:AjaxUpdatedControl ControlID="Panel2" UpdatePanelCssClass="" />
                 </UpdatedControls>
-            </telerik:AjaxSetting>--%>
+            </telerik:AjaxSetting>
         </AjaxSettings>
-    </telerik:RadAjaxManager>
-    <telerik:RadPersistenceManager ID="DVM_RadPersistenceManager1" runat="server"
-        OnSaveCustomSettings="DVMRPM1_SaveCustomSettings"
-        OnLoadCustomSettings="DVMRPM1_LoadCustomSettings"
-        OnLoadSettings="DVMRPM1_LoadSettings"
-        OnSaveSettings="DVMRPM1_SaveSettings">
-    </telerik:RadPersistenceManager>
-    <telerik:RadWindowManager ID="RadWindowManager1" runat="server" OnClientClose="OnClientClose">
-        <Windows>
-            <telerik:RadWindow ID="RadWindow1" runat="server" Modal="True" OnClientClose="OnClientClose" Style="display: none;">
-            </telerik:RadWindow>
-        </Windows>
-    </telerik:RadWindowManager>
+    </telerik:RadAjaxManagerProxy>
+    <telerik:RadWindowManager runat="server" ID="DVM_RadWindowManager1"/>
+    <telerik:RadPersistenceManagerProxy runat="server" Id="DVM_RadPersistenceManagerProxy1"/>
+    <telerik:RadAjaxLoadingPanel ID="DVM_RadAjaxLoadingPanel1" runat="server" Skin="Default"/>
 
-    <telerik:RadScriptBlock runat="server" ID="DVM_RadScriptBlock1">
-        <script type="text/javascript">
-            function GetRadWindow() {
-                var oWindow = null;
-                if (window.radWindow)
-                    oWindow = window.radWindow;
-                else if (window.frameElement.radWindow)
-                    oWindow = window.frameElement.radWindow;
-                log_object(oWindow);
-                return oWindow;
-            }
-        </script>
-    </telerik:RadScriptBlock>
     <telerik:RadCodeBlock runat="server" ID="DVM_RadCodeBlock1">
         <script type="text/javascript">
 
@@ -126,55 +73,70 @@
             //    });
 
             function LogFromJavaScript(logMessage) {
-                const oManager = $find("<%=DVM_RadAjaxManager1.ClientID%>");
+                const oManager = $find("<%= RadAjaxManager.GetCurrent(Page).ClientID %>");
                 if (oManager) {
                     log_debug(logMessage);
                     oManager.ajaxRequest(logMessage);
                 }
-                return false;
+              
             }
 
-            window.onload = restoreState;
+           // window.onload = restoreState;
             // register your event handler
             // setEventHandler(this, "focusin", restoreState); // register your event handler - no on in the event name
             function restoreState() {
-
-                const oManager = $find("<%=DVM_RadAjaxManager1.ClientID%>");
+              
+                 
+                const oManager = $find("<%= RadAjaxManager.GetCurrent(Page).ClientID %>");
                 if (oManager) {
                     // ReSharper disable once StringLiteralTypo
                     const msg = `${"DVM_restoreState"}*${"logdebug"}*${"ajaxRequest window.onload"}`;
                     window.LogFromJavaScript(msg);
                     // ReSharper disable once StringLiteralTypo
-                    oManager.ajaxRequest(`${"DVM_restoreState"}*${"action"}*${"loadstate"}*${""}`);
+                    oManager.ajaxRequest(`${"DVM_restoreState"}*${"action"}*${"loadstatex"}*${""}`);
                 }
-                return false;
+                //return false;
             }
 
-           // window.onbeforeunload = confirmExit;
+             //window.onbeforeunload = confirmExit;
             // register your event handler
             //setEventHandler(this, "beforeunload", confirmExit); // register your event handler - no on in the event name
             function confirmExit() {
-                const oManager = $find("<%=DVM_RadAjaxManager1.ClientID%>");
+                const oManager = $find("<%= RadAjaxManager.GetCurrent(Page).ClientID %>");
                 if (oManager) {
                     const msg = `${"DVM_confirmExit"}*${"logdebug"}*${"ajaxRequest window.onbeforeunload!"}`;
                     window.LogFromJavaScript(msg);
                     oManager.ajaxRequest(`${"DVM_confirmExit"}*${"action"}*${"savestatex"}*${""}`);
                 }
-                return false;
+               // return false;
             }
+           
 
-            window.onfocusout = confirmExit2;
+            //window.onfocusout = confirmExit2;
             // register your event handler
             //setEventHandler(this, "focusout", confirmExit2); // register your event handler - no on in the event name
             function confirmExit2() {
-
-                const oManager = $find("<%=DVM_RadAjaxManager1.ClientID%>");
-                if (oManager) {
+ 
+               const oManager = $find("<%= RadAjaxManager.GetCurrent(Page).ClientID %>");
+               if (oManager) {
                     const msg = `${"DVM_confirmExit2"}*${"logdebug"}*${"ajaxRequest window.onfocusout!"}`;
                     window.LogFromJavaScript(msg);
                     oManager.ajaxRequest(`${"DVM_confirmExit2"}*${"action"}*${"savestatex"}*${""}`);
                 }
-                return false;
+                //return false;
+            }
+
+            //window.onblur = confirmExit3;
+            // register your event handler
+            //setEventHandler(this, "focusout", confirmExit2); // register your event handler - no on in the event name
+            function confirmExit3() {
+                const oManager = $find("<%= RadAjaxManager.GetCurrent(Page).ClientID %>");
+                if (oManager) {
+                    const msg = `${"DVM_confirmExit3"}*${"logdebug"}*${"ajaxRequest window.onblur!"}`;
+                    window.LogFromJavaScript(msg);
+                    oManager.ajaxRequest(`${"DVM_confirmExit3"}*${"action"}*${"savestatex"}*${""}`);
+                }
+                //return false;
             }
         </script>
     </telerik:RadCodeBlock>
@@ -263,8 +225,8 @@
                 <asp:Label ID="Label8" runat="server" Text="Label8"></asp:Label>
             </p>
         </asp:Panel>
-        <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel1" runat="server" Skin="Default">
-        </telerik:RadAjaxLoadingPanel>
+       <%-- <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel1" runat="server" Skin="Default">
+        </telerik:RadAjaxLoadingPanel>--%>
     </div>
 
 </asp:Content>
